@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/IMPMU"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/IMPMU">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal datatypeIRI="&rdfs;Literal">The upper level ontology for IMPlanner</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#CADFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FeatureConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MfgConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MfgFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MfgProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessPhase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MatchedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#immediateNextFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#immediatePreviousFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#immediatelyPrecededBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#immediatelyPrecedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#matches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayBeMachinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#preceededBy"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CADFeature"/>
+        <Class IRI="#MfgConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CADFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpecification"/>
+            <Class IRI="#FeatureConstraint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MatchedBy"/>
+            <Class IRI="#Specification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeatureConstraint"/>
+        <Class IRI="#Specification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeatureConstraint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#matches"/>
+            <Class IRI="#ProcessCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MfgFeature"/>
+        <Class IRI="#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MfgFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mayBeMachinedBy"/>
+            <Class IRI="#MfgProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MfgProcess"/>
+        <Class IRI="#MfgConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MfgProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#ProcessPhase"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MfgProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapability"/>
+            <Class IRI="#ProcessCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCapability"/>
+        <Class IRI="#Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCapability"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#MatchedBy"/>
+            <Class IRI="#FeatureConstraint"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCapability"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#ownedBy"/>
+            <Class IRI="#MfgProcess"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessPhase"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#matches"/>
+            <Class IRI="#Capability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CADFeature"/>
+        <Class IRI="#FeatureConstraint"/>
+        <Class IRI="#MfgProcess"/>
+        <Class IRI="#ProcessCapability"/>
+        <Class IRI="#ProcessPhase"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MatchedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#immediateNextFeature"/>
+        <ObjectProperty IRI="#hasNextFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#immediatePreviousFeature"/>
+        <ObjectProperty IRI="#hasPreviousFeature"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#immediatelyPrecededBy"/>
+        <ObjectProperty IRI="#preceededBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#immediatelyPrecedes"/>
+        <ObjectProperty IRI="#precedes"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#matches"/>
+        <ObjectProperty IRI="#MatchedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#hasProcess"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCapability"/>
+        <ObjectProperty IRI="#ownedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPreviousFeature"/>
+        <ObjectProperty IRI="#hasNextFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#precedes"/>
+        <ObjectProperty IRI="#preceededBy"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#immediatelyPrecededBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#immediatelyPrecedes"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasNextFeature"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasPreviousFeature"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#precedes"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#preceededBy"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#MfgProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class IRI="#MfgProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecification"/>
+        <Class IRI="#CADFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#matches"/>
+        <Class IRI="#FeatureConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#ProcessPhase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class IRI="#ProcessCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpecification"/>
+        <Class IRI="#FeatureConstraint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#matches"/>
+        <Class IRI="#ProcessCapability"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
