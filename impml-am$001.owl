@@ -1,14 +1,4 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.ohio.edu/ontologies/IMPM-AM"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -24,26 +14,98 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.ohio.edu/ontologies/IMPMU</Import>
     <Declaration>
-        <Class IRI="#AMFeature"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AdditiveProcess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#abc"/>
+        <Class IRI="#AdditiveFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#def"/>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ghi"/>
+        <Class IRI="#MultiJetModelling_MJM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinderJetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laser_Melting_LM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserSintering_LS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialExtrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3DPrinting_3DP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialJetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinderJetting_BJ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SheetLamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserCladding_LC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InkjetPrinting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaminatedObjectModeling_LOM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VatPolymerization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boss1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stereolithography_SL,SLA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyJetting_PJ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectLightFabrication_DLF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowderBedFusion"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#AMFeature"/>
+        <Class IRI="#AdditiveFeature"/>
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AMFeature"/>
+        <Class IRI="#AdditiveFeature"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
             <Class IRI="#AdditiveProcess"/>
@@ -54,24 +116,156 @@
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#abc"/>
+        <Class IRI="#BinderJetting"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinderJetting_BJ"/>
+        <Class IRI="#BinderJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
         <Class IRI="#AdditiveProcess"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#def"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
         <Class IRI="#AdditiveProcess"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ghi"/>
-        <Class IRI="#def"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectLightFabrication_DLF"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
+        <Class IRI="#MaterialExtrusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
+        <Class IRI="#MaterialExtrusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InkjetPrinting"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaminatedObjectModeling_LOM"/>
+        <Class IRI="#SheetLamination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserCladding_LC"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserSintering_LS"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laser_Melting_LM"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialExtrusion"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialJetting"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiJetModelling_MJM"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyJetting_PJ"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowderBedFusion"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SheetLamination"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VatPolymerization"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3DPrinting_3DP"/>
+        <Class IRI="#BinderJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stereolithography_SL,SLA"/>
+        <Class IRI="#VatPolymerization"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#abc"/>
-        <Class IRI="#def"/>
+        <Class IRI="#BinderJetting"/>
+        <Class IRI="#PowderBedFusion"/>
+        <Class IRI="#SheetLamination"/>
+        <Class IRI="#VatPolymerization"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BinderJetting_BJ"/>
+        <Class IRI="#3DPrinting_3DP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DirectEnergyDepposition"/>
+        <Class IRI="#MaterialExtrusion"/>
+        <Class IRI="#MaterialJetting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DirectLightFabrication_DLF"/>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
+        <Class IRI="#LaserCladding_LC"/>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
+        <Class IRI="#LaserSintering_LS"/>
+        <Class IRI="#Laser_Melting_LM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InkjetPrinting"/>
+        <Class IRI="#MultiJetModelling_MJM"/>
+        <Class IRI="#PolyJetting_PJ"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <NamedIndividual IRI="#boss1"/>
+    </ClassAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
