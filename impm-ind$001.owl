@@ -1,750 +1,268 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.ohio.edu/ontologies/2016/1/IMPM-ind$001"
+     xml:base="http://www.ohio.edu/ontologies/IMPM-AM"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.ohio.edu/ontologies/2016/1/IMPM-ind$001">
+     ontologyIRI="http://www.ohio.edu/ontologies/IMPM-AM">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ohio.edu/ontologies/IMPMU</Import>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
+        <Class IRI="#AdditiveProcess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <Class IRI="#AdditiveFeature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos2"/>
+        <Class IRI="#MultiJetModelling_MJM"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
+        <Class IRI="#BinderJetting"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol1"/>
+        <Class IRI="#Laser_Melting_LM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
+        <Class IRI="#LaserSintering_LS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol1"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DepthLimit"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatePreviousFeature"/>
+        <Class IRI="#MaterialExtrusion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
+        <Class IRI="#3DPrinting_3DP"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+        <Class IRI="#MaterialJetting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PositiveTolerance"/>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="#BinderJetting_BJ"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#NegativeTolerance"/>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+        <Class IRI="#SheetLamination"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
+        <Class IRI="#LaserCladding_LC"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
+        <Class IRI="#InkjetPrinting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <Class IRI="#LaminatedObjectModeling_LOM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+        <Class IRI="#VatPolymerization"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Grind1"/>
+        <Class IRI="#DirectEnergyDepposition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
+        <NamedIndividual IRI="#boss1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol2"/>
+        <Class IRI="#Stereolithography_SL,SLA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
+        <Class IRI="#PolyJetting_PJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos1"/>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#rad1"/>
+        <Class IRI="#DirectLightFabrication_DLF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#LargestToolDiameter"/>
+        <Class IRI="#PowderBedFusion"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TruePosition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#maxtldm1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Radius"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol3"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hole1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hon1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol3"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Depth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slot1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#deplim1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#dep1"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
-    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdditiveFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdditiveFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="#AdditiveProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdditiveProcess"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinderJetting"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinderJetting_BJ"/>
+        <Class IRI="#BinderJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+        <Class IRI="#AdditiveProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+        <Class IRI="#AdditiveProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectEnergyDepposition"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectLightFabrication_DLF"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
+        <Class IRI="#MaterialExtrusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
+        <Class IRI="#MaterialExtrusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InkjetPrinting"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaminatedObjectModeling_LOM"/>
+        <Class IRI="#SheetLamination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserCladding_LC"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
+        <Class IRI="#DirectEnergyDepposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserSintering_LS"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laser_Melting_LM"/>
+        <Class IRI="#PowderBedFusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialExtrusion"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialJetting"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiJetModelling_MJM"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyJetting_PJ"/>
+        <Class IRI="#MaterialJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowderBedFusion"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SheetLamination"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VatPolymerization"/>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3DPrinting_3DP"/>
+        <Class IRI="#BinderJetting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stereolithography_SL,SLA"/>
+        <Class IRI="#VatPolymerization"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BinderJetting"/>
+        <Class IRI="#PowderBedFusion"/>
+        <Class IRI="#SheetLamination"/>
+        <Class IRI="#VatPolymerization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BinderJetting_BJ"/>
+        <Class IRI="#3DPrinting_3DP"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BuildingMaterial_On_BuildingPlatform"/>
+        <Class IRI="#BuildingMaterial_Onto_BuildingPlatform"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DirectEnergyDepposition"/>
+        <Class IRI="#MaterialExtrusion"/>
+        <Class IRI="#MaterialJetting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DirectLightFabrication_DLF"/>
+        <Class IRI="#LaserBasedMetalDeposition_LBMD"/>
+        <Class IRI="#LaserCladding_LC"/>
+        <Class IRI="#LaserEngineeredNetShaping_LENS"/>
+        <Class IRI="#LaserFreeformFabrication_LFF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectronBeamMelting_EBM"/>
+        <Class IRI="#LaserSintering_LS"/>
+        <Class IRI="#Laser_Melting_LM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FusedDepositionModelling_FDM"/>
+        <Class IRI="#FusedFilamentFabrication_FFF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InkjetPrinting"/>
+        <Class IRI="#MultiJetModelling_MJM"/>
+        <Class IRI="#PolyJetting_PJ"/>
+    </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <NamedIndividual IRI="#boss1"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Grind1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hole1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hon1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slot1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Depth"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#dep1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DepthLimit"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#deplim1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#LargestToolDiameter"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#maxtldm1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#NegativeTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PositiveTolerance"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Radius"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#rad1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TruePosition"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#dep1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#rad1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#DelphiHole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Grind1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Grind1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Grind1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatePreviousFeature"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hole1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hon1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hon1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hon1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#PBor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatePreviousFeature"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slot1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Hole1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatePreviousFeature"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slot1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#Slab2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#bor1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#dep1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#deplim1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#rad1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#maxtldm1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ED1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#GD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#ream1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#CD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#optionallyPrecededBy"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#SPD1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#deplim1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#maxtldm1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#twdrl1"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos1"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">55.63</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">22.48</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#LocatingHole1Position"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.420000000000027</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#VectorZNegative"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-1.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#dep1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">9.77</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#deplim1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">132.23</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#maxtldm1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">50.8</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.975</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0762</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minnegtol3"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.01016</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.05</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0762</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#minpostol3"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.01016</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.2032</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#mintrupos2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.00254</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#negtol1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.025</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#postol1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.025</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#rad1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.5125</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
-        <NamedIndividual IRI="http://www.ohio.edu/ontologies/IMPM-ind#trupos1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.2</Literal>
-    </DataPropertyAssertion>
 </Ontology>
 
 
