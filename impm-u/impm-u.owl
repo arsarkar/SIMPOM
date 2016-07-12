@@ -1,0 +1,152 @@
+Prefix(:=<http://www.ohio.edu/ontologies/IMPMU#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.ohio.edu/ontologies/IMPMU>
+Annotation(rdfs:isDefinedBy "The upper level ontology for IMPlanner"^^rdfs:Literal)
+
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Feature>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Specification>))
+Declaration(Class(:CADFeature))
+Declaration(Class(:Capability))
+Declaration(Class(:FeatureConstraint))
+Declaration(Class(:MfgConcept))
+Declaration(Class(:MfgFeature))
+Declaration(Class(:MfgProcess))
+Declaration(Class(:ProcessCapability))
+Declaration(Class(:ProcessPhase))
+Declaration(ObjectProperty(:MatchedBy))
+Declaration(ObjectProperty(:belongsTo))
+Declaration(ObjectProperty(:hasCapability))
+Declaration(ObjectProperty(:hasNextFeature))
+Declaration(ObjectProperty(:hasPreviousFeature))
+Declaration(ObjectProperty(:hasProcess))
+Declaration(ObjectProperty(:hasSpecification))
+Declaration(ObjectProperty(:immediateNextFeature))
+Declaration(ObjectProperty(:immediatePreviousFeature))
+Declaration(ObjectProperty(:immediatelyPrecededBy))
+Declaration(ObjectProperty(:immediatelyPrecedes))
+Declaration(ObjectProperty(:matches))
+Declaration(ObjectProperty(:mayBeMachinedBy))
+Declaration(ObjectProperty(:ownedBy))
+Declaration(ObjectProperty(:precedes))
+Declaration(ObjectProperty(:preceededBy))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :MatchedBy (:MatchedBy)
+
+SubObjectPropertyOf(:MatchedBy owl:topObjectProperty)
+InverseObjectProperties(:MatchedBy :matches)
+
+# Object Property: :belongsTo (:belongsTo)
+
+InverseObjectProperties(:belongsTo :hasProcess)
+ObjectPropertyDomain(:belongsTo :MfgProcess)
+ObjectPropertyRange(:belongsTo :ProcessPhase)
+
+# Object Property: :hasCapability (:hasCapability)
+
+InverseObjectProperties(:hasCapability :ownedBy)
+ObjectPropertyDomain(:hasCapability :MfgProcess)
+ObjectPropertyRange(:hasCapability :ProcessCapability)
+
+# Object Property: :hasNextFeature (:hasNextFeature)
+
+InverseObjectProperties(:hasNextFeature :hasPreviousFeature)
+TransitiveObjectProperty(:hasNextFeature)
+
+# Object Property: :hasPreviousFeature (:hasPreviousFeature)
+
+TransitiveObjectProperty(:hasPreviousFeature)
+
+# Object Property: :hasSpecification (:hasSpecification)
+
+ObjectPropertyDomain(:hasSpecification :CADFeature)
+ObjectPropertyRange(:hasSpecification :FeatureConstraint)
+
+# Object Property: :immediateNextFeature (:immediateNextFeature)
+
+SubObjectPropertyOf(:immediateNextFeature :hasNextFeature)
+
+# Object Property: :immediatePreviousFeature (:immediatePreviousFeature)
+
+SubObjectPropertyOf(:immediatePreviousFeature :hasPreviousFeature)
+
+# Object Property: :immediatelyPrecededBy (:immediatelyPrecededBy)
+
+SubObjectPropertyOf(:immediatelyPrecededBy :preceededBy)
+FunctionalObjectProperty(:immediatelyPrecededBy)
+
+# Object Property: :immediatelyPrecedes (:immediatelyPrecedes)
+
+SubObjectPropertyOf(:immediatelyPrecedes :precedes)
+FunctionalObjectProperty(:immediatelyPrecedes)
+
+# Object Property: :matches (:matches)
+
+ObjectPropertyDomain(:matches :FeatureConstraint)
+ObjectPropertyRange(:matches :ProcessCapability)
+
+# Object Property: :precedes (:precedes)
+
+InverseObjectProperties(:precedes :preceededBy)
+TransitiveObjectProperty(:precedes)
+
+# Object Property: :preceededBy (:preceededBy)
+
+TransitiveObjectProperty(:preceededBy)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.ohio.edu/ontologies/CPM#Specification> (<http://www.ohio.edu/ontologies/CPM#Specification>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/CPM#Specification> ObjectSomeValuesFrom(:matches :Capability))
+
+# Class: :CADFeature (:CADFeature)
+
+SubClassOf(:CADFeature <http://www.ohio.edu/ontologies/CPM#Feature>)
+SubClassOf(:CADFeature ObjectSomeValuesFrom(:hasSpecification :FeatureConstraint))
+
+# Class: :Capability (:Capability)
+
+SubClassOf(:Capability :MfgConcept)
+
+# Class: :FeatureConstraint (:FeatureConstraint)
+
+SubClassOf(:FeatureConstraint <http://www.ohio.edu/ontologies/CPM#Specification>)
+SubClassOf(:FeatureConstraint ObjectSomeValuesFrom(:matches :ProcessCapability))
+
+# Class: :MfgFeature (:MfgFeature)
+
+SubClassOf(:MfgFeature :CADFeature)
+SubClassOf(:MfgFeature ObjectSomeValuesFrom(:mayBeMachinedBy :MfgProcess))
+
+# Class: :MfgProcess (:MfgProcess)
+
+SubClassOf(:MfgProcess :MfgConcept)
+SubClassOf(:MfgProcess ObjectSomeValuesFrom(:belongsTo :ProcessPhase))
+SubClassOf(:MfgProcess ObjectSomeValuesFrom(:hasCapability :ProcessCapability))
+
+# Class: :ProcessCapability (:ProcessCapability)
+
+SubClassOf(:ProcessCapability :Capability)
+SubClassOf(:ProcessCapability ObjectExactCardinality(1 :MatchedBy :FeatureConstraint))
+SubClassOf(:ProcessCapability ObjectExactCardinality(1 :ownedBy :MfgProcess))
+
+# Class: :ProcessPhase (:ProcessPhase)
+
+SubClassOf(:ProcessPhase owl:Thing)
+
+
+DisjointClasses(:CADFeature :FeatureConstraint :MfgProcess :ProcessCapability :ProcessPhase)
+)

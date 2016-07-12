@@ -1,0 +1,133 @@
+Prefix(:=<http://www.ohio.edu/ontologies/CPM#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.ohio.edu/ontologies/CPM>
+Annotation(rdfs:isDefinedBy "The support of PLM throughout the product life, from the product’s conceptualization to its disposal, requires reliable, complete and efficient data models. The Core Product Model (CPM), initially developed at NIST for a number of in-house research projects, has been extended so as to support the full range of PLM information.
+CPM gives equal status to three aspects of a product or artifact: its function, form and behavior. Thus, CPM can support purely functional reasoning about a product in the conceptual stages of design as well as the recording and modeling of its behavior in the post-design stage.
+CPM is a generic, abstract model with generic semantics. It is defined as a UML class diagram.. Three levels of CPM models, denoted as the conceptual, intermediate, and implementation models, are described. Extensions of CPM are briefly presented and a short illustrative example is given."@en)
+Annotation(rdfs:seeAlso "Fenves, S. J., Foufou, S., Bock, C., & Sriram, R. D. (2008). CPM2: A Core Model for Product Data. Journal of Computing and Information Science in Engineering, 8(1), 014501. http://doi.org/10.1115/1.2830842"@en)
+
+Declaration(Class(:Artifact))
+Declaration(Class(:Behavior))
+Declaration(Class(:CommonCoreObject))
+Declaration(Class(:CommonCoreRelationShip))
+Declaration(Class(:Constraint))
+Declaration(Class(:CoreEntity))
+Declaration(Class(:CoreProductModel))
+Declaration(Class(:CoreProperty))
+Declaration(Class(:EntityAssociation))
+Declaration(Class(:Feature))
+Declaration(Class(:Flow))
+Declaration(Class(:Form))
+Declaration(Class(:Function))
+Declaration(Class(:Geometry))
+Declaration(Class(:Material))
+Declaration(Class(:Requirement))
+Declaration(Class(:Specification))
+Declaration(Class(:Trace))
+Declaration(Class(:Usage))
+Declaration(ObjectProperty(:hasFeature))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasFeature (:hasFeature)
+
+ObjectPropertyDomain(:hasFeature :Artifact)
+ObjectPropertyRange(:hasFeature :Feature)
+
+
+############################
+#   Classes
+############################
+
+# Class: :Artifact (:Artifact)
+
+SubClassOf(:Artifact :CoreEntity)
+SubClassOf(:Artifact ObjectAllValuesFrom(:hasFeature :Feature))
+DisjointClasses(:Artifact :Feature)
+
+# Class: :Behavior (:Behavior)
+
+SubClassOf(:Behavior :CommonCoreObject)
+
+# Class: :CommonCoreObject (:CommonCoreObject)
+
+SubClassOf(:CommonCoreObject :CoreProductModel)
+DisjointClasses(:CommonCoreObject :CommonCoreRelationShip)
+
+# Class: :CommonCoreRelationShip (:CommonCoreRelationShip)
+
+SubClassOf(:CommonCoreRelationShip :CoreProductModel)
+
+# Class: :Constraint (:Constraint)
+
+SubClassOf(:Constraint :CommonCoreRelationShip)
+
+# Class: :CoreEntity (:CoreEntity)
+
+SubClassOf(:CoreEntity :CommonCoreObject)
+
+# Class: :CoreProductModel (:CoreProductModel)
+
+SubClassOf(:CoreProductModel owl:Thing)
+
+# Class: :CoreProperty (:CoreProperty)
+
+SubClassOf(:CoreProperty :CommonCoreObject)
+
+# Class: :EntityAssociation (:EntityAssociation)
+
+SubClassOf(:EntityAssociation :CommonCoreRelationShip)
+
+# Class: :Feature (:Feature)
+
+SubClassOf(:Feature :CoreEntity)
+
+# Class: :Flow (:Flow)
+
+SubClassOf(:Flow :CoreProperty)
+
+# Class: :Form (:Form)
+
+SubClassOf(:Form :CoreProperty)
+
+# Class: :Function (:Function)
+
+SubClassOf(:Function :CoreProperty)
+
+# Class: :Geometry (:Geometry)
+
+SubClassOf(:Geometry :CoreProperty)
+
+# Class: :Material (:Material)
+
+SubClassOf(:Material :CoreProperty)
+
+# Class: :Requirement (:Requirement)
+
+SubClassOf(:Requirement :CommonCoreObject)
+
+# Class: :Specification (:Specification)
+
+SubClassOf(:Specification :CommonCoreObject)
+
+# Class: :Trace (:Trace)
+
+SubClassOf(:Trace :CommonCoreRelationShip)
+
+# Class: :Usage (:Usage)
+
+SubClassOf(:Usage :CommonCoreRelationShip)
+
+
+DisjointClasses(:Behavior :CoreEntity :CoreProperty :Requirement :Specification)
+DisjointClasses(:Constraint :EntityAssociation :Trace :Usage)
+DisjointClasses(:Flow :Form :Function :Geometry :Material)
+)

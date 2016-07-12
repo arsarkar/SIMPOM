@@ -1,0 +1,306 @@
+Prefix(:=<http://www.ohio.edu/ontologies/2016/1/IMPM-ind$001#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(impml:=<http://www.ohio.edu/ontologies/IMPML#>)
+Prefix(impmu:=<http://www.ohio.edu/ontologies/IMPMU#>)
+Prefix(impm-ind:=<http://www.ohio.edu/ontologies/2016/1/IMPM-ind#>)
+
+
+Ontology(<http://www.ohio.edu/ontologies/2016/1/IMPM-ind$001>
+Import(<http://www.ohio.edu/ontologies/IMPMU>)
+Import(<http://www.ohio.edu/ontologies/IMPML>)
+
+Declaration(Class(impml:Axis3D))
+Declaration(Class(impml:Boring))
+Declaration(Class(impml:CenterDrilling))
+Declaration(Class(impml:Depth))
+Declaration(Class(impml:DepthLimit))
+Declaration(Class(impml:EndDrilling))
+Declaration(Class(impml:Grinding))
+Declaration(Class(impml:GunDrilling))
+Declaration(Class(impml:Hole))
+Declaration(Class(impml:Honing))
+Declaration(Class(impml:LargestToolDiameter))
+Declaration(Class(impml:MinimumNegativeTolerance))
+Declaration(Class(impml:MinimumPositiveTolerance))
+Declaration(Class(impml:MinimumTruePosition))
+Declaration(Class(impml:NegativeTolerance))
+Declaration(Class(impml:PositiveTolerance))
+Declaration(Class(impml:PrecisionBoring))
+Declaration(Class(impml:Radius))
+Declaration(Class(impml:Reaming))
+Declaration(Class(impml:Slab))
+Declaration(Class(impml:Slot))
+Declaration(Class(impml:SpadeDrilling))
+Declaration(Class(impml:SpotDrilling))
+Declaration(Class(impml:TruePosition))
+Declaration(Class(impml:TwistDrilling))
+Declaration(ObjectProperty(impml:hasAxisVector))
+Declaration(ObjectProperty(impml:hasLocation))
+Declaration(ObjectProperty(impml:optionallyPrecededBy))
+Declaration(ObjectProperty(impmu:hasCapability))
+Declaration(ObjectProperty(impmu:hasSpecification))
+Declaration(ObjectProperty(impmu:immediatePreviousFeature))
+Declaration(ObjectProperty(impmu:immediatelyPrecededBy))
+Declaration(ObjectProperty(impmu:matches))
+Declaration(DataProperty(impml:hasMax))
+Declaration(DataProperty(impml:hasMin))
+Declaration(DataProperty(impml:hasValue))
+Declaration(DataProperty(impml:x))
+Declaration(DataProperty(impml:y))
+Declaration(DataProperty(impml:z))
+Declaration(NamedIndividual(<impm-ind#CD1>))
+Declaration(NamedIndividual(<impm-ind#DelphiHole1>))
+Declaration(NamedIndividual(<impm-ind#ED1>))
+Declaration(NamedIndividual(<impm-ind#GD1>))
+Declaration(NamedIndividual(<impm-ind#Grind1>))
+Declaration(NamedIndividual(<impm-ind#Hole1>))
+Declaration(NamedIndividual(<impm-ind#Hon1>))
+Declaration(NamedIndividual(<impm-ind#LocatingHole1Position>))
+Declaration(NamedIndividual(<impm-ind#PBor1>))
+Declaration(NamedIndividual(<impm-ind#SD1>))
+Declaration(NamedIndividual(<impm-ind#SPD1>))
+Declaration(NamedIndividual(<impm-ind#Slab1>))
+Declaration(NamedIndividual(<impm-ind#Slab2>))
+Declaration(NamedIndividual(<impm-ind#Slot1>))
+Declaration(NamedIndividual(<impm-ind#VectorZNegative>))
+Declaration(NamedIndividual(<impm-ind#bor1>))
+Declaration(NamedIndividual(<impm-ind#dep1>))
+Declaration(NamedIndividual(<impm-ind#deplim1>))
+Declaration(NamedIndividual(<impm-ind#maxtldm1>))
+Declaration(NamedIndividual(<impm-ind#minnegtol1>))
+Declaration(NamedIndividual(<impm-ind#minnegtol2>))
+Declaration(NamedIndividual(<impm-ind#minnegtol3>))
+Declaration(NamedIndividual(<impm-ind#minpostol1>))
+Declaration(NamedIndividual(<impm-ind#minpostol2>))
+Declaration(NamedIndividual(<impm-ind#minpostol3>))
+Declaration(NamedIndividual(<impm-ind#mintrupos1>))
+Declaration(NamedIndividual(<impm-ind#mintrupos2>))
+Declaration(NamedIndividual(<impm-ind#negtol1>))
+Declaration(NamedIndividual(<impm-ind#postol1>))
+Declaration(NamedIndividual(<impm-ind#rad1>))
+Declaration(NamedIndividual(<impm-ind#ream1>))
+Declaration(NamedIndividual(<impm-ind#trupos1>))
+Declaration(NamedIndividual(<impm-ind#twdrl1>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <impm-ind#CD1> (<impm-ind#CD1>)
+
+ClassAssertion(impml:CenterDrilling <impm-ind#CD1>)
+
+# Individual: <impm-ind#DelphiHole1> (<impm-ind#DelphiHole1>)
+
+ClassAssertion(impml:Hole <impm-ind#DelphiHole1>)
+ObjectPropertyAssertion(impml:hasAxisVector <impm-ind#DelphiHole1> <impm-ind#VectorZNegative>)
+ObjectPropertyAssertion(impml:hasLocation <impm-ind#DelphiHole1> <impm-ind#LocatingHole1Position>)
+ObjectPropertyAssertion(impmu:hasSpecification <impm-ind#DelphiHole1> <impm-ind#dep1>)
+ObjectPropertyAssertion(impmu:hasSpecification <impm-ind#DelphiHole1> <impm-ind#negtol1>)
+ObjectPropertyAssertion(impmu:hasSpecification <impm-ind#DelphiHole1> <impm-ind#postol1>)
+ObjectPropertyAssertion(impmu:hasSpecification <impm-ind#DelphiHole1> <impm-ind#rad1>)
+ObjectPropertyAssertion(impmu:hasSpecification <impm-ind#DelphiHole1> <impm-ind#trupos1>)
+
+# Individual: <impm-ind#ED1> (<impm-ind#ED1>)
+
+ClassAssertion(impml:EndDrilling <impm-ind#ED1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#ED1> <impm-ind#CD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#ED1> <impm-ind#SPD1>)
+
+# Individual: <impm-ind#GD1> (<impm-ind#GD1>)
+
+ClassAssertion(impml:GunDrilling <impm-ind#GD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#GD1> <impm-ind#CD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#GD1> <impm-ind#SPD1>)
+
+# Individual: <impm-ind#Grind1> (<impm-ind#Grind1>)
+
+ClassAssertion(impml:Grinding <impm-ind#Grind1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Grind1> <impm-ind#PBor1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Grind1> <impm-ind#bor1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Grind1> <impm-ind#ream1>)
+
+# Individual: <impm-ind#Hole1> (<impm-ind#Hole1>)
+
+ClassAssertion(impml:Hole <impm-ind#Hole1>)
+ObjectPropertyAssertion(impmu:immediatePreviousFeature <impm-ind#Hole1> <impm-ind#Slab1>)
+
+# Individual: <impm-ind#Hon1> (<impm-ind#Hon1>)
+
+ClassAssertion(impml:Honing <impm-ind#Hon1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Hon1> <impm-ind#PBor1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Hon1> <impm-ind#bor1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#Hon1> <impm-ind#ream1>)
+
+# Individual: <impm-ind#LocatingHole1Position> (<impm-ind#LocatingHole1Position>)
+
+ClassAssertion(impml:Axis3D <impm-ind#LocatingHole1Position>)
+DataPropertyAssertion(impml:x <impm-ind#LocatingHole1Position> "55.63"^^xsd:double)
+DataPropertyAssertion(impml:y <impm-ind#LocatingHole1Position> "22.48"^^xsd:double)
+DataPropertyAssertion(impml:z <impm-ind#LocatingHole1Position> "-0.420000000000027"^^xsd:double)
+
+# Individual: <impm-ind#PBor1> (<impm-ind#PBor1>)
+
+ClassAssertion(impml:PrecisionBoring <impm-ind#PBor1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#PBor1> <impm-ind#ED1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#PBor1> <impm-ind#GD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#PBor1> <impm-ind#SD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#PBor1> <impm-ind#twdrl1>)
+
+# Individual: <impm-ind#SD1> (<impm-ind#SD1>)
+
+ClassAssertion(impml:SpadeDrilling <impm-ind#SD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#SD1> <impm-ind#CD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#SD1> <impm-ind#SPD1>)
+
+# Individual: <impm-ind#SPD1> (<impm-ind#SPD1>)
+
+ClassAssertion(impml:SpotDrilling <impm-ind#SPD1>)
+
+# Individual: <impm-ind#Slab1> (<impm-ind#Slab1>)
+
+ClassAssertion(impml:Slab <impm-ind#Slab1>)
+
+# Individual: <impm-ind#Slab2> (<impm-ind#Slab2>)
+
+ClassAssertion(impml:Slab <impm-ind#Slab2>)
+
+# Individual: <impm-ind#Slot1> (<impm-ind#Slot1>)
+
+ClassAssertion(impml:Slot <impm-ind#Slot1>)
+ObjectPropertyAssertion(impmu:immediatePreviousFeature <impm-ind#Slot1> <impm-ind#Hole1>)
+ObjectPropertyAssertion(impmu:immediatePreviousFeature <impm-ind#Slot1> <impm-ind#Slab2>)
+
+# Individual: <impm-ind#VectorZNegative> (<impm-ind#VectorZNegative>)
+
+ClassAssertion(impml:Axis3D <impm-ind#VectorZNegative>)
+DataPropertyAssertion(impml:x <impm-ind#VectorZNegative> "0.0"^^xsd:double)
+DataPropertyAssertion(impml:y <impm-ind#VectorZNegative> "0.0"^^xsd:double)
+DataPropertyAssertion(impml:z <impm-ind#VectorZNegative> "-1.0"^^xsd:double)
+
+# Individual: <impm-ind#bor1> (<impm-ind#bor1>)
+
+ClassAssertion(impml:Boring <impm-ind#bor1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#bor1> <impm-ind#minnegtol2>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#bor1> <impm-ind#minpostol2>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#bor1> <impm-ind#mintrupos2>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#bor1> <impm-ind#ED1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#bor1> <impm-ind#GD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#bor1> <impm-ind#SD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#bor1> <impm-ind#twdrl1>)
+
+# Individual: <impm-ind#dep1> (<impm-ind#dep1>)
+
+ClassAssertion(impml:Depth <impm-ind#dep1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#dep1> <impm-ind#deplim1>)
+DataPropertyAssertion(impml:hasValue <impm-ind#dep1> "9.77"^^xsd:double)
+
+# Individual: <impm-ind#deplim1> (<impm-ind#deplim1>)
+
+ClassAssertion(impml:DepthLimit <impm-ind#deplim1>)
+DataPropertyAssertion(impml:hasMax <impm-ind#deplim1> "132.23"^^xsd:double)
+
+# Individual: <impm-ind#maxtldm1> (<impm-ind#maxtldm1>)
+
+ClassAssertion(impml:LargestToolDiameter <impm-ind#maxtldm1>)
+DataPropertyAssertion(impml:hasMax <impm-ind#maxtldm1> "50.8"^^xsd:double)
+
+# Individual: <impm-ind#minnegtol1> (<impm-ind#minnegtol1>)
+
+ClassAssertion(impml:MinimumNegativeTolerance <impm-ind#minnegtol1>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minnegtol1> "2.975"^^xsd:double)
+
+# Individual: <impm-ind#minnegtol2> (<impm-ind#minnegtol2>)
+
+ClassAssertion(impml:MinimumNegativeTolerance <impm-ind#minnegtol2>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minnegtol2> "0.0762"^^xsd:double)
+
+# Individual: <impm-ind#minnegtol3> (<impm-ind#minnegtol3>)
+
+ClassAssertion(impml:MinimumNegativeTolerance <impm-ind#minnegtol3>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minnegtol3> "0.01016"^^xsd:double)
+
+# Individual: <impm-ind#minpostol1> (<impm-ind#minpostol1>)
+
+ClassAssertion(impml:MinimumPositiveTolerance <impm-ind#minpostol1>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minpostol1> "3.05"^^xsd:double)
+
+# Individual: <impm-ind#minpostol2> (<impm-ind#minpostol2>)
+
+ClassAssertion(impml:MinimumPositiveTolerance <impm-ind#minpostol2>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minpostol2> "0.0762"^^xsd:double)
+
+# Individual: <impm-ind#minpostol3> (<impm-ind#minpostol3>)
+
+ClassAssertion(impml:MinimumPositiveTolerance <impm-ind#minpostol3>)
+DataPropertyAssertion(impml:hasMin <impm-ind#minpostol3> "0.01016"^^xsd:double)
+
+# Individual: <impm-ind#mintrupos1> (<impm-ind#mintrupos1>)
+
+ClassAssertion(impml:MinimumTruePosition <impm-ind#mintrupos1>)
+DataPropertyAssertion(impml:hasMin <impm-ind#mintrupos1> "0.2032"^^xsd:double)
+
+# Individual: <impm-ind#mintrupos2> (<impm-ind#mintrupos2>)
+
+ClassAssertion(impml:MinimumTruePosition <impm-ind#mintrupos2>)
+DataPropertyAssertion(impml:hasMin <impm-ind#mintrupos2> "0.00254"^^xsd:double)
+
+# Individual: <impm-ind#negtol1> (<impm-ind#negtol1>)
+
+ClassAssertion(impml:NegativeTolerance <impm-ind#negtol1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#negtol1> <impm-ind#minnegtol1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#negtol1> <impm-ind#minnegtol2>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#negtol1> <impm-ind#minnegtol3>)
+DataPropertyAssertion(impml:hasValue <impm-ind#negtol1> "0.025"^^xsd:double)
+
+# Individual: <impm-ind#postol1> (<impm-ind#postol1>)
+
+ClassAssertion(impml:PositiveTolerance <impm-ind#postol1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#postol1> <impm-ind#minpostol1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#postol1> <impm-ind#minpostol2>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#postol1> <impm-ind#minpostol3>)
+DataPropertyAssertion(impml:hasValue <impm-ind#postol1> "0.025"^^xsd:double)
+
+# Individual: <impm-ind#rad1> (<impm-ind#rad1>)
+
+ClassAssertion(impml:Radius <impm-ind#rad1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#rad1> <impm-ind#maxtldm1>)
+DataPropertyAssertion(impml:hasValue <impm-ind#rad1> "5.5125"^^xsd:double)
+
+# Individual: <impm-ind#ream1> (<impm-ind#ream1>)
+
+ClassAssertion(impml:Reaming <impm-ind#ream1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#ream1> <impm-ind#minnegtol3>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#ream1> <impm-ind#minpostol3>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#ream1> <impm-ind#ED1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#ream1> <impm-ind#GD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#ream1> <impm-ind#SD1>)
+ObjectPropertyAssertion(impmu:immediatelyPrecededBy <impm-ind#ream1> <impm-ind#twdrl1>)
+
+# Individual: <impm-ind#trupos1> (<impm-ind#trupos1>)
+
+ClassAssertion(impml:TruePosition <impm-ind#trupos1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#trupos1> <impm-ind#mintrupos1>)
+ObjectPropertyAssertion(impmu:matches <impm-ind#trupos1> <impm-ind#mintrupos2>)
+DataPropertyAssertion(impml:hasValue <impm-ind#trupos1> "0.2"^^xsd:double)
+
+# Individual: <impm-ind#twdrl1> (<impm-ind#twdrl1>)
+
+ClassAssertion(impml:TwistDrilling <impm-ind#twdrl1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#twdrl1> <impm-ind#CD1>)
+ObjectPropertyAssertion(impml:optionallyPrecededBy <impm-ind#twdrl1> <impm-ind#SPD1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#twdrl1> <impm-ind#deplim1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#twdrl1> <impm-ind#maxtldm1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#twdrl1> <impm-ind#minnegtol1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#twdrl1> <impm-ind#minpostol1>)
+ObjectPropertyAssertion(impmu:hasCapability <impm-ind#twdrl1> <impm-ind#mintrupos1>)
+
+
+)
