@@ -1,0 +1,105 @@
+Prefix(:=<http://www.ohio.edu/ontologies/OAM#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.ohio.edu/ontologies/OAM>
+Import(<http://www.ohio.edu/ontologies/CPM>)
+Annotation(rdfs:isDefinedBy "Mechanical assemblies are systems composed of modules that are either subassemblies or parts.
+Traditionally an assembly information model contains
+information regarding parts, their relationships, and its form. But it is important that the model also represent the function and behavior. This report describes the development of an Ontological Assembly Model in the broader context of Product Lifecycle Management (PLM).
+The ontological assembly model can help in achieving various levels of interoperability as required to enable the full potential of PLM. In this report we first present an Ontology Web Language (OWL) version of the Core Product Model (CPM) and subsequently an Open Assembly Model (OAM) based on their previous Unified Modeling Language (UML) versions developed at the National Institute of Standards and Technology (NIST) [7] [8] [9]. Besides developing a semantic assembly information model, we further extend this model to incorporate reasoning capabilities. We explore and discuss various tools and methodologies for ontological assembly modeling with reasoning capabilities. The ontological assembly model can be considered an extension to the NIST OAM with semantic interoperability. This extended Assembly Ontology in OWL could serve to test the advantages of a semantic approach to represent a product structure evolution i.e., from the design phases and throughout the life of the product. An example case study is additionally discussed to explain the Ontological Assembly Model including rules and reasoning capabilities."@en)
+Annotation(rdfs:seeAlso "Fiorentini, X., Gambino, I., Liang, V.-C., Rachuri, S., Mani, M., & Bock, C. (2007). An Ontology for Assembly Representation. NIST."@en)
+
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Artifact>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Feature>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Part>))
+Declaration(Class(:ArtifactAssociation))
+Declaration(Class(:Assembly))
+Declaration(Class(:AssemblyAssociation))
+Declaration(Class(:AssemblyFeature))
+Declaration(Class(:AssemblyFeatureAssociation))
+Declaration(Class(:AssemblyRelationship))
+Declaration(Class(:CompositeFeature))
+Declaration(Class(:Connection))
+Declaration(Class(:FixedConnection))
+Declaration(Class(:IntermittentConnection))
+Declaration(Class(:MovableConnection))
+Declaration(Class(:OAMFeature))
+Declaration(Class(:PositionOrientation))
+Declaration(Class(:RelativeMotion))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.ohio.edu/ontologies/CPM#Part> (<http://www.ohio.edu/ontologies/CPM#Part>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/CPM#Part> <http://www.ohio.edu/ontologies/CPM#Artifact>)
+
+# Class: :ArtifactAssociation (:ArtifactAssociation)
+
+SubClassOf(:ArtifactAssociation :AssemblyRelationship)
+
+# Class: :Assembly (:Assembly)
+
+SubClassOf(:Assembly <http://www.ohio.edu/ontologies/CPM#Artifact>)
+
+# Class: :AssemblyAssociation (:AssemblyAssociation)
+
+SubClassOf(:AssemblyAssociation :AssemblyRelationship)
+
+# Class: :AssemblyFeature (:AssemblyFeature)
+
+SubClassOf(:AssemblyFeature :OAMFeature)
+DisjointClasses(:AssemblyFeature :CompositeFeature)
+
+# Class: :AssemblyFeatureAssociation (:AssemblyFeatureAssociation)
+
+SubClassOf(:AssemblyFeatureAssociation :AssemblyRelationship)
+
+# Class: :AssemblyRelationship (:AssemblyRelationship)
+
+SubClassOf(:AssemblyRelationship <http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip>)
+
+# Class: :CompositeFeature (:CompositeFeature)
+
+SubClassOf(:CompositeFeature :OAMFeature)
+
+# Class: :Connection (:Connection)
+
+SubClassOf(:Connection :AssemblyAssociation)
+
+# Class: :FixedConnection (:FixedConnection)
+
+SubClassOf(:FixedConnection :Connection)
+
+# Class: :IntermittentConnection (:IntermittentConnection)
+
+SubClassOf(:IntermittentConnection :Connection)
+
+# Class: :MovableConnection (:MovableConnection)
+
+SubClassOf(:MovableConnection :Connection)
+
+# Class: :OAMFeature (:OAMFeature)
+
+SubClassOf(:OAMFeature <http://www.ohio.edu/ontologies/CPM#Feature>)
+
+# Class: :PositionOrientation (:PositionOrientation)
+
+SubClassOf(:PositionOrientation :AssemblyAssociation)
+
+# Class: :RelativeMotion (:RelativeMotion)
+
+SubClassOf(:RelativeMotion :AssemblyAssociation)
+
+
+DisjointClasses(:ArtifactAssociation :AssemblyAssociation :AssemblyFeatureAssociation)
+DisjointClasses(:Connection :PositionOrientation :RelativeMotion)
+DisjointClasses(:FixedConnection :IntermittentConnection :MovableConnection)
+)
