@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ohio.edu/ontologies/CPM" uri="file:/C:/Users/sarkara1/git/SIMPOM/cpm/cpm.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.ohio.edu/ontologies/IMPML" uri="https://raw.githubusercontent.com/arsarkar/SIMPOM/master/impm-l/impm-l.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.ohio.edu/ontologies/IMPMU" uri="https://raw.githubusercontent.com/arsarkar/SIMPOM/master/impm-u/impm-u.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1473910435543" name="http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002" uri="impm-ind-f$002.owl"/>
+    </group>
 </catalog>

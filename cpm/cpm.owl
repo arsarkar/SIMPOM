@@ -27,6 +27,7 @@ Declaration(Class(:Form))
 Declaration(Class(:Function))
 Declaration(Class(:Geometry))
 Declaration(Class(:Material))
+Declaration(Class(:Part))
 Declaration(Class(:Requirement))
 Declaration(Class(:Specification))
 Declaration(Class(:Trace))
@@ -109,6 +110,10 @@ SubClassOf(:Geometry :CoreProperty)
 # Class: :Material (:Material)
 
 SubClassOf(:Material :CoreProperty)
+
+# Class: :Part (:Part)
+
+SubClassOf(:Part :Artifact)
 
 # Class: :Requirement (:Requirement)
 

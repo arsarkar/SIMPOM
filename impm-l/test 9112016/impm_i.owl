@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/OAM"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/OAM">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ohio.edu/ontologies/CPM</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fiorentini, X., Gambino, I., Liang, V.-C., Rachuri, S., Mani, M., &amp; Bock, C. (2007). An Ontology for Assembly Representation. NIST.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mechanical assemblies are systems composed of modules that are either subassemblies or parts.
+Traditionally an assembly information model contains
+information regarding parts, their relationships, and its form. But it is important that the model also represent the function and behavior. This report describes the development of an Ontological Assembly Model in the broader context of Product Lifecycle Management (PLM).
+The ontological assembly model can help in achieving various levels of interoperability as required to enable the full potential of PLM. In this report we first present an Ontology Web Language (OWL) version of the Core Product Model (CPM) and subsequently an Open Assembly Model (OAM) based on their previous Unified Modeling Language (UML) versions developed at the National Institute of Standards and Technology (NIST) [7] [8] [9]. Besides developing a semantic assembly information model, we further extend this model to incorporate reasoning capabilities. We explore and discuss various tools and methodologies for ontological assembly modeling with reasoning capabilities. The ontological assembly model can be considered an extension to the NIST OAM with semantic interoperability. This extended Assembly Ontology in OWL could serve to test the advantages of a semantic approach to represent a product structure evolution i.e., from the design phases and throughout the life of the product. An example case study is additionally discussed to explain the Ontological Assembly Model including rules and reasoning capabilities.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AssemblyAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositionOrientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovableConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssemblyFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OAMFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssemblyFeatureAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermittentConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompositeFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssemblyRelationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtifactAssociation"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ArtifactAssociation"/>
+        <Class IRI="#AssemblyRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssemblyAssociation"/>
+        <Class IRI="#AssemblyRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssemblyFeature"/>
+        <Class IRI="#OAMFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssemblyFeatureAssociation"/>
+        <Class IRI="#AssemblyRelationship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssemblyRelationship"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompositeFeature"/>
+        <Class IRI="#OAMFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Connection"/>
+        <Class IRI="#AssemblyAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedConnection"/>
+        <Class IRI="#Connection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermittentConnection"/>
+        <Class IRI="#Connection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovableConnection"/>
+        <Class IRI="#Connection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OAMFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Part"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositionOrientation"/>
+        <Class IRI="#AssemblyAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeMotion"/>
+        <Class IRI="#AssemblyAssociation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ArtifactAssociation"/>
+        <Class IRI="#AssemblyAssociation"/>
+        <Class IRI="#AssemblyFeatureAssociation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AssemblyFeature"/>
+        <Class IRI="#CompositeFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Connection"/>
+        <Class IRI="#PositionOrientation"/>
+        <Class IRI="#RelativeMotion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FixedConnection"/>
+        <Class IRI="#IntermittentConnection"/>
+        <Class IRI="#MovableConnection"/>
+    </DisjointClasses>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.0.2.20150417-2043) http://owlapi.sourceforge.net -->
+

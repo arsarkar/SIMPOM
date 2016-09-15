@@ -16,6 +16,7 @@ Annotation(rdfs:seeAlso "Fiorentini, X., Gambino, I., Liang, V.-C., Rachuri, S.,
 Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Artifact>))
 Declaration(Class(<http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip>))
 Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Feature>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Part>))
 Declaration(Class(:ArtifactAssociation))
 Declaration(Class(:Assembly))
 Declaration(Class(:AssemblyAssociation))
@@ -28,13 +29,16 @@ Declaration(Class(:FixedConnection))
 Declaration(Class(:IntermittentConnection))
 Declaration(Class(:MovableConnection))
 Declaration(Class(:OAMFeature))
-Declaration(Class(:Part))
 Declaration(Class(:PositionOrientation))
 Declaration(Class(:RelativeMotion))
 
 ############################
 #   Classes
 ############################
+
+# Class: <http://www.ohio.edu/ontologies/CPM#Part> (<http://www.ohio.edu/ontologies/CPM#Part>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/CPM#Part> <http://www.ohio.edu/ontologies/CPM#Artifact>)
 
 # Class: :ArtifactAssociation (:ArtifactAssociation)
 
@@ -84,10 +88,6 @@ SubClassOf(:MovableConnection :Connection)
 # Class: :OAMFeature (:OAMFeature)
 
 SubClassOf(:OAMFeature <http://www.ohio.edu/ontologies/CPM#Feature>)
-
-# Class: :Part (:Part)
-
-SubClassOf(:Part <http://www.ohio.edu/ontologies/CPM#Artifact>)
 
 # Class: :PositionOrientation (:PositionOrientation)
 
