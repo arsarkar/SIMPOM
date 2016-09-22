@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>	
+    <Import>http://www.ohio.edu/ontologies/CPM</Import>
+    <Import>http://www.ohio.edu/ontologies/IMPMU</Import>
+    <Import>http://www.ohio.edu/ontologies/IMPML</Import>
+	
+	<Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#parallelism"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parallelism1474519109508"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Material"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#perpendicularity1474519109618"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#slotPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#positiveSweepLength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#sweep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#truePosition1474519109384"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#normal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#truePosition1474519109261"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#negativeSweepLength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#perpendicularity1474519109483"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#truePosition1474519109317"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CarbonSteel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDist"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#perpendicularity1474519109434"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#perpendicularity1474519109592"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#parallelism"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Material"/>
+        <NamedIndividual IRI="#CarbonSteel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#parallelism"/>
+        <NamedIndividual IRI="#parallelism1474519109508"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <NamedIndividual IRI="#perpendicularity1474519109434"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <NamedIndividual IRI="#perpendicularity1474519109483"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <NamedIndividual IRI="#perpendicularity1474519109592"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+        <NamedIndividual IRI="#perpendicularity1474519109618"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Part"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+        <NamedIndividual IRI="#truePosition1474519109261"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+        <NamedIndividual IRI="#truePosition1474519109317"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+        <NamedIndividual IRI="#truePosition1474519109384"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/CPM#hasMaterial"/>
+        <NamedIndividual IRI="#slider_with_slabs"/>
+        <NamedIndividual IRI="#CarbonSteel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+        <NamedIndividual IRI="#parallelism1474519109508"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+        <NamedIndividual IRI="#perpendicularity1474519109483"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+        <NamedIndividual IRI="#perpendicularity1474519109618"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+        <NamedIndividual IRI="#perpendicularity1474519109434"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <NamedIndividual IRI="#perpendicularity1474519109592"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+        <NamedIndividual IRI="#truePosition1474519109384"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+        <NamedIndividual IRI="#truePosition1474519109317"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <NamedIndividual IRI="#truePosition1474519109261"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#parallelism1474519109508"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#perpendicularity1474519109434"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#perpendicularity1474519109483"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#perpendicularity1474519109592"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#perpendicularity1474519109618"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#truePosition1474519109261"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#truePosition1474519109317"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#truePosition1474519109384"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(14)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.415</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-1 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(15)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.415</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 1 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(2)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 -1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(3)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-1 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 1 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(4)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3 0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(5)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 0 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(6)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 0 -1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#RECTANGULAR_POCKET(7)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDist"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#negativeSweepLength"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 -1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#positiveSweepLength"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#slotPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.3375 0.1 0.4125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#sweep"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 0 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#width"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(8)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDist"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#negativeSweepLength"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#normal"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 -1 0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#positiveSweepLength"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#slotPoint"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.39 0.1 1.337445</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#sweep"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#width"/>
+        <NamedIndividual IRI="#RECTANGULAR_SLOT(9)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.6 0.1 1.3725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(10)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.315</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.18 0.1 1.3725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.315</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.39 0.3 1.3725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.3925</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2 0.6 2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(16)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.0625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.58 0.6 2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -0 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(17)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.0625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2 0.6 0.725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -0 -1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(18)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.0445</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.58 0.6 0.725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -0 -1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(19)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.0445</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.265 0.5 0.35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.025</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 -0 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(24)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.515 0.5 0.35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0.025</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-1 -0 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(25)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.1055 0.3 1.866</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(26)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.068</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.6745 0.3 1.866</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(27)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.068</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.1055 0.3 0.879</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(28)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.068</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.6745 0.3 0.879</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(29)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.068</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.24 0.5 0.35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 -0 -0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(31)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.068</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

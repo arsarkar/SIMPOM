@@ -33,6 +33,7 @@ Declaration(Class(:Specification))
 Declaration(Class(:Trace))
 Declaration(Class(:Usage))
 Declaration(ObjectProperty(:hasFeature))
+Declaration(ObjectProperty(:hasMaterial))
 
 ############################
 #   Object Properties
@@ -114,6 +115,8 @@ SubClassOf(:Material :CoreProperty)
 # Class: :Part (:Part)
 
 SubClassOf(:Part :Artifact)
+SubClassOf(:Part ObjectSomeValuesFrom(:hasFeature :Feature))
+SubClassOf(:Part ObjectSomeValuesFrom(:hasMaterial :Material))
 
 # Class: :Requirement (:Requirement)
 

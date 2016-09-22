@@ -57,13 +57,13 @@ The ontological assembly model can help in achieving various levels of interoper
         <Class IRI="#IntermittentConnection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FixedConnection"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Part"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CompositeFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Part"/>
+        <Class IRI="#FixedConnection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssemblyRelationship"/>
@@ -77,6 +77,10 @@ The ontological assembly model can help in achieving various levels of interoper
     <Declaration>
         <Class IRI="#ArtifactAssociation"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Part"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#ArtifactAssociation"/>
         <Class IRI="#AssemblyRelationship"/>
@@ -124,10 +128,6 @@ The ontological assembly model can help in achieving various levels of interoper
     <SubClassOf>
         <Class IRI="#OAMFeature"/>
         <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Part"/>
-        <Class IRI="http://www.ohio.edu/ontologies/CPM#Artifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PositionOrientation"/>
