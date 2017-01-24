@@ -43,8 +43,10 @@ Declaration(Class(:Machine))
 Declaration(Class(:MachiningFeature))
 Declaration(Class(:MachiningProcess))
 Declaration(Class(:MaxCapability))
+Declaration(Class(:MaxRuleCapability))
 Declaration(Class(:Milling))
 Declaration(Class(:MinCapability))
+Declaration(Class(:MinRuleCapability))
 Declaration(Class(:MinimumNegativeTolerance))
 Declaration(Class(:MinimumPositiveTolerance))
 Declaration(Class(:MinimumTruePosition))
@@ -56,10 +58,13 @@ Declaration(Class(:PolygonalTurning))
 Declaration(Class(:PositiveTolerance))
 Declaration(Class(:PrecisionBoring))
 Declaration(Class(:Radius))
+Declaration(Class(:RangeCapability))
+Declaration(Class(:RangeRuleCapability))
 Declaration(Class(:Reaming))
 Declaration(Class(:Rectangular_Bar))
 Declaration(Class(:RoughMilling))
 Declaration(Class(:Round_Bar))
+Declaration(Class(:RuleCapability))
 Declaration(Class(:Sawing))
 Declaration(Class(:SemiFinishMilling))
 Declaration(Class(:Sheet))
@@ -92,6 +97,7 @@ Declaration(Class(<http://www.ohio.edu/ontologies/IMPMU#ProcessPhase>))
 Declaration(ObjectProperty(:canDrill))
 Declaration(ObjectProperty(:canMachine))
 Declaration(ObjectProperty(:canMill))
+Declaration(ObjectProperty(:hasArgument))
 Declaration(ObjectProperty(:hasAxisVector))
 Declaration(ObjectProperty(:hasLocation))
 Declaration(ObjectProperty(:mayUseTool))
@@ -109,6 +115,7 @@ Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/IMPMU#precedes>))
 Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/IMPMU#preceededBy>))
 Declaration(DataProperty(:hasMax))
 Declaration(DataProperty(:hasMin))
+Declaration(DataProperty(:hasRule))
 Declaration(DataProperty(:hasValue))
 Declaration(DataProperty(:x))
 Declaration(DataProperty(:y))
@@ -350,8 +357,15 @@ SubClassOf(:MachiningProcess <http://www.ohio.edu/ontologies/IMPMU#MfgProcess>)
 
 # Class: :MaxCapability (:MaxCapability)
 
+AnnotationAssertion(rdfs:comment :MaxCapability "hasMax data property is used to define the maximum value for the particular capability.")
 SubClassOf(:MaxCapability <http://www.ohio.edu/ontologies/IMPMU#ProcessCapability>)
 SubClassOf(:MaxCapability DataExactCardinality(1 :hasMax xsd:double))
+
+# Class: :MaxRuleCapability (:MaxRuleCapability)
+
+AnnotationAssertion(rdfs:comment :MaxRuleCapability "hasMax data property is used to define the maximum value for the particular capability and calculated by the rule specified in hasRule data property")
+SubClassOf(:MaxRuleCapability :MaxCapability)
+SubClassOf(:MaxRuleCapability :RuleCapability)
 
 # Class: :Milling (:Milling)
 
@@ -359,8 +373,15 @@ SubClassOf(:Milling :MachiningProcess)
 
 # Class: :MinCapability (:MinCapability)
 
+AnnotationAssertion(rdfs:comment :MinCapability "hasMin data property is used to define the minimum value for the particular capability.")
 SubClassOf(:MinCapability <http://www.ohio.edu/ontologies/IMPMU#ProcessCapability>)
-SubClassOf(:MinCapability DataSomeValuesFrom(:hasMin xsd:double))
+SubClassOf(:MinCapability DataExactCardinality(1 :hasMin xsd:double))
+
+# Class: :MinRuleCapability (:MinRuleCapability)
+
+AnnotationAssertion(rdfs:comment :MinRuleCapability "hasMin data property is used to define the minimum value for the particular capability and calculated by the rule specified in hasRule data property")
+SubClassOf(:MinRuleCapability :MinCapability)
+SubClassOf(:MinRuleCapability :RuleCapability)
 
 # Class: :MinimumNegativeTolerance (:MinimumNegativeTolerance)
 
@@ -412,6 +433,18 @@ SubClassOf(:PrecisionBoring ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies
 SubClassOf(:Radius :ValueSpecification)
 SubClassOf(:Radius ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies/IMPMU#matches> :LargestToolDiameter))
 
+# Class: :RangeCapability (:RangeCapability)
+
+AnnotationAssertion(rdfs:comment :RangeCapability "hasMax and hasmin data properties are used to define the maximum and minimum value for the particular capability.")
+SubClassOf(:RangeCapability :MaxCapability)
+SubClassOf(:RangeCapability :MinCapability)
+
+# Class: :RangeRuleCapability (:RangeRuleCapability)
+
+AnnotationAssertion(rdfs:comment :RangeRuleCapability "hasMax and hasMin data property is used to define the maximum and minimum value for the particular capability and calculated by the rule specified in hasRule data property")
+SubClassOf(:RangeRuleCapability :RangeCapability)
+SubClassOf(:RangeRuleCapability :RuleCapability)
+
 # Class: :Reaming (:Reaming)
 
 SubClassOf(:Reaming :HoleMaking)
@@ -431,6 +464,13 @@ SubClassOf(:RoughMilling :Milling)
 # Class: :Round_Bar (:Round_Bar)
 
 SubClassOf(:Round_Bar :Stock)
+
+# Class: :RuleCapability (:RuleCapability)
+
+AnnotationAssertion(rdfs:comment :RuleCapability "Specifies the rule in hasRule data property and also arguments used in the rule is specified in hasArgument existential property.")
+SubClassOf(:RuleCapability <http://www.ohio.edu/ontologies/IMPMU#ProcessCapability>)
+SubClassOf(:RuleCapability ObjectSomeValuesFrom(:hasArgument <http://www.ohio.edu/ontologies/IMPMU#MfgConcept>))
+SubClassOf(:RuleCapability DataExactCardinality(1 :hasRule xsd:string))
 
 # Class: :Sawing (:Sawing)
 
