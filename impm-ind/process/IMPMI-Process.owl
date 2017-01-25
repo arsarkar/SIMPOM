@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/IMPMI-Process"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/IMPMI-Process">
+    <Prefix name="" IRI="http://www.ohio.edu/ontologies/IMPMI-Process"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ohio.edu/ontologies/IMPML</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CNC machining process and capability loaded from IMPlanner test case ProcessCapabilityMaster.xml</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#mrd0001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Radius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mpt0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mpl0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mtp0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#msf0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ltd0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#std0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mnt0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mdl0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mst0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tldr0001"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#LargestToolDiameter"/>
+        <NamedIndividual IRI="#ltd0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <NamedIndividual IRI="#mdl0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <NamedIndividual IRI="#mnt0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <NamedIndividual IRI="#mpl0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <NamedIndividual IRI="#mpt0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRoundness"/>
+        <NamedIndividual IRI="#mrd0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinSurfaceFinish"/>
+        <NamedIndividual IRI="#msf0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <NamedIndividual IRI="#mst0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
+        <NamedIndividual IRI="#mtp0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SmallestToolDiameter"/>
+        <NamedIndividual IRI="#std0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <NamedIndividual IRI="#tldr0001"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mdl0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mnt0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mpl0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mpt0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mrd0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#msf0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mst0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#mtp0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr0001"/>
+        <NamedIndividual IRI="#std0001"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+        <NamedIndividual IRI="#ltd0001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+        <NamedIndividual IRI="#std0001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0625</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

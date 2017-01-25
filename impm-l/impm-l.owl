@@ -46,14 +46,23 @@ Declaration(Class(:MaxCapability))
 Declaration(Class(:MaxRuleCapability))
 Declaration(Class(:Milling))
 Declaration(Class(:MinCapability))
+Declaration(Class(:MinDepthLimit))
+Declaration(Class(:MinNegativeTolerance))
+Declaration(Class(:MinParallelism))
+Declaration(Class(:MinPositiveTolerance))
+Declaration(Class(:MinRoundness))
 Declaration(Class(:MinRuleCapability))
+Declaration(Class(:MinStraightness))
+Declaration(Class(:MinSurfaceFinish))
 Declaration(Class(:MinimumNegativeTolerance))
 Declaration(Class(:MinimumPositiveTolerance))
 Declaration(Class(:MinimumTruePosition))
 Declaration(Class(:NegativeTolerance))
+Declaration(Class(:Normal3D))
 Declaration(Class(:Planing))
 Declaration(Class(:Plate))
 Declaration(Class(:Pocket))
+Declaration(Class(:Point3D))
 Declaration(Class(:PolygonalTurning))
 Declaration(Class(:PositiveTolerance))
 Declaration(Class(:PrecisionBoring))
@@ -72,19 +81,23 @@ Declaration(Class(:SideMilling))
 Declaration(Class(:Slab))
 Declaration(Class(:SlabMilling))
 Declaration(Class(:Slot))
+Declaration(Class(:SmallestToolDiameter))
 Declaration(Class(:SpadeDrilling))
 Declaration(Class(:SpotDrilling))
 Declaration(Class(:Square_Bar))
 Declaration(Class(:Stock))
+Declaration(Class(:Sweep))
 Declaration(Class(:TSlot))
 Declaration(Class(:Threading))
 Declaration(Class(:ThroughHole))
 Declaration(Class(:Tool))
 Declaration(Class(:TruePosition))
 Declaration(Class(:Tube))
+Declaration(Class(:Tuple))
 Declaration(Class(:TurnDrilling))
 Declaration(Class(:Turning))
 Declaration(Class(:TwistDrilling))
+Declaration(Class(:Value))
 Declaration(Class(:ValueSpecification))
 Declaration(Class(:YSpecification))
 Declaration(Class(<http://www.ohio.edu/ontologies/IMPMU#CADFeature>))
@@ -98,8 +111,15 @@ Declaration(ObjectProperty(:canDrill))
 Declaration(ObjectProperty(:canMachine))
 Declaration(ObjectProperty(:canMill))
 Declaration(ObjectProperty(:hasArgument))
+Declaration(ObjectProperty(:hasAxis))
+Declaration(ObjectProperty(:hasAxisPoint))
 Declaration(ObjectProperty(:hasAxisVector))
+Declaration(ObjectProperty(:hasBottomDistance))
+Declaration(ObjectProperty(:hasFeatureProperty))
 Declaration(ObjectProperty(:hasLocation))
+Declaration(ObjectProperty(:hasNormal))
+Declaration(ObjectProperty(:hasPoint))
+Declaration(ObjectProperty(:hasRadius))
 Declaration(ObjectProperty(:mayUseTool))
 Declaration(ObjectProperty(:notSatisfiedBy))
 Declaration(ObjectProperty(:optionallyPrecededBy))
@@ -133,15 +153,49 @@ SubObjectPropertyOf(:canDrill :canMachine)
 
 SubObjectPropertyOf(:canMill :canMachine)
 
+# Object Property: :hasAxis (:hasAxis)
+
+SubObjectPropertyOf(:hasAxis :hasFeatureProperty)
+ObjectPropertyRange(:hasAxis :Axis3D)
+
+# Object Property: :hasAxisPoint (:hasAxisPoint)
+
+SubObjectPropertyOf(:hasAxisPoint :hasFeatureProperty)
+ObjectPropertyRange(:hasAxisPoint :Point3D)
+
 # Object Property: :hasAxisVector (:hasAxisVector)
 
 FunctionalObjectProperty(:hasAxisVector)
 ObjectPropertyRange(:hasAxisVector :Axis3D)
 
+# Object Property: :hasBottomDistance (:hasBottomDistance)
+
+SubObjectPropertyOf(:hasBottomDistance :hasFeatureProperty)
+ObjectPropertyRange(:hasBottomDistance :Value)
+
+# Object Property: :hasFeatureProperty (:hasFeatureProperty)
+
+ObjectPropertyDomain(:hasFeatureProperty <http://www.ohio.edu/ontologies/IMPMU#MfgFeature>)
+
 # Object Property: :hasLocation (:hasLocation)
 
 FunctionalObjectProperty(:hasLocation)
 ObjectPropertyRange(:hasLocation :Axis3D)
+
+# Object Property: :hasNormal (:hasNormal)
+
+SubObjectPropertyOf(:hasNormal :hasFeatureProperty)
+ObjectPropertyRange(:hasNormal :Axis3D)
+
+# Object Property: :hasPoint (:hasPoint)
+
+SubObjectPropertyOf(:hasPoint :hasFeatureProperty)
+ObjectPropertyRange(:hasPoint :Point3D)
+
+# Object Property: :hasRadius (:hasRadius)
+
+SubObjectPropertyOf(:hasRadius :hasFeatureProperty)
+ObjectPropertyRange(:hasRadius :Value)
 
 # Object Property: :notSatisfiedBy (:notSatisfiedBy)
 
@@ -206,9 +260,7 @@ DataPropertyRange(:z xsd:double)
 
 # Class: :Axis3D (:Axis3D)
 
-EquivalentClasses(:Axis3D DataExactCardinality(1 :x xsd:double))
-EquivalentClasses(:Axis3D DataExactCardinality(1 :y xsd:double))
-EquivalentClasses(:Axis3D DataExactCardinality(1 :z xsd:double))
+SubClassOf(:Axis3D :Tuple)
 
 # Class: :BlindHole (:BlindHole)
 
@@ -377,28 +429,69 @@ AnnotationAssertion(rdfs:comment :MinCapability "hasMin data property is used to
 SubClassOf(:MinCapability <http://www.ohio.edu/ontologies/IMPMU#ProcessCapability>)
 SubClassOf(:MinCapability DataExactCardinality(1 :hasMin xsd:double))
 
+# Class: :MinDepthLimit (:MinDepthLimit)
+
+SubClassOf(:MinDepthLimit :MinRuleCapability)
+
+# Class: :MinNegativeTolerance (mnt)
+
+AnnotationAssertion(rdfs:label :MinNegativeTolerance "mnt")
+SubClassOf(:MinNegativeTolerance :MinRuleCapability)
+
+# Class: :MinParallelism (mpl)
+
+AnnotationAssertion(rdfs:label :MinParallelism "mpl")
+SubClassOf(:MinParallelism :MinRuleCapability)
+
+# Class: :MinPositiveTolerance (mpt)
+
+AnnotationAssertion(rdfs:label :MinPositiveTolerance "mpt")
+SubClassOf(:MinPositiveTolerance :MinRuleCapability)
+
+# Class: :MinRoundness (mrd)
+
+AnnotationAssertion(rdfs:label :MinRoundness "mrd")
+SubClassOf(:MinRoundness :MinCapability)
+
 # Class: :MinRuleCapability (:MinRuleCapability)
 
 AnnotationAssertion(rdfs:comment :MinRuleCapability "hasMin data property is used to define the minimum value for the particular capability and calculated by the rule specified in hasRule data property")
 SubClassOf(:MinRuleCapability :MinCapability)
 SubClassOf(:MinRuleCapability :RuleCapability)
 
-# Class: :MinimumNegativeTolerance (:MinimumNegativeTolerance)
+# Class: :MinStraightness (mst)
 
+AnnotationAssertion(rdfs:label :MinStraightness "mst")
+SubClassOf(:MinStraightness :MinRuleCapability)
+
+# Class: :MinSurfaceFinish (msf)
+
+AnnotationAssertion(rdfs:label :MinSurfaceFinish "msf")
+SubClassOf(:MinSurfaceFinish :MinCapability)
+
+# Class: :MinimumNegativeTolerance (mnt)
+
+AnnotationAssertion(rdfs:label :MinimumNegativeTolerance "mnt")
 SubClassOf(:MinimumNegativeTolerance :MinCapability)
 
-# Class: :MinimumPositiveTolerance (:MinimumPositiveTolerance)
+# Class: :MinimumPositiveTolerance (mpt)
 
+AnnotationAssertion(rdfs:label :MinimumPositiveTolerance "mpt")
 SubClassOf(:MinimumPositiveTolerance :MinCapability)
 
-# Class: :MinimumTruePosition (:MinimumTruePosition)
+# Class: :MinimumTruePosition (mtp)
 
+AnnotationAssertion(rdfs:label :MinimumTruePosition "mtp")
 SubClassOf(:MinimumTruePosition :MinCapability)
 
 # Class: :NegativeTolerance (:NegativeTolerance)
 
 SubClassOf(:NegativeTolerance :ValueSpecification)
 SubClassOf(:NegativeTolerance ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies/IMPMU#matches> :MinimumNegativeTolerance))
+
+# Class: :Normal3D (:Normal3D)
+
+SubClassOf(:Normal3D :Tuple)
 
 # Class: :Planing (:Planing)
 
@@ -411,6 +504,10 @@ SubClassOf(:Plate :Stock)
 # Class: :Pocket (:Pocket)
 
 SubClassOf(:Pocket <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
+
+# Class: :Point3D (:Point3D)
+
+SubClassOf(:Point3D :Tuple)
 
 # Class: :PolygonalTurning (:PolygonalTurning)
 
@@ -500,6 +597,11 @@ SubClassOf(:SlabMilling :Milling)
 
 SubClassOf(:Slot <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
 
+# Class: :SmallestToolDiameter (std)
+
+AnnotationAssertion(rdfs:label :SmallestToolDiameter "std")
+SubClassOf(:SmallestToolDiameter :MinCapability)
+
 # Class: :SpadeDrilling (:SpadeDrilling)
 
 SubClassOf(:SpadeDrilling :HoleMaking)
@@ -513,6 +615,10 @@ SubClassOf(:SpotDrilling :HoleMaking)
 # Class: :Square_Bar (:Square_Bar)
 
 SubClassOf(:Square_Bar :Stock)
+
+# Class: :Sweep (:Sweep)
+
+SubClassOf(:Sweep :Tuple)
 
 # Class: :TSlot (:TSlot)
 
@@ -539,6 +645,12 @@ SubClassOf(:TruePosition ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies/IM
 
 SubClassOf(:Tube :Stock)
 
+# Class: :Tuple (:Tuple)
+
+EquivalentClasses(:Tuple DataExactCardinality(1 :x xsd:double))
+EquivalentClasses(:Tuple DataExactCardinality(1 :y xsd:double))
+EquivalentClasses(:Tuple DataExactCardinality(1 :z xsd:double))
+
 # Class: :TurnDrilling (:TurnDrilling)
 
 SubClassOf(:TurnDrilling :Turning)
@@ -553,6 +665,10 @@ SubClassOf(:TwistDrilling :HoleMaking)
 SubClassOf(:TwistDrilling ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy> :CenterDrilling))
 SubClassOf(:TwistDrilling ObjectSomeValuesFrom(<http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy> :SpotDrilling))
 
+# Class: :Value (:Value)
+
+SubClassOf(:Value DataExactCardinality(1 :hasValue xsd:double))
+
 # Class: :ValueSpecification (:ValueSpecification)
 
 SubClassOf(:ValueSpecification <http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint>)
@@ -566,6 +682,8 @@ SubClassOf(<http://www.ohio.edu/ontologies/IMPMU#CADFeature> ObjectSomeValuesFro
 # Class: <http://www.ohio.edu/ontologies/IMPMU#MfgFeature> (<http://www.ohio.edu/ontologies/IMPMU#MfgFeature>)
 
 SubClassOf(<http://www.ohio.edu/ontologies/IMPMU#MfgFeature> <http://www.ohio.edu/ontologies/CPM#Feature>)
+SubClassOf(<http://www.ohio.edu/ontologies/IMPMU#MfgFeature> ObjectSomeValuesFrom(:hasFeatureProperty :Tuple))
+SubClassOf(<http://www.ohio.edu/ontologies/IMPMU#MfgFeature> ObjectSomeValuesFrom(:hasFeatureProperty :Value))
 
 # Class: <http://www.ohio.edu/ontologies/IMPMU#MfgProcess> (<http://www.ohio.edu/ontologies/IMPMU#MfgProcess>)
 
@@ -575,6 +693,7 @@ SubClassOf(<http://www.ohio.edu/ontologies/IMPMU#MfgProcess> ObjectSomeValuesFro
 DisjointClasses(:Depth :NegativeTolerance :PositiveTolerance :Radius :TruePosition)
 DisjointClasses(:DepthLimit :MinimumNegativeTolerance :MinimumPositiveTolerance :MinimumTruePosition)
 DisjointClasses(:Hexagonal_Bar :Plate :Rectangular_Bar :Round_Bar :Sheet :Square_Bar :Tube)
+DisjointClasses(:Normal3D :Point3D :Sweep)
 DLSafeRule(Body(DataPropertyAtom(:hasValue Variable(<urn:swrl#s>) Variable(<urn:swrl#v>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#MfgProcess> Variable(<urn:swrl#p>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#CADFeature> Variable(<urn:swrl#f>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<urn:swrl#m>) Variable(<urn:swrl#v>)) ClassAtom(:MaxCapability Variable(<urn:swrl#c>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> Variable(<urn:swrl#f>) Variable(<urn:swrl#s>)) DataPropertyAtom(:hasMin Variable(<urn:swrl#c>) Variable(<urn:swrl#m>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasCapability> Variable(<urn:swrl#p>) Variable(<urn:swrl#c>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#matches> Variable(<urn:swrl#s>) Variable(<urn:swrl#c>)))Head(ObjectPropertyAtom(:notSatisfiedBy Variable(<urn:swrl#s>) Variable(<urn:swrl#c>))))
 DLSafeRule(Body(DataPropertyAtom(:hasValue Variable(<urn:swrl#s>) Variable(<urn:swrl#v>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#MfgProcess> Variable(<urn:swrl#p>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#CADFeature> Variable(<urn:swrl#f>)) ClassAtom(:MinCapability Variable(<urn:swrl#c>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThan> Variable(<urn:swrl#m>) Variable(<urn:swrl#v>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> Variable(<urn:swrl#f>) Variable(<urn:swrl#s>)) DataPropertyAtom(:hasMin Variable(<urn:swrl#c>) Variable(<urn:swrl#m>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasCapability> Variable(<urn:swrl#p>) Variable(<urn:swrl#c>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#matches> Variable(<urn:swrl#s>) Variable(<urn:swrl#c>)))Head(ObjectPropertyAtom(:notSatisfiedBy Variable(<urn:swrl#s>) Variable(<urn:swrl#c>))))
 DLSafeRule(Body(DataPropertyAtom(:hasValue Variable(<urn:swrl#s>) Variable(<urn:swrl#v>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#MfgProcess> Variable(<urn:swrl#p>)) ClassAtom(<http://www.ohio.edu/ontologies/IMPMU#CADFeature> Variable(<urn:swrl#f>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> Variable(<urn:swrl#m>) Variable(<urn:swrl#v>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> Variable(<urn:swrl#f>) Variable(<urn:swrl#s>)) DataPropertyAtom(:hasMin Variable(<urn:swrl#c>) Variable(<urn:swrl#m>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#hasCapability> Variable(<urn:swrl#p>) Variable(<urn:swrl#c>)) ObjectPropertyAtom(<http://www.ohio.edu/ontologies/IMPMU#matches> Variable(<urn:swrl#s>) Variable(<urn:swrl#c>)))Head(ObjectPropertyAtom(:satisfiedBy Variable(<urn:swrl#s>) Variable(<urn:swrl#c>))))
