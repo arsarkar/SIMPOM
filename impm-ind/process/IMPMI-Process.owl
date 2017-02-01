@@ -30,10 +30,10 @@
         <NamedIndividual IRI="#mpl0001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mtp0001"/>
+        <NamedIndividual IRI="#msf0001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#msf0001"/>
+        <NamedIndividual IRI="#mtp0001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ltd0001"/>
@@ -42,10 +42,10 @@
         <NamedIndividual IRI="#std0001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mnt0001"/>
+        <NamedIndividual IRI="#mdl0001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mdl0001"/>
+        <NamedIndividual IRI="#mnt0001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mst0001"/>

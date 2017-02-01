@@ -610,6 +610,11 @@
         <NamedIndividual IRI="#pt0001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
+        <NamedIndividual IRI="#v0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
         <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
         <NamedIndividual IRI="#v0001"/>
@@ -963,26 +968,6 @@
         <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
         <NamedIndividual IRI="#SIMPLE HOLE(11)"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.315</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
-        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.39 0.3 1.3725</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
-        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NaN</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
-        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">-0 -1 -0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#radius"/>
-        <NamedIndividual IRI="#SIMPLE HOLE(12)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.3925</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>

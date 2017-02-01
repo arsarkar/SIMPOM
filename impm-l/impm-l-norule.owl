@@ -1,0 +1,1382 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/IMPML"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/IMPML">
+    <Prefix name="" IRI="http://www.ohio.edu/ontologies/IMPML#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This is the IMPlanner sample lower level onotlogy</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#HoleImproving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThroughHole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAxisVector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinPositiveTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoleStarting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canDrill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolygonalTurning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FaceMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sawing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square_Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal3D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knurling"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoughMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangular_Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LargestToolDiameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broaching"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiFinishMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndMillingSlotting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Round_Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Turning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoleFinishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrecisionBoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinDepthLimit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Axis3D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinParallelism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinNegativeTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNormal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoreMaking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canMachine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumNegativeTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grinding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#optionallyPreceeds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMax"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#preceededBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaxRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBottomDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threading"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notSatisfiedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GunDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cutting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepthLimit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachiningFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tuple"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumPositiveTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canMill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlabMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumTruePosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAxis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAxisPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SideMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CenterDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TruePosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grooving"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#y"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinishMilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwistDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Point3D"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#optionallyPrecededBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinRoundness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpadeDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pocket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hexagonal_Bar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RangeRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#precedes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#z"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurnDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TSlot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinSurfaceFinish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DovetailSlot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaxCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RangeCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayUseTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#satisfiedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlindHole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndMillingPeripheral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallestToolDiameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachiningProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinStraightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoleMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRadius"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#HoleMaking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canMachine"/>
+            <Class IRI="#Hole"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tuple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tuple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tuple"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Axis3D"/>
+        <Class IRI="#Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlindHole"/>
+        <Class IRI="#Hole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boring"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boring"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#EndDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpadeDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#TwistDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broaching"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CenterDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoreMaking"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cutting"/>
+        <Class IRI="#Facing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depth"/>
+        <Class IRI="#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Depth"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="#DepthLimit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepthLimit"/>
+        <Class IRI="#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DovetailSlot"/>
+        <Class IRI="#Slot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#CenterDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpotDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndMillingPeripheral"/>
+        <Class IRI="#EndMilling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndMillingSlotting"/>
+        <Class IRI="#EndMilling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FaceMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Facing"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinishMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grinding"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grinding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#Boring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grinding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#PrecisionBoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grinding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#Reaming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grooving"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GunDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GunDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#CenterDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GunDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpotDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hexagonal_Bar"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hole"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAxisVector"/>
+            <Class IRI="#Axis3D"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hole"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="#Axis3D"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoleFinishing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoleImproving"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoleMaking"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoleStarting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honing"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#Boring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#PrecisionBoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#Reaming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knurling"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LargestToolDiameter"/>
+        <Class IRI="#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mayUseTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachiningFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachiningFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="#MachiningProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MachiningProcess"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxRuleCapability"/>
+        <Class IRI="#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxRuleCapability"/>
+        <Class IRI="#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milling"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinDepthLimit"/>
+        <Class IRI="#MinRuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinNegativeTolerance"/>
+        <Class IRI="#MinRuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinParallelism"/>
+        <Class IRI="#MinRuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinPositiveTolerance"/>
+        <Class IRI="#MinRuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinRoundness"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinRuleCapability"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinRuleCapability"/>
+        <Class IRI="#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinStraightness"/>
+        <Class IRI="#MinRuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinSurfaceFinish"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumNegativeTolerance"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumPositiveTolerance"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumTruePosition"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeTolerance"/>
+        <Class IRI="#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeTolerance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="#MinimumNegativeTolerance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal3D"/>
+        <Class IRI="#Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planing"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plate"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pocket"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point3D"/>
+        <Class IRI="#Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolygonalTurning"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveTolerance"/>
+        <Class IRI="#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveTolerance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="#MinimumPositiveTolerance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionBoring"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionBoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#EndDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionBoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpadeDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionBoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#TwistDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radius"/>
+        <Class IRI="#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radius"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="#LargestToolDiameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangeCapability"/>
+        <Class IRI="#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangeCapability"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangeRuleCapability"/>
+        <Class IRI="#RangeCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangeRuleCapability"/>
+        <Class IRI="#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaming"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaming"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#EndDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpadeDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#TwistDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangular_Bar"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoughMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Round_Bar"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sawing"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiFinishMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheet"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SideMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlabMilling"/>
+        <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallestToolDiameter"/>
+        <Class IRI="#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpadeDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpadeDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#CenterDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpadeDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpotDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpotDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square_Bar"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweep"/>
+        <Class IRI="#Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TSlot"/>
+        <Class IRI="#Slot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threading"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThroughHole"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hole"/>
+            <ObjectComplementOf>
+                <Class IRI="#BlindHole"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TruePosition"/>
+        <Class IRI="#ValueSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TruePosition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="#MinimumTruePosition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tube"/>
+        <Class IRI="#Stock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurnDrilling"/>
+        <Class IRI="#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turning"/>
+        <Class IRI="#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwistDrilling"/>
+        <Class IRI="#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwistDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#CenterDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwistDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="#SpotDrilling"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueSpecification"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueSpecification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFeatureProperty"/>
+            <Class IRI="#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFeatureProperty"/>
+            <Class IRI="#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Depth"/>
+        <Class IRI="#NegativeTolerance"/>
+        <Class IRI="#PositiveTolerance"/>
+        <Class IRI="#Radius"/>
+        <Class IRI="#TruePosition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DepthLimit"/>
+        <Class IRI="#MinimumNegativeTolerance"/>
+        <Class IRI="#MinimumPositiveTolerance"/>
+        <Class IRI="#MinimumTruePosition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DovetailSlot"/>
+        <Class IRI="#TSlot"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hexagonal_Bar"/>
+        <Class IRI="#Plate"/>
+        <Class IRI="#Rectangular_Bar"/>
+        <Class IRI="#Round_Bar"/>
+        <Class IRI="#Sheet"/>
+        <Class IRI="#Square_Bar"/>
+        <Class IRI="#Tube"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Normal3D"/>
+        <Class IRI="#Point3D"/>
+        <Class IRI="#Sweep"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canDrill"/>
+        <ObjectProperty IRI="#canMachine"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canMill"/>
+        <ObjectProperty IRI="#canMachine"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAxis"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAxisPoint"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBottomDistance"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNormal"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPoint"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRadius"/>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#optionallyPrecededBy"/>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#preceededBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#optionallyPreceeds"/>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#precedes"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAxisVector"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#optionallyPrecededBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#optionallyPreceeds"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeatureProperty"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#notSatisfiedBy"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#satisfiedBy"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAxis"/>
+        <Class IRI="#Axis3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAxisPoint"/>
+        <Class IRI="#Point3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAxisVector"/>
+        <Class IRI="#Axis3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBottomDistance"/>
+        <Class IRI="#Value"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Axis3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNormal"/>
+        <Class IRI="#Axis3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPoint"/>
+        <Class IRI="#Point3D"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRadius"/>
+        <Class IRI="#Value"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#notSatisfiedBy"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#satisfiedBy"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMax"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMin"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#x"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#y"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#z"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMax"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMin"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#x"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#y"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#z"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaxCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax data property is used to define the maximum value for the particular capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaxRuleCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax data property is used to define the maximum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMin data property is used to define the minimum value for the particular capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinNegativeTolerance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mnt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinParallelism</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinPositiveTolerance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinRoundness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mrd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinRuleCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMin data property is used to define the minimum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinStraightness</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mst</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinSurfaceFinish</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">msf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinimumNegativeTolerance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mnt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinimumPositiveTolerance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MinimumTruePosition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mtp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RangeCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax and hasmin data properties are used to define the maximum and minimum value for the particular capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RangeRuleCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax and hasMin data property is used to define the maximum and minimum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RuleCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rule in hasRule data property and also arguments used in the rule is specified in hasArgument existential property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmallestToolDiameter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">std</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
