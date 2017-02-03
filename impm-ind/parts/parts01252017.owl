@@ -1,0 +1,345 @@
+Prefix(:=<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002>
+
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Material>))
+Declaration(Class(<http://www.ohio.edu/ontologies/CPM#Part>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#Hole>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#Pocket>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#Slab>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#Slot>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#ValueSpecification>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#parallelism>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#perpendicularity>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPML#truePosition>))
+Declaration(Class(<http://www.ohio.edu/ontologies/IMPMU#CADFeature>))
+Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/CPM#hasFeature>))
+Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/CPM#hasMaterial>))
+Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature>))
+Declaration(ObjectProperty(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#bottomDist>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#bottomDistance>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#hasValue>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#negativeSweepLength>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#positiveSweepLength>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#radius>))
+Declaration(DataProperty(<http://www.ohio.edu/ontologies/IMPML#width>))
+Declaration(NamedIndividual(:CarbonSteel))
+Declaration(NamedIndividual(:parallelism1485377520848))
+Declaration(NamedIndividual(:perpendicularity1485377520748))
+Declaration(NamedIndividual(:perpendicularity1485377520820))
+Declaration(NamedIndividual(:perpendicularity1485377520979))
+Declaration(NamedIndividual(:perpendicularity1485377521044))
+Declaration(NamedIndividual(:slider_with_slabs))
+Declaration(NamedIndividual(:truePosition1485377520543))
+Declaration(NamedIndividual(:truePosition1485377520631))
+Declaration(NamedIndividual(:truePosition1485377520704))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>))
+Declaration(NamedIndividual(<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#Hole> (<http://www.ohio.edu/ontologies/IMPML#Hole>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#Pocket> (<http://www.ohio.edu/ontologies/IMPML#Pocket>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#Pocket> <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#Slab> (<http://www.ohio.edu/ontologies/IMPML#Slab>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#Slot> (<http://www.ohio.edu/ontologies/IMPML#Slot>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#Slot> <http://www.ohio.edu/ontologies/IMPMU#CADFeature>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#parallelism> (<http://www.ohio.edu/ontologies/IMPML#parallelism>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#parallelism> <http://www.ohio.edu/ontologies/IMPML#ValueSpecification>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#perpendicularity> (<http://www.ohio.edu/ontologies/IMPML#perpendicularity>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#perpendicularity> <http://www.ohio.edu/ontologies/IMPML#ValueSpecification>)
+
+# Class: <http://www.ohio.edu/ontologies/IMPML#truePosition> (<http://www.ohio.edu/ontologies/IMPML#truePosition>)
+
+SubClassOf(<http://www.ohio.edu/ontologies/IMPML#truePosition> <http://www.ohio.edu/ontologies/IMPML#ValueSpecification>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :CarbonSteel (:CarbonSteel)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/CPM#Material> :CarbonSteel)
+
+# Individual: :parallelism1485377520848 (:parallelism1485377520848)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#parallelism> :parallelism1485377520848)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :parallelism1485377520848 "0.001"^^xsd:double)
+
+# Individual: :perpendicularity1485377520748 (:perpendicularity1485377520748)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#perpendicularity> :perpendicularity1485377520748)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :perpendicularity1485377520748 "0.001"^^xsd:double)
+
+# Individual: :perpendicularity1485377520820 (:perpendicularity1485377520820)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#perpendicularity> :perpendicularity1485377520820)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :perpendicularity1485377520820 "0.001"^^xsd:double)
+
+# Individual: :perpendicularity1485377520979 (:perpendicularity1485377520979)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#perpendicularity> :perpendicularity1485377520979)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :perpendicularity1485377520979 "0.001"^^xsd:double)
+
+# Individual: :perpendicularity1485377521044 (:perpendicularity1485377521044)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#perpendicularity> :perpendicularity1485377521044)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :perpendicularity1485377521044 "0.001"^^xsd:double)
+
+# Individual: :slider_with_slabs (:slider_with_slabs)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/CPM#Part> :slider_with_slabs)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasFeature> :slider_with_slabs <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/CPM#hasMaterial> :slider_with_slabs :CarbonSteel)
+
+# Individual: :truePosition1485377520543 (:truePosition1485377520543)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#truePosition> :truePosition1485377520543)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :truePosition1485377520543 "0.001"^^xsd:double)
+
+# Individual: :truePosition1485377520631 (:truePosition1485377520631)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#truePosition> :truePosition1485377520631)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :truePosition1485377520631 "0.001"^^xsd:double)
+
+# Individual: :truePosition1485377520704 (:truePosition1485377520704)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#truePosition> :truePosition1485377520704)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#hasValue> :truePosition1485377520704 "0.001"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Pocket> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)> "-0.415"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Pocket> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)> "-0.415"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)> :parallelism1485377520848)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)> :perpendicularity1485377520820)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)> :perpendicularity1485377521044)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slab> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)> :perpendicularity1485377520748)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)> "-0.1"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slot> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> :perpendicularity1485377520979)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDist> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> "-1.0"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#negativeSweepLength> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> "1.75"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#positiveSweepLength> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> "1.75"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#width> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)> "0.2"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Slot> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDist> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> "-1.0"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#negativeSweepLength> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> "1.25"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#positiveSweepLength> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> "1.25"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#width> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)> "0.2"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)> :truePosition1485377520704)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)> "0.315"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)> :truePosition1485377520631)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)> "0.315"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)> :truePosition1485377520543)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)> "0.3925"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)> "-0.45"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)> "0.0625"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)> "-0.45"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)> "0.0625"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)> "0.0445"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)> "0.0445"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)> "-0.025"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)> "0.125"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)> "-0.025"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)> "0.125"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)> "0.068"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)> "0.068"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)> "0.068"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)> "0.068"^^xsd:double)
+
+# Individual: <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)> (<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)>)
+
+ClassAssertion(<http://www.ohio.edu/ontologies/IMPML#Hole> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)>)
+ObjectPropertyAssertion(<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)>)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#bottomDistance> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)> "NaN"^^xsd:double)
+DataPropertyAssertion(<http://www.ohio.edu/ontologies/IMPML#radius> <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)> "0.068"^^xsd:double)
+
+
+)
