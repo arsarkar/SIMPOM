@@ -1,0 +1,2093 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ohio.edu/ontologies/IMPM-ind$003"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ohio.edu/ontologies/IMPM-ind$003">
+    <Prefix name="" IRI="http://www.ohio.edu/ontologies/IMPM-ind$003"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ohio.edu/ontologies/IMPML</Import>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hole1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mnt1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nt1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tldr1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia1"/>
+    </Declaration>
+    <EquivalentClasses>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Diameter"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Boring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Broaching"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Broaching"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Cutting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Cutting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Turning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Cutting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Cutting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Depth"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Depth"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DepthLimit"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DepthLimit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#DovetailSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingPeripheral"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingPeripheral"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingPeripheral"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingPeripheral"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingSlotting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingSlotting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingSlotting"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#EndMillingSlotting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FaceMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FaceMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FaceMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Facing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Facing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Facing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FinishMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FinishMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#FinishMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grinding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grooving"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grooving"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Grooving"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#GunDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#HoleMaking"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#HoleMaking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#HoleMaking"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Honing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Knurling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Knurling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Knurling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#LargestToolDiameter"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#LargestToolDiameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxRuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxRuleCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Milling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Milling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinDepthLimit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinParallelism"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinPositiveTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRoundness"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRoundness"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinStraightness"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinSurfaceFinish"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinSurfaceFinish"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumPositiveTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumTruePosition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#NegativeTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#NegativeTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Planing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Planing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Pocket"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PolygonalTurning"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PolygonalTurning"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PolygonalTurning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PositiveTolerance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PositiveTolerance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#PrecisionBoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Radius"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Radius"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMax"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RangeRuleCapability"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RoughMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RoughMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RoughMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Sawing"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Sawing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SemiFinishMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SemiFinishMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SemiFinishMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SideMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SideMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SideMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SlabMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SlabMilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SlabMilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SmallestToolDiameter"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SmallestToolDiameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpadeDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TSlot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Threading"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Threading"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Threading"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ThroughHole"/>
+        <ObjectComplementOf>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TruePosition"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TruePosition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TurnDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TurnDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TurnDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Turning"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Turning"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+            <ObjectComplementOf>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+        <ObjectComplementOf>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#BlindHole"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#HoleMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Diameter"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <NamedIndividual IRI="#dia1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
+        </ObjectExactCardinality>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Axis3D"/>
+        </ObjectExactCardinality>
+        <NamedIndividual IRI="#hole1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinNegativeTolerance"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinRuleCapability"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasMin"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+        <NamedIndividual IRI="#mnt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#NegativeTolerance"/>
+        <NamedIndividual IRI="#nt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#ValueSpecification"/>
+        <NamedIndividual IRI="#nt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+        <NamedIndividual IRI="#nt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinimumNegativeTolerance"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#nt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+        <NamedIndividual IRI="#nt1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#HoleMaking"/>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#MachiningProcess"/>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#canMachine"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#CenterDrilling"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#immediatelyPrecededBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#SpotDrilling"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#tldr1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+        <NamedIndividual IRI="#hole1"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+        <NamedIndividual IRI="#hole1"/>
+        <NamedIndividual IRI="#nt1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasArgument1"/>
+        <NamedIndividual IRI="#mnt1"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+        <NamedIndividual IRI="#nt1"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <NamedIndividual IRI="#tldr1"/>
+        <NamedIndividual IRI="#mnt1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#dia1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+        <NamedIndividual IRI="#nt1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.035</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
+        <Class IRI="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPML#Value"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxis"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasAxisVector"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasBottomDistance"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasLocation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasNormal"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPML#Tuple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasPoint"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#z"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRadius"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+                <Variable IRI="urn:swrl#c"/>
+                <Variable IRI="urn:swrl#r"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#pr"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Diameter"/>
+                <Variable IRI="urn:swrl#pr"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+                <Variable IRI="urn:swrl#pr"/>
+                <Variable IRI="urn:swrl#dia"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlm.owl#eval">
+                <Variable IRI="urn:swrl#h"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#dia"/>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="urn:swrl#v"/>
+                <Variable IRI="urn:swrl#h"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#satisfiedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#RuleCapability"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#MinCapability"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasRule"/>
+                <Variable IRI="urn:swrl#c"/>
+                <Variable IRI="urn:swrl#r"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasFeatureProperty"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#pr"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Diameter"/>
+                <Variable IRI="urn:swrl#pr"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+                <Variable IRI="urn:swrl#pr"/>
+                <Variable IRI="urn:swrl#dia"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://swrl.stanford.edu/ontologies/built-ins/3.4/swrlm.owl#eval">
+                <Variable IRI="urn:swrl#h"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#dia"/>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.ohio.edu/ontologies/IMPML#hasValue"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl#v"/>
+                <Variable IRI="urn:swrl#h"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPML#notSatisfiedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

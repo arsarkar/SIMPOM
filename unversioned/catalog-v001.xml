@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-<<<<<<< HEAD
-        <uri id="Automatically generated entry, Timestamp=1456686891292" name="http://www.ohio.edu/ontologies/2016/1/IMPM-ind$001" uri="impm-ind$001.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456686891292" name="http://www.ohio.edu/ontologies/IMPM-AM" uri="impml-am$001.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456686891292" name="http://www.ohio.edu/ontologies/IMPML" uri="impml$003.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456686891292" name="http://www.ohio.edu/ontologies/IMPMU" uri="impmu$002.owl"/>
-=======
-        <uri id="Automatically generated entry, Timestamp=1456630131237" name="duplicate:http://www.ohio.edu/ontologies/IMPM-AM" uri="impm-ind$001.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456630131237" name="duplicate:http://www.ohio.edu/ontologies/IMPM-AM" uri="impml-am$001.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456630131237" name="http://www.ohio.edu/ontologies/IMPML" uri="impml$003.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1456630131237" name="http://www.ohio.edu/ontologies/IMPMU" uri="impmu$002.owl"/>
->>>>>>> d88daebdd5afe7fcbfb7bfe23d224002b557edd4
-    </group>
-</catalog>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"/>

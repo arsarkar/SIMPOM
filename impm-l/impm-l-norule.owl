@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.ohio.edu/ontologies/IMPML">
-    <Prefix name="" IRI="http://www.ohio.edu/ontologies/IMPML#"/>
+    <Prefix name="" IRI="http://www.ohio.edu/ontologies/IMPML"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -17,7 +17,13 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This is the IMPlanner sample lower level onotlogy</Literal>
     </Annotation>
     <Declaration>
+        <ObjectProperty IRI="#hasArgument1"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HoleImproving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RangeFunctionCapability"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EndMilling"/>
@@ -35,13 +41,7 @@
         <ObjectProperty IRI="#hasAxisVector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MinPositiveTolerance"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#HoleStarting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RuleCapability"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Machine"/>
@@ -62,10 +62,10 @@
         <Class IRI="#Sawing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PositiveTolerance"/>
+        <Class IRI="#Square_Bar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Square_Bar"/>
+        <Class IRI="#PositiveTolerance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Normal3D"/>
@@ -75,6 +75,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgument2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Reaming"/>
@@ -104,22 +110,25 @@
         <Class IRI="#Milling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Broaching"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasArgument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SemiFinishMilling"/>
+        <Class IRI="#Broaching"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgProcess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EndMillingSlotting"/>
+        <Class IRI="#SemiFinishMilling"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndMillingSlotting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnaryFunction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Radius"/>
@@ -131,7 +140,7 @@
         <Class IRI="#Turning"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MinRuleCapability"/>
+        <ObjectProperty IRI="#hasArgument3"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HoleFinishing"/>
@@ -140,19 +149,13 @@
         <Class IRI="#PrecisionBoring"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MinDepthLimit"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Axis3D"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MinParallelism"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MinNegativeTolerance"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFunction"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasNormal"/>
@@ -167,6 +170,9 @@
         <ObjectProperty IRI="#hasPoint"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasArgument4"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Depth"/>
     </Declaration>
     <Declaration>
@@ -177,6 +183,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MinCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionCapability"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Facing"/>
@@ -194,19 +203,25 @@
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessPhase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Diameter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Planing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Plate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MaxRuleCapability"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Honing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MinFunctionCapability"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sweep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArgument5"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBottomDistance"/>
@@ -233,6 +248,9 @@
         <Class IRI="#MachiningFeature"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#BinaryFunction"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasFeatureProperty"/>
     </Declaration>
     <Declaration>
@@ -243,9 +261,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#mayBeMachinedBy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasRule"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NegativeTolerance"/>
@@ -266,10 +281,10 @@
         <Class IRI="#MinimumTruePosition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAxis"/>
+        <ObjectProperty IRI="#hasAxisPoint"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAxisPoint"/>
+        <ObjectProperty IRI="#hasAxis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SideMilling"/>
@@ -281,10 +296,13 @@
         <Class IRI="#Slab"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CenterDrilling"/>
+        <Class IRI="#MaxFunctionCapability"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpotDrilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CenterDrilling"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TruePosition"/>
@@ -341,9 +359,6 @@
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RangeRuleCapability"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#precedes"/>
     </Declaration>
     <Declaration>
@@ -365,40 +380,37 @@
         <Class IRI="#DovetailSlot"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
+        <Class IRI="#MaxCapability"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MaxCapability"/>
+        <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#hasCapability"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RangeCapability"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#YSpecification"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#mayUseTool"/>
+        <Class IRI="#RangeCapability"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#satisfiedBy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BlindHole"/>
+        <ObjectProperty IRI="#mayUseTool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EndMillingPeripheral"/>
+        <Class IRI="#BlindHole"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SmallestToolDiameter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MachiningProcess"/>
+        <Class IRI="#EndMillingPeripheral"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MinStraightness"/>
+        <Class IRI="#MachiningProcess"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HoleMaking"/>
@@ -440,6 +452,17 @@
     <SubClassOf>
         <Class IRI="#Axis3D"/>
         <Class IRI="#Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryFunction"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryFunction"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BlindHole"/>
@@ -495,15 +518,12 @@
         <Class IRI="#ValueSpecification"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Depth"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-            <Class IRI="#DepthLimit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DepthLimit"/>
         <Class IRI="#MaxCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diameter"/>
+        <Class IRI="#ValueSpecification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DovetailSlot"/>
@@ -550,6 +570,28 @@
     <SubClassOf>
         <Class IRI="#FinishMilling"/>
         <Class IRI="#Milling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasFunction"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionCapability"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionCapability"/>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Grinding"/>
@@ -707,12 +749,12 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MaxRuleCapability"/>
-        <Class IRI="#MaxCapability"/>
+        <Class IRI="#MaxFunctionCapability"/>
+        <Class IRI="#FunctionCapability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MaxRuleCapability"/>
-        <Class IRI="#RuleCapability"/>
+        <Class IRI="#MaxFunctionCapability"/>
+        <Class IRI="#MaxCapability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Milling"/>
@@ -730,36 +772,16 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MinDepthLimit"/>
-        <Class IRI="#MinRuleCapability"/>
+        <Class IRI="#MinFunctionCapability"/>
+        <Class IRI="#FunctionCapability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MinNegativeTolerance"/>
-        <Class IRI="#MinRuleCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MinParallelism"/>
-        <Class IRI="#MinRuleCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MinPositiveTolerance"/>
-        <Class IRI="#MinRuleCapability"/>
+        <Class IRI="#MinFunctionCapability"/>
+        <Class IRI="#MinCapability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MinRoundness"/>
         <Class IRI="#MinCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MinRuleCapability"/>
-        <Class IRI="#MinCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MinRuleCapability"/>
-        <Class IRI="#RuleCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MinStraightness"/>
-        <Class IRI="#MinRuleCapability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MinSurfaceFinish"/>
@@ -853,13 +875,6 @@
         <Class IRI="#ValueSpecification"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Radius"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ohio.edu/ontologies/IMPMU#matches"/>
-            <Class IRI="#LargestToolDiameter"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#RangeCapability"/>
         <Class IRI="#MaxCapability"/>
     </SubClassOf>
@@ -868,12 +883,12 @@
         <Class IRI="#MinCapability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RangeRuleCapability"/>
-        <Class IRI="#RangeCapability"/>
+        <Class IRI="#RangeFunctionCapability"/>
+        <Class IRI="#FunctionCapability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RangeRuleCapability"/>
-        <Class IRI="#RuleCapability"/>
+        <Class IRI="#RangeFunctionCapability"/>
+        <Class IRI="#RangeCapability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Reaming"/>
@@ -915,24 +930,6 @@
     <SubClassOf>
         <Class IRI="#Round_Bar"/>
         <Class IRI="#Stock"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RuleCapability"/>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#ProcessCapability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RuleCapability"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasArgument"/>
-            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RuleCapability"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasRule"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sawing"/>
@@ -1059,6 +1056,17 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UnaryFunction"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnaryFunction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasArgument"/>
+            <Class IRI="http://www.ohio.edu/ontologies/IMPMU#MfgConcept"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Value"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#hasValue"/>
@@ -1067,14 +1075,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ValueSpecification"/>
-        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
+        <Class IRI="#Value"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ValueSpecification"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasValue"/>
-            <Datatype abbreviatedIRI="xsd:double"/>
-        </DataExactCardinality>
+        <Class IRI="http://www.ohio.edu/ontologies/IMPMU#FeatureConstraint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ohio.edu/ontologies/IMPMU#CADFeature"/>
@@ -1114,6 +1119,7 @@
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Depth"/>
+        <Class IRI="#Diameter"/>
         <Class IRI="#NegativeTolerance"/>
         <Class IRI="#PositiveTolerance"/>
         <Class IRI="#Radius"/>
@@ -1150,6 +1156,26 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#canMill"/>
         <ObjectProperty IRI="#canMachine"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasArgument1"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasArgument2"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasArgument3"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasArgument4"/>
+        <ObjectProperty IRI="#hasArgument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasArgument5"/>
+        <ObjectProperty IRI="#hasArgument"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAxis"/>
@@ -1266,18 +1292,6 @@
         <DataProperty IRI="#z"/>
     </FunctionalDataProperty>
     <DataPropertyRange>
-        <DataProperty IRI="#hasMax"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasMin"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasValue"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#x"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
@@ -1291,12 +1305,17 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FunctionCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rule in hasRule data property and also arguments used in the rule is specified in hasArgument existential property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MaxCapability</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax data property is used to define the maximum value for the particular capability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MaxRuleCapability</IRI>
+        <IRI>#MaxFunctionCapability</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax data property is used to define the maximum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1305,34 +1324,14 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMin data property is used to define the minimum value for the particular capability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MinNegativeTolerance</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mnt</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MinParallelism</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MinPositiveTolerance</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mpt</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinFunctionCapability</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMin data property is used to define the minimum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MinRoundness</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mrd</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MinRuleCapability</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMin data property is used to define the minimum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MinStraightness</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mst</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1361,13 +1360,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#RangeRuleCapability</IRI>
+        <IRI>#RangeFunctionCapability</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMax and hasMin data property is used to define the maximum and minimum value for the particular capability and calculated by the rule specified in hasRule data property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#RuleCapability</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rule in hasRule data property and also arguments used in the rule is specified in hasArgument existential property.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
