@@ -25,10 +25,13 @@
         <NamedIndividual IRI="impm-ind#deplim1"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="impml:hasAxisVector"/>
+        <NamedIndividual IRI="#bor2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EMS1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="impml:hasAxisVector"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#Slot1"/>
@@ -52,6 +55,9 @@
         <DataProperty abbreviatedIRI="impml:hasValue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="impm-ind#hole"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="impmu:immediatePreviousFeature"/>
     </Declaration>
     <Declaration>
@@ -62,6 +68,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="impml:PositiveTolerance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FM1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#SD1"/>
@@ -106,10 +115,10 @@
         <NamedIndividual IRI="impm-ind#Slab1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="impm-ind#ream1"/>
+        <Class abbreviatedIRI="impml:Boring"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="impml:Boring"/>
+        <NamedIndividual IRI="impm-ind#ream1"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="impml:Slab"/>
@@ -137,6 +146,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#twdrl1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ream2"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="impml:y"/>
@@ -169,10 +181,10 @@
         <Class abbreviatedIRI="impml:PrecisionBoring"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EMP1"/>
+        <Class abbreviatedIRI="impml:EndDrilling"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="impml:EndDrilling"/>
+        <NamedIndividual IRI="#EMP1"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="impml:Axis3D"/>
@@ -184,6 +196,9 @@
         <NamedIndividual IRI="impm-ind#minnegtol1"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="impmu:immediatelyPrecedes"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="impm-ind#GD1"/>
     </Declaration>
     <Declaration>
@@ -193,7 +208,7 @@
         <NamedIndividual IRI="impm-ind#dep1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
+        <NamedIndividual IRI="#SM2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#minpostol2"/>
@@ -206,6 +221,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#SPD1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EM2"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="impml:z"/>
@@ -229,13 +247,16 @@
         <Class abbreviatedIRI="impml:Grinding"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="impmu:ownedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="impmu:matches"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="impm-ind#rad1"/>
+        <NamedIndividual IRI="impm-ind#minnegtol3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="impm-ind#minnegtol3"/>
+        <NamedIndividual IRI="impm-ind#rad1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="impm-ind#mintrupos2"/>
@@ -273,12 +294,10 @@
     <Declaration>
         <NamedIndividual IRI="#320M"/>
     </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="impmu:immediatelyPrecedes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="impmu:ownedBy"/>
-    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="impml:EndMilling"/>
+        <NamedIndividual IRI="#EM2"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="impml:EndMillingPeripheral"/>
         <NamedIndividual IRI="#EMP1"/>
@@ -286,6 +305,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="impml:EndMillingSlotting"/>
         <NamedIndividual IRI="#EMS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="impml:FaceMilling"/>
+        <NamedIndividual IRI="#FM1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="impml:Machine"/>
@@ -298,6 +321,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="impml:SlabMilling"/>
         <NamedIndividual IRI="#SM1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="impml:SlabMilling"/>
+        <NamedIndividual IRI="#SM2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="impml:Tool"/>
@@ -316,6 +343,14 @@
         <NamedIndividual IRI="#VM1054-3"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="impml:Boring"/>
+        <NamedIndividual IRI="#bor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="impml:Reaming"/>
+        <NamedIndividual IRI="#ream2"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="impml:Machine"/>
         <NamedIndividual IRI="#300M"/>
     </ClassAssertion>
@@ -326,10 +361,6 @@
     <ClassAssertion>
         <Class abbreviatedIRI="impml:CenterDrilling"/>
         <NamedIndividual IRI="impm-ind#CD1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="impml:Hole"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="impml:EndDrilling"/>
@@ -396,6 +427,10 @@
         <NamedIndividual IRI="impm-ind#deplim1"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI="impml:Hole"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="impml:LargestToolDiameter"/>
         <NamedIndividual IRI="impm-ind#maxtldm1"/>
     </ClassAssertion>
@@ -476,6 +511,21 @@
         <NamedIndividual IRI="#320M"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:precedes"/>
+        <NamedIndividual IRI="#FM1"/>
+        <NamedIndividual IRI="#EM2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:precedes"/>
+        <NamedIndividual IRI="#FM1"/>
+        <NamedIndividual IRI="#EMP1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:precedes"/>
+        <NamedIndividual IRI="#FM1"/>
+        <NamedIndividual IRI="#EMS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="impml:mayUseTool"/>
         <NamedIndividual IRI="#JMD-15"/>
         <NamedIndividual IRI="#T217"/>
@@ -496,6 +546,11 @@
         <NamedIndividual IRI="#320M"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:mayBeMachinedBy"/>
+        <NamedIndividual IRI="#SM2"/>
+        <NamedIndividual IRI="#320M"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="impml:mayUseTool"/>
         <NamedIndividual IRI="#VM1054-3"/>
         <NamedIndividual IRI="#T704"/>
@@ -519,41 +574,6 @@
         <ObjectProperty abbreviatedIRI="impml:mayUseTool"/>
         <NamedIndividual IRI="#320M"/>
         <NamedIndividual IRI="#T704"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impml:hasAxisVector"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#VectorZNegative"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impml:hasLocation"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#LocatingHole1Position"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#dep1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#negtol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#postol1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#rad1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
-        <NamedIndividual IRI="impm-ind#DelphiHole1"/>
-        <NamedIndividual IRI="impm-ind#trupos1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="impml:optionallyPrecededBy"/>
@@ -589,6 +609,16 @@
         <ObjectProperty abbreviatedIRI="impmu:immediatelyPrecededBy"/>
         <NamedIndividual IRI="impm-ind#Grind1"/>
         <NamedIndividual IRI="impm-ind#ream1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mayBeProcessedBy"/>
+        <NamedIndividual IRI="impm-ind#Hole1"/>
+        <NamedIndividual IRI="#bor2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mayBeProcessedBy"/>
+        <NamedIndividual IRI="impm-ind#Hole1"/>
+        <NamedIndividual IRI="#ream2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#mayBeProcessedBy"/>
@@ -724,6 +754,41 @@
         <ObjectProperty abbreviatedIRI="impmu:matches"/>
         <NamedIndividual IRI="impm-ind#dep1"/>
         <NamedIndividual IRI="impm-ind#deplim1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impml:hasAxisVector"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#VectorZNegative"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impml:hasLocation"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#LocatingHole1Position"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#dep1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#negtol1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#postol1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#rad1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="impmu:hasSpecification"/>
+        <NamedIndividual IRI="impm-ind#hole"/>
+        <NamedIndividual IRI="impm-ind#trupos1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="impmu:matches"/>
