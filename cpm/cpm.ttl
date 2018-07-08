@@ -4,266 +4,228 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ohio.edu/ontologies/CPM> .
 
-<http://www.ohio.edu/ontologies/CPM> rdf:type owl:Ontology ;
-                                     
-                                     rdfs:seeAlso "Fenves, S. J., Foufou, S., Bock, C., & Sriram, R. D. (2008). CPM2: A Core Model for Product Data. Journal of Computing and Information Science in Engineering, 8(1), 014501. http://doi.org/10.1115/1.2830842"@en ;
-                                     
-                                     rdfs:isDefinedBy """The support of PLM throughout the product life, from the product’s conceptualization to its disposal, requires reliable, complete and efficient data models. The Core Product Model (CPM), initially developed at NIST for a number of in-house research projects, has been extended so as to support the full range of PLM information.
-CPM gives equal status to three aspects of a product or artifact: its function, form and behavior. Thus, CPM can support purely functional reasoning about a product in the conceptual stages of design as well as the recording and modeling of its behavior in the post-design stage.
-CPM is a generic, abstract model with generic semantics. It is defined as a UML class diagram.. Three levels of CPM models, denoted as the conceptual, intermediate, and implementation models, are described. Extensions of CPM are briefly presented and a short illustrative example is given."""@en .
-
-
-#################################################################
-#
-#    Object Properties
-#
-#################################################################
-
-
-###  http://www.ohio.edu/ontologies/CPM#hasFeature
-
-:hasFeature rdf:type owl:ObjectProperty ;
-            
-            rdfs:domain :Artifact ;
-            
-            rdfs:range :Feature .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#hasMaterial
-
-:hasMaterial rdf:type owl:ObjectProperty .
-
-
-
-
-
-#################################################################
-#
-#    Classes
-#
-#################################################################
-
-
-###  http://www.ohio.edu/ontologies/CPM#Artifact
-
-:Artifact rdf:type owl:Class ;
-          
-          rdfs:subClassOf :CoreEntity ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasFeature ;
-                            owl:allValuesFrom :Feature
-                          ] ;
-          
-          owl:disjointWith :Feature .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Behavior
-
-:Behavior rdf:type owl:Class ;
-          
-          rdfs:subClassOf :CommonCoreObject .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#CommonCoreObject
-
-:CommonCoreObject rdf:type owl:Class ;
-                  
-                  rdfs:subClassOf :CoreProductModel ;
-                  
-                  owl:disjointWith :CommonCoreRelationShip .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip
-
-:CommonCoreRelationShip rdf:type owl:Class ;
-                        
-                        rdfs:subClassOf :CoreProductModel .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Constraint
-
-:Constraint rdf:type owl:Class ;
-            
-            rdfs:subClassOf :CommonCoreRelationShip .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#CoreEntity
-
-:CoreEntity rdf:type owl:Class ;
-            
-            rdfs:subClassOf :CommonCoreObject .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#CoreProductModel
-
-:CoreProductModel rdf:type owl:Class ;
-                  
-                  rdfs:subClassOf owl:Thing .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#CoreProperty
-
-:CoreProperty rdf:type owl:Class ;
-              
-              rdfs:subClassOf :CommonCoreObject .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#EntityAssociation
-
-:EntityAssociation rdf:type owl:Class ;
-                   
-                   rdfs:subClassOf :CommonCoreRelationShip .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Feature
-
-:Feature rdf:type owl:Class ;
-         
-         rdfs:subClassOf :CoreEntity .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Flow
-
-:Flow rdf:type owl:Class ;
-      
-      rdfs:subClassOf :CoreProperty .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Form
-
-:Form rdf:type owl:Class ;
-      
-      rdfs:subClassOf :CoreProperty .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Function
-
-:Function rdf:type owl:Class ;
-          
-          rdfs:subClassOf :CoreProperty .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Geometry
-
-:Geometry rdf:type owl:Class ;
-          
-          rdfs:subClassOf :CoreProperty .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Material
-
-:Material rdf:type owl:Class ;
-          
-          rdfs:subClassOf :CoreProperty .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Part
-
-:Part rdf:type owl:Class ;
-      
-      rdfs:subClassOf :Artifact ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasFeature ;
-                        owl:someValuesFrom :Feature
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasMaterial ;
-                        owl:someValuesFrom :Material
-                      ] .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Requirement
-
-:Requirement rdf:type owl:Class ;
-             
-             rdfs:subClassOf :CommonCoreObject .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Specification
-
-:Specification rdf:type owl:Class ;
-               
-               rdfs:subClassOf :CommonCoreObject .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Trace
-
-:Trace rdf:type owl:Class ;
-       
-       rdfs:subClassOf :CommonCoreRelationShip .
-
-
-
-###  http://www.ohio.edu/ontologies/CPM#Usage
-
-:Usage rdf:type owl:Class ;
-       
-       rdfs:subClassOf :CommonCoreRelationShip .
-
-
-
-
-
-#################################################################
-#
-#    General axioms
-#
-#################################################################
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Behavior
-                :CoreEntity
-                :CoreProperty
-                :Requirement
-                :Specification
-              )
-] .
-
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Constraint
-                :EntityAssociation
-                :Trace
-                :Usage
-              )
-] .
-
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Flow
-                :Form
-                :Function
-                :Geometry
-                :Material
-              )
-] .
-
-
-
-
-###  Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi
-
+<http://www.ohio.edu/ontologies/CPM> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ohio.edu/ontologies/CPM#hasFeature
+
+:hasFeature a owl:ObjectProperty ;
+	rdfs:domain :Artifact ;
+	rdfs:range :Feature .
+# 
+# http://www.ohio.edu/ontologies/CPM#hasMaterial
+
+:hasMaterial a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ohio.edu/ontologies/CPM#Artifact
+
+:Artifact a owl:Class ;
+	rdfs:subClassOf :CoreEntity , _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :hasFeature ;
+	owl:allValuesFrom :Feature .
+
+:Artifact owl:disjointWith :Feature .
+# 
+# http://www.ohio.edu/ontologies/CPM#Behavior
+
+:Behavior a owl:Class ;
+	rdfs:subClassOf :CommonCoreObject .
+# 
+# http://www.ohio.edu/ontologies/CPM#CommonCoreObject
+
+:CommonCoreObject a owl:Class ;
+	rdfs:subClassOf :CoreProductModel ;
+	owl:disjointWith :CommonCoreRelationShip .
+# 
+# http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip
+
+:CommonCoreRelationShip a owl:Class ;
+	rdfs:subClassOf :CoreProductModel .
+# 
+# http://www.ohio.edu/ontologies/CPM#Constraint
+
+:Constraint a owl:Class ;
+	rdfs:subClassOf :CommonCoreRelationShip .
+# 
+# http://www.ohio.edu/ontologies/CPM#CoreEntity
+
+:CoreEntity a owl:Class ;
+	rdfs:subClassOf :CommonCoreObject .
+# 
+# http://www.ohio.edu/ontologies/CPM#CoreProductModel
+
+:CoreProductModel a owl:Class ;
+	rdfs:subClassOf owl:Thing .
+# 
+# http://www.ohio.edu/ontologies/CPM#CoreProperty
+
+:CoreProperty a owl:Class ;
+	rdfs:subClassOf :CommonCoreObject .
+# 
+# http://www.ohio.edu/ontologies/CPM#EntityAssociation
+
+:EntityAssociation a owl:Class ;
+	rdfs:subClassOf :CommonCoreRelationShip .
+# 
+# http://www.ohio.edu/ontologies/CPM#Feature
+
+:Feature a owl:Class ;
+	rdfs:subClassOf :CoreEntity .
+# 
+# http://www.ohio.edu/ontologies/CPM#Flow
+
+:Flow a owl:Class ;
+	rdfs:subClassOf :CoreProperty .
+# 
+# http://www.ohio.edu/ontologies/CPM#Form
+
+:Form a owl:Class ;
+	rdfs:subClassOf :CoreProperty .
+# 
+# http://www.ohio.edu/ontologies/CPM#Function
+
+:Function a owl:Class ;
+	rdfs:subClassOf :CoreProperty .
+# 
+# http://www.ohio.edu/ontologies/CPM#Geometry
+
+:Geometry a owl:Class ;
+	rdfs:subClassOf :CoreProperty .
+# 
+# http://www.ohio.edu/ontologies/CPM#Material
+
+:Material a owl:Class ;
+	rdfs:subClassOf :CoreProperty .
+# 
+# http://www.ohio.edu/ontologies/CPM#Part
+
+:Part a owl:Class ;
+	rdfs:subClassOf :Artifact , _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :hasFeature ;
+	owl:someValuesFrom :Feature .
+
+:Part rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :hasMaterial ;
+	owl:someValuesFrom :Material .
+# 
+# http://www.ohio.edu/ontologies/CPM#Requirement
+
+:Requirement a owl:Class ;
+	rdfs:subClassOf :CommonCoreObject .
+# 
+# http://www.ohio.edu/ontologies/CPM#Specification
+
+:Specification a owl:Class ;
+	rdfs:subClassOf :CommonCoreObject .
+# 
+# http://www.ohio.edu/ontologies/CPM#Trace
+
+:Trace a owl:Class ;
+	rdfs:subClassOf :CommonCoreRelationShip .
+# 
+# http://www.ohio.edu/ontologies/CPM#Usage
+
+:Usage a owl:Class ;
+	rdfs:subClassOf :CommonCoreRelationShip .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+
+_:genid4 a owl:AllDisjointClasses ;
+	owl:members _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first :Behavior ;
+	rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first :CoreEntity ;
+	rdf:rest _:genid7 .
+
+_:genid7 a rdf:List ;
+	rdf:first :CoreProperty ;
+	rdf:rest _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first :Requirement ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first :Specification ;
+	rdf:rest rdf:nil .
+# 
+
+_:genid10 a owl:AllDisjointClasses ;
+	owl:members _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first :Constraint ;
+	rdf:rest _:genid13 .
+
+_:genid13 a rdf:List ;
+	rdf:first :EntityAssociation ;
+	rdf:rest _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first :Trace ;
+	rdf:rest _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first :Usage ;
+	rdf:rest rdf:nil .
+# 
+
+_:genid15 a owl:AllDisjointClasses ;
+	owl:members _:genid20 .
+
+_:genid20 a rdf:List ;
+	rdf:first :Flow ;
+	rdf:rest _:genid19 .
+
+_:genid19 a rdf:List ;
+	rdf:first :Form ;
+	rdf:rest _:genid18 .
+
+_:genid18 a rdf:List ;
+	rdf:first :Function ;
+	rdf:rest _:genid17 .
+
+_:genid17 a rdf:List ;
+	rdf:first :Geometry ;
+	rdf:rest _:genid16 .
+
+_:genid16 a rdf:List ;
+	rdf:first :Material ;
+	rdf:rest rdf:nil .
+# 
+# Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi

@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/CPM#"
+     xml:base="http://www.ohio.edu/ontologies/CPM"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/CPM"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/CPM#hasFeature">
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+        <rdfs:range rdf:resource="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/CPM#hasMaterial"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Artifact -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+                <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/CPM#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/CPM#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Behavior -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Behavior">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#CommonCoreObject -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#CommonCoreObject">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProductModel"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProductModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Constraint -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Constraint">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#CoreEntity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#CoreEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#CoreProductModel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#CoreProductModel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#CoreProperty -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#CoreProperty">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#EntityAssociation -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#EntityAssociation">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Feature -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Flow -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Flow">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Form -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Form">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Function -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Function">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Geometry -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Material -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Material">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Part -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Part">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+                <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/CPM#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/CPM#hasMaterial"/>
+                <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/CPM#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Requirement -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Specification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Trace -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Trace">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/CPM#Usage -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Usage">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/CPM#CommonCoreRelationShip"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Behavior"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#CoreEntity"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#CoreProperty"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Requirement"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Specification"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Constraint"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#EntityAssociation"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Trace"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Usage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Flow"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Form"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Function"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Geometry"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/CPM#Material"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
