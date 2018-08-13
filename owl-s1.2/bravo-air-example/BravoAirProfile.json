@@ -1,0 +1,220 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.daml.org/services/owl-s/1.2/Profile.owl#ServiceParameter" ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#sParameter" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Concepts.owl#qualityRating_Good"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#serviceParameterName" : [ {
+    "@value" : "\n\t  SomeRating\n\t"
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#AcctName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#ArrivalAirport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#BravoAir_Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#Confirm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#DepartureAirport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#FlightsFound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#HaveSeatResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#InboundDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#OutboundDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#Password",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#PreferredFlightItinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#ReservationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#RoundTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\n      DAML-S Coalition: BravoAir Example for OWL-S Profile description\n \n    "
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirService.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Process.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Country.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/ProfileHierarchy.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Concepts.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/ProfileAdditionalParameters.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Service.owl"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Profile.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "\n      $Id: BravoAirProfile.owl,v 1.25 2004/11/28 16:29:55 martin Exp $\n    "
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-geographicRadius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ProfileAdditionalParameters.owl#GeographicRadius" ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#sParameter" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/Country.owl#UnitedStates"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#serviceParameterName" : [ {
+    "@value" : "\n\t  BravoAir Geographic Radius\n\t"
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#Actor" ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#email" : [ {
+    "@value" : "John_Doe@Bravoair.com"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#fax" : [ {
+    "@value" : "412 268 5569 "
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#name" : [ {
+    "@value" : "John Doe"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#phone" : [ {
+    "@value" : "412 268 8789 "
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#physicalAddress" : [ {
+    "@value" : "\n\t      Airstrip 2,\n\t      Teetering Cliff Hights,\n\t      Florida 12321,\n\t      USA\n\t"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#title" : [ {
+    "@value" : "Sale Representative"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#webURL" : [ {
+    "@value" : " \n            http://www.daml.org/services/daml-s/2001/05/BravoAir.html \n        "
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-reservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#Actor" ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#email" : [ {
+    "@value" : "Bravo@Bravoair.com"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#fax" : [ {
+    "@value" : "412 268 5569 "
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#name" : [ {
+    "@value" : "BravoAir Reservation department"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#phone" : [ {
+    "@value" : "412 268 8780 "
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#physicalAddress" : [ {
+    "@value" : "\n\t      Airstrip 2,\n\t      Teetering Cliff Hights,\n\t      Florida 12321,\n\t      USA\n\t"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#title" : [ {
+    "@value" : "\n\t  Reservation Representative \n\t"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/ActorDefault.owl#webURL" : [ {
+    "@value" : " \n            http://www.daml.org/services/daml-s/2001/05/BravoAir.html \n        "
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#NAICS-category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ProfileAdditionalParameters.owl#NAICS" ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#code" : [ {
+    "@value" : "\n\t  561599\n\t"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#value" : [ {
+    "@value" : "\n\t  Airline reservation services \n\t"
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#Profile_BravoAir_ReservationAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ProfileHierarchy.owl#AirlineTicketing" ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#contactInformation" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-information"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-reservation"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#hasInput" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#AcctName"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#ArrivalAirport"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#Confirm"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#DepartureAirport"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#InboundDate"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#OutboundDate"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#Password"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#RoundTrip"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#hasOutput" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#FlightsFound"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#PreferredFlightItinerary"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#ReservationID"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#hasResult" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#HaveSeatResult"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#has_process" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProcess.owl#BravoAir_Process"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#serviceCategory" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#NAICS-category"
+  }, {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#UNSPSC-category"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#serviceName" : [ {
+    "@value" : "BravoAir_ReservationAgent"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#serviceParameter" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#BravoAir-geographicRadius"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#textDescription" : [ {
+    "@value" : "\n\tThis  service provide flight reservations based on the\n\tspecification of a flight request.  This typically involves a departure\n\tairport, an arrival airport, a departure date, and if a return trip is\n\trequired, a return date.\n        If the desired flight is available, an itinerary and reservation number\n\twill be returned.\n    "
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Service.owl#presentedBy" : [ {
+    "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirService.owl#BravoAir_ReservationAgent"
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirProfile.owl#UNSPSC-category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.daml.org/services/owl-s/1.2/ProfileAdditionalParameters.owl#UNSPSC" ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#code" : [ {
+    "@value" : "\n\t  90121500\n\t"
+  } ],
+  "http://www.daml.org/services/owl-s/1.2/Profile.owl#value" : [ {
+    "@value" : "\n\t  Travel Agent\n\t"
+  } ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/BravoAirService.owl#BravoAir_ReservationAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/Concepts.owl#qualityRating_Good",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.daml.org/services/owl-s/1.2/Country.owl#UnitedStates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

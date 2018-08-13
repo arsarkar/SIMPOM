@@ -1,0 +1,939 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:impmu="http://www.ohio.edu/ontologies/IMPMU#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cpm="http://www.ohio.edu/ontologies/CPM#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.1="http://www.ohio.edu/ontologies/IMPML#"
+    xmlns:dc="http://purl.org/dc/elements/1.1">
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#diameter"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#NormalContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#axisPointContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#parallelism"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#width"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#truePositionContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#bottomDistanceContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#axisPoint"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#holeAxis"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#Normal"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#slotPointContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#parallelismContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#positiveSweepLengthContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Feature"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#perpendicularityContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#PocketPointContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#positiveSweepLength"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#PocketPoint"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#normalContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#bottomDistance"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#slotPoint"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#sweep"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#diameterContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#normal"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#negativeSweepLength"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#truePosition"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#perpendicularity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#holeAxisContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#sweepContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#widthContentEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/CPM#Part"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/IMPML#negativeSweepLengthContentEntity"/>
+  <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/IMPMU#hasSpecification"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/CPM#hasFeature"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/IMPMU#hasNextFeature"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity9914"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity8519"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity4128"/>
+  <j.1:normalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity2427"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity6763"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity7506"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity7282"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity7161"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity2765"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity5216"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity9324"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity9426"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity9276"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity8584"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity4733"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity8637"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity3990"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity2422"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity5438"/>
+  <j.1:sweepContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#sweepcontententity5223"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity2229"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity1001"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity4071"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity6671"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity3297"/>
+  <j.1:sweepContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#sweepcontententity7657"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity4467"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity3414"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity2182"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity4559"/>
+  <j.1:slotPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#slotpointcontententity7657"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity6594"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity9870"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity3132"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity1792"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity4133"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity7406"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity6171"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity2106"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity9065"/>
+  <j.1:NormalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity8276"/>
+  <j.1:normalContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normalcontententity6099"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity9766"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity2106"/>
+  <j.1:axisPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispointcontententity9237"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity1845"/>
+  <j.1:PocketPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpointcontententity8773"/>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity3478"/>
+  <cpm:Part rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#part5216">
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1840">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance4213">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity7902">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >-0.1</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint4145"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal3050"/>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature8188">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance5302">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity9689">
+                    <j.0:inheres_in>
+                      <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626">
+                        <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                        >NaN</j.0:has_decimal_value>
+                      </j.0:InformationBearingEntity>
+                    </j.0:inheres_in>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint7895"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis2115"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter1336">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity5778">
+                    <j.0:inheres_in>
+                      <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7763">
+                        <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                        >0.136</j.0:has_decimal_value>
+                      </j.0:InformationBearingEntity>
+                    </j.0:inheres_in>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(26)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4031">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance4839">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity3945">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint1340"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis5403"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter8063">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity7774">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7763"/>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(27)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature6259">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance2690">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity9465">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint1712"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis3289"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter3907">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity8707">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7763"/>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(28)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1902">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance6082">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity4309">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint6089"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis2216"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter3880">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity9103">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7763"/>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(29)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <rdfs:label>RECTANGULAR_POCKET(2)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature7509">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance6840">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity7192">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8199">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >-1.0</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:sweep rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#sweep2454"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:negativeSweepLength rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#negativesweeplength9165">
+            <j.0:prescribed_by>
+              <j.1:negativeSweepLengthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#negativesweeplengthcontententity8358">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6668">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >1.25</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:negativeSweepLengthContentEntity>
+            </j.0:prescribed_by>
+          </j.1:negativeSweepLength>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:slotPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#slotpoint2033"/>
+        </impmu:hasSpecification>
+        <rdfs:label>RECTANGULAR_SLOT(9)</rdfs:label>
+        <impmu:hasSpecification>
+          <j.1:positiveSweepLength rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#positivesweeplength9767">
+            <j.0:prescribed_by>
+              <j.1:positiveSweepLengthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#positivesweeplengthcontententity6619">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6668"/>
+              </j.1:positiveSweepLengthContentEntity>
+            </j.0:prescribed_by>
+          </j.1:positiveSweepLength>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1902"/>
+        <impmu:hasSpecification>
+          <j.1:normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal1876"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:width rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#width7183">
+            <j.0:prescribed_by>
+              <j.1:widthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#widthcontententity3648">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7120">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >0.2</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:widthContentEntity>
+            </j.0:prescribed_by>
+          </j.1:width>
+        </impmu:hasSpecification>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4570">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance2270">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity8334">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6450">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >-0.025</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint7212"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis1241"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter1973">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity3427">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4798">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >0.25</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature5637">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance5466">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity9745">
+                    <j.0:inheres_in>
+                      <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4773">
+                        <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                        >-0.415</j.0:has_decimal_value>
+                      </j.0:InformationBearingEntity>
+                    </j.0:inheres_in>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint3904"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal7478"/>
+            </impmu:hasSpecification>
+            <impmu:hasNextFeature>
+              <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4048">
+                <impmu:hasSpecification>
+                  <j.1:negativeSweepLength rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#negativesweeplength5416">
+                    <j.0:prescribed_by>
+                      <j.1:negativeSweepLengthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#negativesweeplengthcontententity2523">
+                        <j.0:inheres_in>
+                          <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6314">
+                            <j.0:has_decimal_value rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#double"
+                            >1.75</j.0:has_decimal_value>
+                          </j.0:InformationBearingEntity>
+                        </j.0:inheres_in>
+                      </j.1:negativeSweepLengthContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:negativeSweepLength>
+                </impmu:hasSpecification>
+                <impmu:hasNextFeature>
+                  <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature6204">
+                    <impmu:hasSpecification>
+                      <j.1:truePosition rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#trueposition6291">
+                        <j.0:prescribed_by>
+                          <j.1:truePositionContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#truepositioncontententity1727">
+                            <j.0:inheres_in>
+                              <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270">
+                                <j.0:has_decimal_value rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#double"
+                                >0.001</j.0:has_decimal_value>
+                              </j.0:InformationBearingEntity>
+                            </j.0:inheres_in>
+                          </j.1:truePositionContentEntity>
+                        </j.0:prescribed_by>
+                      </j.1:truePosition>
+                    </impmu:hasSpecification>
+                    <impmu:hasSpecification>
+                      <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance9073">
+                        <j.0:prescribed_by>
+                          <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity1051">
+                            <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+                          </j.1:bottomDistanceContentEntity>
+                        </j.0:prescribed_by>
+                      </j.1:bottomDistance>
+                    </impmu:hasSpecification>
+                    <impmu:hasSpecification>
+                      <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint9439"/>
+                    </impmu:hasSpecification>
+                    <impmu:hasSpecification>
+                      <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis5349"/>
+                    </impmu:hasSpecification>
+                    <impmu:hasSpecification>
+                      <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter4304">
+                        <j.0:prescribed_by>
+                          <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity2837">
+                            <j.0:inheres_in>
+                              <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity2043">
+                                <j.0:has_decimal_value rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#double"
+                                >0.785</j.0:has_decimal_value>
+                              </j.0:InformationBearingEntity>
+                            </j.0:inheres_in>
+                          </j.1:diameterContentEntity>
+                        </j.0:prescribed_by>
+                      </j.1:diameter>
+                    </impmu:hasSpecification>
+                    <impmu:hasNextFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature7509"/>
+                    <rdfs:label>SIMPLE HOLE(12)</rdfs:label>
+                  </cpm:Feature>
+                </impmu:hasNextFeature>
+                <impmu:hasSpecification>
+                  <j.1:normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal4303"/>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:perpendicularity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularity9268">
+                    <j.0:prescribed_by>
+                      <j.1:perpendicularityContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularitycontententity1569">
+                        <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+                      </j.1:perpendicularityContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:perpendicularity>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:sweep rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#sweep4641"/>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance9238">
+                    <j.0:prescribed_by>
+                      <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity1318">
+                        <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8199"/>
+                      </j.1:bottomDistanceContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:bottomDistance>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:width rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#width3416">
+                    <j.0:prescribed_by>
+                      <j.1:widthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#widthcontententity3281">
+                        <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7120"/>
+                      </j.1:widthContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:width>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:positiveSweepLength rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#positivesweeplength2650">
+                    <j.0:prescribed_by>
+                      <j.1:positiveSweepLengthContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#positivesweeplengthcontententity3735">
+                        <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6314"/>
+                      </j.1:positiveSweepLengthContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:positiveSweepLength>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:slotPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#slotpoint1391"/>
+                </impmu:hasSpecification>
+                <rdfs:label>RECTANGULAR_SLOT(8)</rdfs:label>
+              </cpm:Feature>
+            </impmu:hasNextFeature>
+            <rdfs:label>RECTANGULAR_POCKET(15)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <rdfs:label>SIMPLE HOLE(25)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1902"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1337">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance3158">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity9648">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint8916"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis7815"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter5528">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity1489">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity7763"/>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4570"/>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature2081">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance3950">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity1501">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity6450"/>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint9253"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis9449"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter1493">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity1862">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4798"/>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <impmu:hasNextFeature>
+              <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature3877">
+                <impmu:hasSpecification>
+                  <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance9807">
+                    <j.0:prescribed_by>
+                      <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity4541">
+                        <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4773"/>
+                      </j.1:bottomDistanceContentEntity>
+                    </j.0:prescribed_by>
+                  </j.1:bottomDistance>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint5758"/>
+                </impmu:hasSpecification>
+                <impmu:hasSpecification>
+                  <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal2191"/>
+                </impmu:hasSpecification>
+                <impmu:hasNextFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4048"/>
+                <rdfs:label>RECTANGULAR_POCKET(14)</rdfs:label>
+              </cpm:Feature>
+            </impmu:hasNextFeature>
+            <rdfs:label>SIMPLE HOLE(24)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <rdfs:label>SIMPLE HOLE(31)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature7967">
+        <impmu:hasSpecification>
+          <j.1:perpendicularity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularity9928">
+            <j.0:prescribed_by>
+              <j.1:perpendicularityContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularitycontententity2108">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:perpendicularityContentEntity>
+            </j.0:prescribed_by>
+          </j.1:perpendicularity>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance6642">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity6129">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint1737"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal4367"/>
+        </impmu:hasSpecification>
+        <rdfs:label>RECTANGULAR_POCKET(6)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1721">
+        <impmu:hasSpecification>
+          <j.1:perpendicularity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularity9188">
+            <j.0:prescribed_by>
+              <j.1:perpendicularityContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularitycontententity9947">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:perpendicularityContentEntity>
+            </j.0:prescribed_by>
+          </j.1:perpendicularity>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance7205">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity4543">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint1312"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal1611"/>
+        </impmu:hasSpecification>
+        <rdfs:label>RECTANGULAR_POCKET(4)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature3482">
+        <impmu:hasSpecification>
+          <j.1:perpendicularity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularity7159">
+            <j.0:prescribed_by>
+              <j.1:perpendicularityContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#perpendicularitycontententity3480">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:perpendicularityContentEntity>
+            </j.0:prescribed_by>
+          </j.1:perpendicularity>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance3233">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity9999">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint9475"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal8648"/>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4048"/>
+        <rdfs:label>RECTANGULAR_POCKET(7)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature8188"/>
+    <rdfs:label>slider_with_slabs</rdfs:label>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature2081"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature6033">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance3578">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity3279">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint3909"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis2929"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter9808">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity1520">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity1790">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >0.089</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature9951">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance1530">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity6249">
+                    <j.0:inheres_in>
+                      <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity1946">
+                        <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                        >-0.45</j.0:has_decimal_value>
+                      </j.0:InformationBearingEntity>
+                    </j.0:inheres_in>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint1897"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis1834"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter4608">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity8201">
+                    <j.0:inheres_in>
+                      <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity5790">
+                        <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                        >0.125</j.0:has_decimal_value>
+                      </j.0:InformationBearingEntity>
+                    </j.0:inheres_in>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(16)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <rdfs:label>SIMPLE HOLE(18)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature6204"/>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4031"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature3006">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance2514">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity7841">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint2034"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis1985"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter3198">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity2879">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity1790"/>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <impmu:hasNextFeature>
+          <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1277">
+            <impmu:hasSpecification>
+              <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance8794">
+                <j.0:prescribed_by>
+                  <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity4748">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity1946"/>
+                  </j.1:bottomDistanceContentEntity>
+                </j.0:prescribed_by>
+              </j.1:bottomDistance>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint3520"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis5025"/>
+            </impmu:hasSpecification>
+            <impmu:hasSpecification>
+              <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter9615">
+                <j.0:prescribed_by>
+                  <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity5736">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity5790"/>
+                  </j.1:diameterContentEntity>
+                </j.0:prescribed_by>
+              </j.1:diameter>
+            </impmu:hasSpecification>
+            <rdfs:label>SIMPLE HOLE(17)</rdfs:label>
+          </cpm:Feature>
+        </impmu:hasNextFeature>
+        <rdfs:label>SIMPLE HOLE(19)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature5637"/>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature6259"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature3018">
+        <impmu:hasSpecification>
+          <j.1:parallelism rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#parallelism7425">
+            <j.0:prescribed_by>
+              <j.1:parallelismContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#parallelismcontententity2825">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:parallelismContentEntity>
+            </j.0:prescribed_by>
+          </j.1:parallelism>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance7449">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity1029">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint2980"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal2850"/>
+        </impmu:hasSpecification>
+        <rdfs:label>RECTANGULAR_POCKET(3)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature3877"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature8049">
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance9914">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity2023">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4753"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:PocketPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#pocketpoint9355"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:Normal rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#normal1255"/>
+        </impmu:hasSpecification>
+        <rdfs:label>RECTANGULAR_POCKET(5)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature1277"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature2195">
+        <impmu:hasSpecification>
+          <j.1:truePosition rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#trueposition1841">
+            <j.0:prescribed_by>
+              <j.1:truePositionContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#truepositioncontententity3931">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:truePositionContentEntity>
+            </j.0:prescribed_by>
+          </j.1:truePosition>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance7065">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity7931">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint1308"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis2085"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter3513">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity1985">
+                <j.0:inheres_in>
+                  <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4438">
+                    <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+                    >0.63</j.0:has_decimal_value>
+                  </j.0:InformationBearingEntity>
+                </j.0:inheres_in>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <rdfs:label>SIMPLE HOLE(10)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4048"/>
+    <cpm:hasFeature rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature9951"/>
+    <cpm:hasFeature>
+      <cpm:Feature rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#feature4142">
+        <impmu:hasSpecification>
+          <j.1:truePosition rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#trueposition2175">
+            <j.0:prescribed_by>
+              <j.1:truePositionContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#truepositioncontententity1945">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8270"/>
+              </j.1:truePositionContentEntity>
+            </j.0:prescribed_by>
+          </j.1:truePosition>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:bottomDistance rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistance3882">
+            <j.0:prescribed_by>
+              <j.1:bottomDistanceContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#bottomdistancecontententity2831">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity8626"/>
+              </j.1:bottomDistanceContentEntity>
+            </j.0:prescribed_by>
+          </j.1:bottomDistance>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:axisPoint rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#axispoint1928"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:holeAxis rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxis8012"/>
+        </impmu:hasSpecification>
+        <impmu:hasSpecification>
+          <j.1:diameter rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diameter6204">
+            <j.0:prescribed_by>
+              <j.1:diameterContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#diametercontententity6814">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design/2018/8/2/328788#informationbearingentity4438"/>
+              </j.1:diameterContentEntity>
+            </j.0:prescribed_by>
+          </j.1:diameter>
+        </impmu:hasSpecification>
+        <rdfs:label>SIMPLE HOLE(11)</rdfs:label>
+      </cpm:Feature>
+    </cpm:hasFeature>
+  </cpm:Part>
+  <j.1:holeAxisContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#holeaxiscontententity8162"/>
+  <j.1:slotPointContentEntity rdf:about="http://www.ohio.edu/simplanner/design/2018/8/2/328788#slotpointcontententity1206"/>
+</rdf:RDF>
