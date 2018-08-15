@@ -1,0 +1,190 @@
+Prefix(:=<http://ontohub.org/PSL/psl_core_beta#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontohub.org/PSL/psl_core_beta>
+
+Declaration(Class(<http://ontohub.org/PSL/psl_core#Activity>))
+Declaration(Class(<http://ontohub.org/PSL/psl_core#Activity_Occurrence>))
+Declaration(Class(<http://ontohub.org/PSL/psl_core#Object>))
+Declaration(Class(<http://ontohub.org/PSL/psl_core#OccurrenceOrObject>))
+Declaration(Class(<http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval>))
+Declaration(Class(<http://ontohub.org/PSL/psl_core#Timepoint>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#before>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#beforeEq>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#begins>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#ends>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#exists_at>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#is_occurring_at>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#occurrence_of>))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#participates>))
+Declaration(NamedIndividual(:Inf-))
+Declaration(NamedIndividual(:ac1))
+Declaration(NamedIndividual(:act-occ1))
+Declaration(NamedIndividual(:act1))
+Declaration(NamedIndividual(:t1))
+Declaration(NamedIndividual(:t2))
+Declaration(NamedIndividual(:Inf+))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontohub.org/PSL/psl_core#before> (<http://ontohub.org/PSL/psl_core#before>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#before> "before")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#before> "befores")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#before> "befored")
+TransitiveObjectProperty(<http://ontohub.org/PSL/psl_core#before>)
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#before> <http://ontohub.org/PSL/psl_core#Timepoint>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#before> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#beforeEq> (<http://ontohub.org/PSL/psl_core#beforeEq>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#beforeEq> "beforeEq")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#beforeEq> "beforeEqs")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#beforeEq> "beforeEqed")
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#beforeEq> <http://ontohub.org/PSL/psl_core#Timepoint>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#beforeEq> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#begins> (<http://ontohub.org/PSL/psl_core#begins>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#begins> "begins")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#begins> "beginss")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#begins> "beginsed")
+FunctionalObjectProperty(<http://ontohub.org/PSL/psl_core#begins>)
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#begins> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#begins> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#ends> (<http://ontohub.org/PSL/psl_core#ends>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#ends> "ends")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#ends> "endss")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#ends> "endsed")
+FunctionalObjectProperty(<http://ontohub.org/PSL/psl_core#ends>)
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#ends> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#ends> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#exists_at> (<http://ontohub.org/PSL/psl_core#exists_at>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#exists_at> "exists_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#exists_at> "existses_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#exists_at> "existsed_at")
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#exists_at> <http://ontohub.org/PSL/psl_core#Object>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#exists_at> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#is_occurring_at> (<http://ontohub.org/PSL/psl_core#is_occurring_at>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#is_occurring_at> "is_occurring_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#is_occurring_at> "is_occurrings_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#is_occurring_at> "is_occurrung_at")
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#is_occurring_at> <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#is_occurring_at> <http://ontohub.org/PSL/psl_core#Timepoint>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#occurrence_of> (<http://ontohub.org/PSL/psl_core#occurrence_of>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#occurrence_of> "occurrence_of")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#occurrence_of> "occurrence_ofs")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#occurrence_of> "occurrence_ofed")
+FunctionalObjectProperty(<http://ontohub.org/PSL/psl_core#occurrence_of>)
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#occurrence_of> <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#occurrence_of> <http://ontohub.org/PSL/psl_core#Activity>)
+
+# Object Property: <http://ontohub.org/PSL/psl_core#participates> (<http://ontohub.org/PSL/psl_core#participates>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> <http://ontohub.org/PSL/psl_core#participates> "participates")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> <http://ontohub.org/PSL/psl_core#participates> "participateses")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> <http://ontohub.org/PSL/psl_core#participates> "participatesed")
+ObjectPropertyDomain(<http://ontohub.org/PSL/psl_core#participates> <http://ontohub.org/PSL/psl_core#Object>)
+ObjectPropertyRange(<http://ontohub.org/PSL/psl_core#participates> <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontohub.org/PSL/psl_core#Activity> (<http://ontohub.org/PSL/psl_core#Activity>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Activity> "Activities")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Activity> "Activity")
+
+# Class: <http://ontohub.org/PSL/psl_core#Activity_Occurrence> (<http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Activity_Occurrence> "Activity_Occurrences")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Activity_Occurrence> "Activity_Occurrence")
+SubClassOf(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject>)
+SubClassOf(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#begins> <http://ontohub.org/PSL/psl_core#Timepoint>) ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#ends> <http://ontohub.org/PSL/psl_core#Timepoint>)) ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#is_occurring_at> <http://ontohub.org/PSL/psl_core#Timepoint>)))
+SubClassOf(Annotation(rdfs:isDefinedBy "An activity-occurence is the occurence of a single activity") <http://ontohub.org/PSL/psl_core#Activity_Occurrence> ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#occurrence_of> <http://ontohub.org/PSL/psl_core#Activity>))
+DisjointClasses(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> <http://ontohub.org/PSL/psl_core#Object>)
+
+# Class: <http://ontohub.org/PSL/psl_core#Object> (<http://ontohub.org/PSL/psl_core#Object>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Object> "Objects")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Object> "Object")
+SubClassOf(<http://ontohub.org/PSL/psl_core#Object> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject>)
+SubClassOf(<http://ontohub.org/PSL/psl_core#Object> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#begins> <http://ontohub.org/PSL/psl_core#Timepoint>) ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#ends> <http://ontohub.org/PSL/psl_core#Timepoint>)) ObjectSomeValuesFrom(<http://ontohub.org/PSL/psl_core#exists_at> <http://ontohub.org/PSL/psl_core#Timepoint>)))
+
+# Class: <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> (<http://ontohub.org/PSL/psl_core#OccurrenceOrObject>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> "OccurrenceOrObjects")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> "OccurrenceOrObject")
+SubClassOf(<http://ontohub.org/PSL/psl_core#OccurrenceOrObject> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval>)
+
+# Class: <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval> (<http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval> "OccurrenceOrObjectOrIntervals")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval> "OccurrenceOrObjectOrInterval")
+
+# Class: <http://ontohub.org/PSL/psl_core#Timepoint> (<http://ontohub.org/PSL/psl_core#Timepoint>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Timepoint> "Timepoints")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Timepoint> "Timepoint")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Inf- (:Inf-)
+
+ClassAssertion(<http://ontohub.org/PSL/psl_core#Timepoint> :Inf-)
+
+# Individual: :ac1 (:ac1)
+
+ClassAssertion(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> :ac1)
+ObjectPropertyAssertion(<http://ontohub.org/PSL/psl_core#begins> :ac1 :t1)
+ObjectPropertyAssertion(<http://ontohub.org/PSL/psl_core#ends> :ac1 :t2)
+
+# Individual: :act-occ1 (:act-occ1)
+
+ObjectPropertyAssertion(<http://ontohub.org/PSL/psl_core#begins> :act-occ1 :t1)
+ObjectPropertyAssertion(<http://ontohub.org/PSL/psl_core#ends> :act-occ1 :t2)
+ObjectPropertyAssertion(<http://ontohub.org/PSL/psl_core#occurrence_of> :act-occ1 :act1)
+
+# Individual: :t1 (:t1)
+
+ClassAssertion(<http://ontohub.org/PSL/psl_core#Timepoint> :t1)
+
+# Individual: :t2 (:t2)
+
+ClassAssertion(<http://ontohub.org/PSL/psl_core#Timepoint> :t2)
+
+# Individual: :Inf+ (:Inf+)
+
+ClassAssertion(<http://ontohub.org/PSL/psl_core#Timepoint> :Inf+)
+
+
+DisjointClasses(<http://ontohub.org/PSL/psl_core#Activity> <http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval> <http://ontohub.org/PSL/psl_core#Timepoint>)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurence ends"^^xsd:string) Annotation(rdfs:label "Axiom14"^^xsd:string) Body(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<ac>) Variable(<t2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<ac>) Variable(<t1>)))Head(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#before> Variable(<t1>) Variable(<t2>))))
+)
