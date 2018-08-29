@@ -5,8 +5,49 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://www.example.com/case> a owl:Ontology ;
-	owl:imports <http://www.example.com/case1> .
+<http://www.example.com/case> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.example.com/case1#hasSpecification
+
+<http://www.example.com/case1#hasSpecification> a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.example.com/case1#Depth
+
+<http://www.example.com/case1#Depth> a owl:Class .
+# 
+# http://www.example.com/case1#Diameter
+
+<http://www.example.com/case1#Diameter> a owl:Class .
+# 
+# http://www.example.com/case1#Feature
+
+<http://www.example.com/case1#Feature> a owl:Class .
+# 
+# http://www.example.com/case1#Length
+
+<http://www.example.com/case1#Length> a owl:Class .
+# 
+# http://www.example.com/case1#Width
+
+<http://www.example.com/case1#Width> a owl:Class .
+# 
 # 
 # 
 # #################################################################
