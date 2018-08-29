@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1534298980905" name="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl" uri="geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1534712162462" name="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl" uri="geometry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1534712162462" name="http://www.ohio.edu/ontologies/2018/7/8/geom-ind" uri="geom-ind1.owl"/>
     </group>
 </catalog>
