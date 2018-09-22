@@ -1,0 +1,206 @@
+Prefix(:=<http://ontohub.org/PSL/psl_core#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontohub.org/PSL/psl_core>
+Import(<http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology>)
+
+Declaration(Class(:Activity))
+Declaration(Class(:Activity_Occurrence))
+Declaration(Class(:NegativeInfinity))
+Declaration(Class(:Object))
+Declaration(Class(:OccurrenceOrObject))
+Declaration(Class(:OccurrenceOrObjectOrInterval))
+Declaration(Class(:PositiveInfinity))
+Declaration(Class(:Timepoint))
+Declaration(ObjectProperty(:before))
+Declaration(ObjectProperty(:beforeEq))
+Declaration(ObjectProperty(:begins))
+Declaration(ObjectProperty(:between))
+Declaration(ObjectProperty(:betweenEq))
+Declaration(ObjectProperty(:ends))
+Declaration(ObjectProperty(:exists_at))
+Declaration(ObjectProperty(:is_occurring_at))
+Declaration(ObjectProperty(:occurrence_of))
+Declaration(ObjectProperty(:participates))
+Declaration(NamedIndividual(:Inf-))
+Declaration(NamedIndividual(:Inf+))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg>))
+Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :before (:before)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :before "before")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :before "befores")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :before "befored")
+TransitiveObjectProperty(:before)
+ObjectPropertyDomain(:before :Timepoint)
+ObjectPropertyRange(:before :Timepoint)
+
+# Object Property: :beforeEq (:beforeEq)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :beforeEq "beforeEq")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :beforeEq "beforeEqs")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :beforeEq "beforeEqed")
+ObjectPropertyDomain(:beforeEq :Timepoint)
+ObjectPropertyRange(:beforeEq :Timepoint)
+
+# Object Property: :begins (:begins)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :begins "begins")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :begins "beginss")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :begins "beginsed")
+AnnotationAssertion(rdfs:isDefinedBy :begins "The timepoint at which the occurrence begins.")
+FunctionalObjectProperty(:begins)
+ObjectPropertyDomain(:begins :OccurrenceOrObjectOrInterval)
+ObjectPropertyRange(:begins :Timepoint)
+
+# Object Property: :between (:between)
+
+AnnotationAssertion(rdfs:isDefinedBy :between "Strictly less than and strictly greater than.")
+SubObjectPropertyOf(:between owl:topObjectProperty)
+
+# Object Property: :betweenEq (:betweenEq)
+
+AnnotationAssertion(rdfs:isDefinedBy :betweenEq "Less or equal to and greater or equal to.")
+SubObjectPropertyOf(:betweenEq owl:topObjectProperty)
+
+# Object Property: :ends (:ends)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :ends "ends")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :ends "endss")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :ends "endsed")
+AnnotationAssertion(rdfs:isDefinedBy :ends "The timepoint at which the occurrence ends.")
+FunctionalObjectProperty(:ends)
+ObjectPropertyDomain(:ends :OccurrenceOrObjectOrInterval)
+ObjectPropertyRange(:ends :Timepoint)
+
+# Object Property: :exists_at (:exists_at)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :exists_at "exists_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :exists_at "existses_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :exists_at "existsed_at")
+AnnotationAssertion(rdfs:isDefinedBy :exists_at "The object exists at the given timepoint.")
+ObjectPropertyDomain(:exists_at :Object)
+ObjectPropertyRange(:exists_at :Timepoint)
+
+# Object Property: :is_occurring_at (:is_occurring_at)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :is_occurring_at "is_occurring_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :is_occurring_at "is_occurrings_at")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :is_occurring_at "is_occurrung_at")
+AnnotationAssertion(rdfs:isDefinedBy :is_occurring_at "The activity corresponding to the specified activity occurrence is
+occurring at the specified timepoint. I.e., there exists an occurrence of
+the activity that is such that the specified timepoint is between or equal
+to the begin timepoint and end timepoint of the occurrence.")
+ObjectPropertyDomain(:is_occurring_at :Activity_Occurrence)
+ObjectPropertyRange(:is_occurring_at :Timepoint)
+
+# Object Property: :occurrence_of (:occurrence_of)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :occurrence_of "occurrence_of")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :occurrence_of "occurrence_ofs")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :occurrence_of "occurrence_ofed")
+AnnotationAssertion(rdfs:isDefinedBy :occurrence_of "The activity-occurrence is a particular occurrence of the given activity.")
+FunctionalObjectProperty(:occurrence_of)
+ObjectPropertyDomain(:occurrence_of :Activity_Occurrence)
+ObjectPropertyRange(:occurrence_of :Activity)
+
+# Object Property: :participates (:participates)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :participates "participates")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :participates "participateses")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :participates "participatesed")
+AnnotationAssertion(rdfs:isDefinedBy :participates "The given object plays some (indeterminate) role in an
+occurrence of the given activity at the given timepoint.")
+ObjectPropertyDomain(:participates :Object)
+ObjectPropertyRange(:participates :Activity_Occurrence)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Activity (:Activity)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Activity "Activities")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Activity "Activity")
+
+# Class: :Activity_Occurrence (:Activity_Occurrence)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Activity_Occurrence "Activity_Occurrences")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Activity_Occurrence "Activity_Occurrence")
+AnnotationAssertion(rdfs:isDefinedBy :Activity_Occurrence "An event or action that takes place at a specific place and time. An instance or occurrence of an activity. E.g., paint-part is an activity, painting in Maryland at 2 PM on May 25, 1998 is an activ ityoccurrence.")
+SubClassOf(:Activity_Occurrence :OccurrenceOrObject)
+SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:begins :Timepoint))
+SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:ends :Timepoint))
+SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:occurrence_of :Activity))
+DisjointClasses(:Activity_Occurrence :Object)
+
+# Class: :NegativeInfinity (:NegativeInfinity)
+
+SubClassOf(:NegativeInfinity :Timepoint)
+DisjointClasses(:NegativeInfinity :PositiveInfinity)
+
+# Class: :Object (:Object)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Object "Objects")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Object "Object")
+AnnotationAssertion(rdfs:isDefinedBy :Object "Anything that is not a timepoint or an activity.")
+SubClassOf(:Object :OccurrenceOrObject)
+SubClassOf(:Object ObjectSomeValuesFrom(:begins :Timepoint))
+SubClassOf(:Object ObjectSomeValuesFrom(:ends :Timepoint))
+
+# Class: :OccurrenceOrObject (:OccurrenceOrObject)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :OccurrenceOrObject "OccurrenceOrObjects")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :OccurrenceOrObject "OccurrenceOrObject")
+SubClassOf(:OccurrenceOrObject :OccurrenceOrObjectOrInterval)
+
+# Class: :OccurrenceOrObjectOrInterval (:OccurrenceOrObjectOrInterval)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrIntervals")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrInterval")
+
+# Class: :PositiveInfinity (:PositiveInfinity)
+
+SubClassOf(:PositiveInfinity :Timepoint)
+
+# Class: :Timepoint (:Timepoint)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Timepoint "Timepoints")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Timepoint "Timepoint")
+AnnotationAssertion(rdfs:isDefinedBy :Timepoint "A point in time.")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Inf- (:Inf-)
+
+ClassAssertion(:NegativeInfinity :Inf-)
+
+# Individual: :Inf+ (:Inf+)
+
+ClassAssertion(:PositiveInfinity :Inf+)
+
+
+DisjointClasses(:Activity :OccurrenceOrObjectOrInterval :Timepoint)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Inf- is before all other timepoints."^^xsd:string) Annotation(rdfs:label "Axiom 5"^^xsd:string) Body(ClassAtom(:NegativeInfinity Variable(:i1)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:i1) Variable(:t))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Every timepoint else than inf+ is before mf-t-"^^xsd:string) Annotation(rdfs:label "Axiom 6"^^xsd:string) Body(ClassAtom(:PositiveInfinity Variable(:i)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:t) Variable(:i))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurrence ends."^^xsd:string) Annotation(rdfs:label "Axiom 14"^^xsd:string) Body(ObjectPropertyAtom(:ends Variable(<occ>) Variable(<t2>)) ObjectPropertyAtom(:begins Variable(<occ>) Variable(<t1>)))Head(ObjectPropertyAtom(:before Variable(<t1>) Variable(<t2>))))
+)
