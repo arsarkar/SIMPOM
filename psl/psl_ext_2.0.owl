@@ -7,15 +7,23 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://ontohub.org/PSL/psl_core>
-Import(<http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology>)
 
 Declaration(Class(:Activity))
 Declaration(Class(:Activity_Occurrence))
+Declaration(Class(:Activity_Participation))
+Declaration(Class(:BetweenEqOrdinal))
+Declaration(Class(:BetweenOrdinal))
+Declaration(Class(:NegativeDuration))
 Declaration(Class(:NegativeInfinity))
 Declaration(Class(:Object))
 Declaration(Class(:OccurrenceOrObject))
 Declaration(Class(:OccurrenceOrObjectOrInterval))
+Declaration(Class(:Ordinal))
+Declaration(Class(:Participation))
+Declaration(Class(:PositiveDuration))
 Declaration(Class(:PositiveInfinity))
+Declaration(Class(:Primitive))
+Declaration(Class(:TimeDuration))
 Declaration(Class(:Timepoint))
 Declaration(ObjectProperty(:before))
 Declaration(ObjectProperty(:beforeEq))
@@ -24,9 +32,16 @@ Declaration(ObjectProperty(:between))
 Declaration(ObjectProperty(:betweenEq))
 Declaration(ObjectProperty(:ends))
 Declaration(ObjectProperty(:exists_at))
+Declaration(ObjectProperty(:hasAfterOrdinal))
+Declaration(ObjectProperty(:hasBeforeOrdinal))
+Declaration(ObjectProperty(:hasOrdinal))
 Declaration(ObjectProperty(:is_occurring_at))
+Declaration(ObjectProperty(:occurrence))
 Declaration(ObjectProperty(:occurrence_of))
 Declaration(ObjectProperty(:participates))
+Declaration(ObjectProperty(:proper_subactivity))
+Declaration(ObjectProperty(:subactivity))
+Declaration(DataProperty(:hasValue))
 Declaration(NamedIndividual(:Inf-))
 Declaration(NamedIndividual(:Inf+))
 Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl>))
@@ -96,6 +111,18 @@ AnnotationAssertion(rdfs:isDefinedBy :exists_at "The object exists at the given 
 ObjectPropertyDomain(:exists_at :Object)
 ObjectPropertyRange(:exists_at :Timepoint)
 
+# Object Property: :hasAfterOrdinal (:hasAfterOrdinal)
+
+SubObjectPropertyOf(:hasAfterOrdinal :hasOrdinal)
+
+# Object Property: :hasBeforeOrdinal (:hasBeforeOrdinal)
+
+SubObjectPropertyOf(:hasBeforeOrdinal :hasOrdinal)
+
+# Object Property: :hasOrdinal (:hasOrdinal)
+
+SubObjectPropertyOf(:hasOrdinal owl:topObjectProperty)
+
 # Object Property: :is_occurring_at (:is_occurring_at)
 
 AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :is_occurring_at "is_occurring_at")
@@ -107,6 +134,12 @@ the activity that is such that the specified timepoint is between or equal
 to the begin timepoint and end timepoint of the occurrence.")
 ObjectPropertyDomain(:is_occurring_at :Activity_Occurrence)
 ObjectPropertyRange(:is_occurring_at :Timepoint)
+
+# Object Property: :occurrence (:occurrence)
+
+SubObjectPropertyOf(:occurrence owl:topObjectProperty)
+ObjectPropertyDomain(:occurrence :Activity_Participation)
+ObjectPropertyRange(:occurrence :Activity_Occurrence)
 
 # Object Property: :occurrence_of (:occurrence_of)
 
@@ -128,6 +161,28 @@ occurrence of the given activity at the given timepoint.")
 ObjectPropertyDomain(:participates :Object)
 ObjectPropertyRange(:participates :Activity_Occurrence)
 
+# Object Property: :proper_subactivity (:proper_subactivity)
+
+SubObjectPropertyOf(:proper_subactivity :subactivity)
+
+# Object Property: :subactivity (:subactivity)
+
+AnnotationAssertion(rdfs:isDefinedBy :subactivity "This relation defines a partial ordering over the set of
+activities with respect to aggregation and decomposition")
+SubObjectPropertyOf(:subactivity owl:topObjectProperty)
+TransitiveObjectProperty(:subactivity)
+ObjectPropertyDomain(:subactivity :Activity)
+ObjectPropertyRange(:subactivity :Activity)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasValue (:hasValue)
+
+SubDataPropertyOf(:hasValue owl:topDataProperty)
+
 
 
 ############################
@@ -147,8 +202,26 @@ AnnotationAssertion(rdfs:isDefinedBy :Activity_Occurrence "An event or action th
 SubClassOf(:Activity_Occurrence :OccurrenceOrObject)
 SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:begins :Timepoint))
 SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:ends :Timepoint))
+SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:is_occurring_at :Timepoint))
 SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:occurrence_of :Activity))
 DisjointClasses(:Activity_Occurrence :Object)
+
+# Class: :Activity_Participation (:Activity_Participation)
+
+EquivalentClasses(:Activity_Participation ObjectIntersectionOf(:Activity_Occurrence ObjectSomeValuesFrom(:occurrence :Activity_Occurrence) ObjectSomeValuesFrom(ObjectInverseOf(:participates) :Object)))
+SubClassOf(:Activity_Participation :Participation)
+
+# Class: :BetweenEqOrdinal (:BetweenEqOrdinal)
+
+SubClassOf(:BetweenEqOrdinal :Ordinal)
+
+# Class: :BetweenOrdinal (:BetweenOrdinal)
+
+SubClassOf(:BetweenOrdinal :Ordinal)
+
+# Class: :NegativeDuration (:NegativeDuration)
+
+SubClassOf(:NegativeDuration :TimeDuration)
 
 # Class: :NegativeInfinity (:NegativeInfinity)
 
@@ -175,9 +248,24 @@ SubClassOf(:OccurrenceOrObject :OccurrenceOrObjectOrInterval)
 AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrIntervals")
 AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrInterval")
 
+# Class: :PositiveDuration (:PositiveDuration)
+
+SubClassOf(:PositiveDuration :TimeDuration)
+
 # Class: :PositiveInfinity (:PositiveInfinity)
 
 SubClassOf(:PositiveInfinity :Timepoint)
+
+# Class: :Primitive (:Primitive)
+
+AnnotationAssertion(rdfs:isDefinedBy :Primitive "primitive activity is an activity that does not have any subactivities.")
+SubClassOf(:Primitive :Activity)
+
+# Class: :TimeDuration (:TimeDuration)
+
+AnnotationAssertion(rdfs:isDefinedBy :TimeDuration "The class of timedurations, intuitively, the possible lengths of time that an activity
+occurrence can last, represented simply as the pair of points that at which an activity
+occurrence begins and ends, respectively.")
 
 # Class: :Timepoint (:Timepoint)
 
@@ -202,5 +290,5 @@ ClassAssertion(:PositiveInfinity :Inf+)
 DisjointClasses(:Activity :OccurrenceOrObjectOrInterval :Timepoint)
 DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Inf- is before all other timepoints."^^xsd:string) Annotation(rdfs:label "Axiom 5"^^xsd:string) Body(ClassAtom(:NegativeInfinity Variable(:i1)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:i1) Variable(:t))))
 DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Every timepoint else than inf+ is before mf-t-"^^xsd:string) Annotation(rdfs:label "Axiom 6"^^xsd:string) Body(ClassAtom(:PositiveInfinity Variable(:i)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:t) Variable(:i))))
-DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurrence ends."^^xsd:string) Annotation(rdfs:label "Axiom 14"^^xsd:string) Body(ObjectPropertyAtom(:ends Variable(<occ>) Variable(<t2>)) ObjectPropertyAtom(:begins Variable(<occ>) Variable(<t1>)))Head(ObjectPropertyAtom(:before Variable(<t1>) Variable(<t2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurrence ends."^^xsd:string) Annotation(rdfs:label "Axiom 14"^^xsd:string) Body(ObjectPropertyAtom(:ends Variable(:occ) Variable(:t2)) ObjectPropertyAtom(:begins Variable(:occ) Variable(:t1)))Head(ObjectPropertyAtom(:before Variable(:t1) Variable(:t2))))
 )
