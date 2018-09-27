@@ -1,294 +1,706 @@
-Prefix(:=<http://ontohub.org/PSL/psl_core#>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontohub.org/PSL/psl_core#"
+     xml:base="http://ontohub.org/PSL/psl_core"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://ontohub.org/PSL/psl_core"/>
+    
 
 
-Ontology(<http://ontohub.org/PSL/psl_core>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-Declaration(Class(:Activity))
-Declaration(Class(:Activity_Occurrence))
-Declaration(Class(:Activity_Participation))
-Declaration(Class(:BetweenEqOrdinal))
-Declaration(Class(:BetweenOrdinal))
-Declaration(Class(:NegativeDuration))
-Declaration(Class(:NegativeInfinity))
-Declaration(Class(:Object))
-Declaration(Class(:OccurrenceOrObject))
-Declaration(Class(:OccurrenceOrObjectOrInterval))
-Declaration(Class(:Ordinal))
-Declaration(Class(:Participation))
-Declaration(Class(:PositiveDuration))
-Declaration(Class(:PositiveInfinity))
-Declaration(Class(:Primitive))
-Declaration(Class(:TimeDuration))
-Declaration(Class(:Timepoint))
-Declaration(ObjectProperty(:before))
-Declaration(ObjectProperty(:beforeEq))
-Declaration(ObjectProperty(:begins))
-Declaration(ObjectProperty(:between))
-Declaration(ObjectProperty(:betweenEq))
-Declaration(ObjectProperty(:ends))
-Declaration(ObjectProperty(:exists_at))
-Declaration(ObjectProperty(:hasAfterOrdinal))
-Declaration(ObjectProperty(:hasBeforeOrdinal))
-Declaration(ObjectProperty(:hasOrdinal))
-Declaration(ObjectProperty(:is_occurring_at))
-Declaration(ObjectProperty(:occurrence))
-Declaration(ObjectProperty(:occurrence_of))
-Declaration(ObjectProperty(:participates))
-Declaration(ObjectProperty(:proper_subactivity))
-Declaration(ObjectProperty(:subactivity))
-Declaration(DataProperty(:hasValue))
-Declaration(NamedIndividual(:Inf-))
-Declaration(NamedIndividual(:Inf+))
-Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl>))
-Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg>))
-Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl>))
-Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg>))
-Declaration(AnnotationProperty(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg>))
-Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+    
 
-############################
-#   Object Properties
-############################
 
-# Object Property: :before (:before)
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :before "before")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :before "befores")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :before "befored")
-TransitiveObjectProperty(:before)
-ObjectPropertyDomain(:before :Timepoint)
-ObjectPropertyRange(:before :Timepoint)
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    
 
-# Object Property: :beforeEq (:beforeEq)
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :beforeEq "beforeEq")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :beforeEq "beforeEqs")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :beforeEq "beforeEqed")
-ObjectPropertyDomain(:beforeEq :Timepoint)
-ObjectPropertyRange(:beforeEq :Timepoint)
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
 
-# Object Property: :begins (:begins)
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :begins "begins")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :begins "beginss")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :begins "beginsed")
-AnnotationAssertion(rdfs:isDefinedBy :begins "The timepoint at which the occurrence begins.")
-FunctionalObjectProperty(:begins)
-ObjectPropertyDomain(:begins :OccurrenceOrObjectOrInterval)
-ObjectPropertyRange(:begins :Timepoint)
 
-# Object Property: :between (:between)
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
 
-AnnotationAssertion(rdfs:isDefinedBy :between "Strictly less than and strictly greater than.")
-SubObjectPropertyOf(:between owl:topObjectProperty)
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+    
 
-# Object Property: :betweenEq (:betweenEq)
 
-AnnotationAssertion(rdfs:isDefinedBy :betweenEq "Less or equal to and greater or equal to.")
-SubObjectPropertyOf(:betweenEq owl:topObjectProperty)
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
 
-# Object Property: :ends (:ends)
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+    
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :ends "ends")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :ends "endss")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :ends "endsed")
-AnnotationAssertion(rdfs:isDefinedBy :ends "The timepoint at which the occurrence ends.")
-FunctionalObjectProperty(:ends)
-ObjectPropertyDomain(:ends :OccurrenceOrObjectOrInterval)
-ObjectPropertyRange(:ends :Timepoint)
 
-# Object Property: :exists_at (:exists_at)
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :exists_at "exists_at")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :exists_at "existses_at")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :exists_at "existsed_at")
-AnnotationAssertion(rdfs:isDefinedBy :exists_at "The object exists at the given timepoint.")
-ObjectPropertyDomain(:exists_at :Object)
-ObjectPropertyRange(:exists_at :Timepoint)
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+    
 
-# Object Property: :hasAfterOrdinal (:hasAfterOrdinal)
 
-SubObjectPropertyOf(:hasAfterOrdinal :hasOrdinal)
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
-# Object Property: :hasBeforeOrdinal (:hasBeforeOrdinal)
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
 
-SubObjectPropertyOf(:hasBeforeOrdinal :hasOrdinal)
 
-# Object Property: :hasOrdinal (:hasOrdinal)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-SubObjectPropertyOf(:hasOrdinal owl:topObjectProperty)
+    
 
-# Object Property: :is_occurring_at (:is_occurring_at)
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :is_occurring_at "is_occurring_at")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :is_occurring_at "is_occurrings_at")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :is_occurring_at "is_occurrung_at")
-AnnotationAssertion(rdfs:isDefinedBy :is_occurring_at "The activity corresponding to the specified activity occurrence is
+    <!-- http://ontohub.org/PSL/psl_core#before -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>before</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>befores</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>befored</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#beforeEq -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#beforeEq">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>beforeEq</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>beforeEqs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>beforeEqed</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#begins -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#begins">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>begins</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>beginss</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>beginsed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The timepoint at which the occurrence begins.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#between -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#between">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy>Strictly less than and strictly greater than.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#betweenEq -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#betweenEq">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy>Less or equal to and greater or equal to.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#ends -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#ends">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>ends</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>endss</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>endsed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The timepoint at which the occurrence ends.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#exists_at -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#exists_at">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>exists_at</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>existses_at</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>existsed_at</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The object exists at the given timepoint.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasAfterOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasAfterOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasBeforeOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#is_occurring_at -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#is_occurring_at">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>is_occurring_at</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>is_occurrings_at</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>is_occurrung_at</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The activity corresponding to the specified activity occurrence is
 occurring at the specified timepoint. I.e., there exists an occurrence of
 the activity that is such that the specified timepoint is between or equal
-to the begin timepoint and end timepoint of the occurrence.")
-ObjectPropertyDomain(:is_occurring_at :Activity_Occurrence)
-ObjectPropertyRange(:is_occurring_at :Timepoint)
-
-# Object Property: :occurrence (:occurrence)
-
-SubObjectPropertyOf(:occurrence owl:topObjectProperty)
-ObjectPropertyDomain(:occurrence :Activity_Participation)
-ObjectPropertyRange(:occurrence :Activity_Occurrence)
-
-# Object Property: :occurrence_of (:occurrence_of)
-
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :occurrence_of "occurrence_of")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :occurrence_of "occurrence_ofs")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :occurrence_of "occurrence_ofed")
-AnnotationAssertion(rdfs:isDefinedBy :occurrence_of "The activity-occurrence is a particular occurrence of the given activity.")
-FunctionalObjectProperty(:occurrence_of)
-ObjectPropertyDomain(:occurrence_of :Activity_Occurrence)
-ObjectPropertyRange(:occurrence_of :Activity)
-
-# Object Property: :participates (:participates)
-
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :participates "participates")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :participates "participateses")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :participates "participatesed")
-AnnotationAssertion(rdfs:isDefinedBy :participates "The given object plays some (indeterminate) role in an
-occurrence of the given activity at the given timepoint.")
-ObjectPropertyDomain(:participates :Object)
-ObjectPropertyRange(:participates :Activity_Occurrence)
-
-# Object Property: :proper_subactivity (:proper_subactivity)
-
-SubObjectPropertyOf(:proper_subactivity :subactivity)
-
-# Object Property: :subactivity (:subactivity)
-
-AnnotationAssertion(rdfs:isDefinedBy :subactivity "This relation defines a partial ordering over the set of
-activities with respect to aggregation and decomposition")
-SubObjectPropertyOf(:subactivity owl:topObjectProperty)
-TransitiveObjectProperty(:subactivity)
-ObjectPropertyDomain(:subactivity :Activity)
-ObjectPropertyRange(:subactivity :Activity)
+to the begin timepoint and end timepoint of the occurrence.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
 
 
-############################
-#   Data Properties
-############################
+    <!-- http://ontohub.org/PSL/psl_core#occurrence -->
 
-# Data Property: :hasValue (:hasValue)
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#occurrence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Participation"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+    </owl:ObjectProperty>
+    
 
-SubDataPropertyOf(:hasValue owl:topDataProperty)
+
+    <!-- http://ontohub.org/PSL/psl_core#occurrence_of -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#occurrence_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+        <ace_lexicon:TV_pl>occurrence_of</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>occurrence_ofs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>occurrence_ofed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The activity-occurrence is a particular occurrence of the given activity.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
 
 
+    <!-- http://ontohub.org/PSL/psl_core#participates -->
 
-############################
-#   Classes
-############################
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#participates">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <ace_lexicon:TV_pl>participates</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>participateses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>participatesed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The given object plays some (indeterminate) role in an
+occurrence of the given activity at the given timepoint.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
 
-# Class: :Activity (:Activity)
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Activity "Activities")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Activity "Activity")
+    <!-- http://ontohub.org/PSL/psl_core#proper_subactivity -->
 
-# Class: :Activity_Occurrence (:Activity_Occurrence)
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#proper_subactivity">
+        <rdfs:subPropertyOf rdf:resource="http://ontohub.org/PSL/psl_core#subactivity"/>
+    </owl:ObjectProperty>
+    
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Activity_Occurrence "Activity_Occurrences")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Activity_Occurrence "Activity_Occurrence")
-AnnotationAssertion(rdfs:isDefinedBy :Activity_Occurrence "An event or action that takes place at a specific place and time. An instance or occurrence of an activity. E.g., paint-part is an activity, painting in Maryland at 2 PM on May 25, 1998 is an activ ityoccurrence.")
-SubClassOf(:Activity_Occurrence :OccurrenceOrObject)
-SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:begins :Timepoint))
-SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:ends :Timepoint))
-SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:is_occurring_at :Timepoint))
-SubClassOf(:Activity_Occurrence ObjectSomeValuesFrom(:occurrence_of :Activity))
-DisjointClasses(:Activity_Occurrence :Object)
 
-# Class: :Activity_Participation (:Activity_Participation)
+    <!-- http://ontohub.org/PSL/psl_core#subactivity -->
 
-EquivalentClasses(:Activity_Participation ObjectIntersectionOf(:Activity_Occurrence ObjectSomeValuesFrom(:occurrence :Activity_Occurrence) ObjectSomeValuesFrom(ObjectInverseOf(:participates) :Object)))
-SubClassOf(:Activity_Participation :Participation)
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#subactivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+        <rdfs:isDefinedBy>This relation defines a partial ordering over the set of
+activities with respect to aggregation and decomposition</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
 
-# Class: :BetweenEqOrdinal (:BetweenEqOrdinal)
 
-SubClassOf(:BetweenEqOrdinal :Ordinal)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-# Class: :BetweenOrdinal (:BetweenOrdinal)
+    
 
-SubClassOf(:BetweenOrdinal :Ordinal)
 
-# Class: :NegativeDuration (:NegativeDuration)
+    <!-- http://ontohub.org/PSL/psl_core#hasValue -->
 
-SubClassOf(:NegativeDuration :TimeDuration)
+    <owl:DatatypeProperty rdf:about="http://ontohub.org/PSL/psl_core#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
 
-# Class: :NegativeInfinity (:NegativeInfinity)
 
-SubClassOf(:NegativeInfinity :Timepoint)
-DisjointClasses(:NegativeInfinity :PositiveInfinity)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-# Class: :Object (:Object)
+    
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Object "Objects")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Object "Object")
-AnnotationAssertion(rdfs:isDefinedBy :Object "Anything that is not a timepoint or an activity.")
-SubClassOf(:Object :OccurrenceOrObject)
-SubClassOf(:Object ObjectSomeValuesFrom(:begins :Timepoint))
-SubClassOf(:Object ObjectSomeValuesFrom(:ends :Timepoint))
 
-# Class: :OccurrenceOrObject (:OccurrenceOrObject)
+    <!-- http://ontohub.org/PSL/psl_core#Activity -->
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :OccurrenceOrObject "OccurrenceOrObjects")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :OccurrenceOrObject "OccurrenceOrObject")
-SubClassOf(:OccurrenceOrObject :OccurrenceOrObjectOrInterval)
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity">
+        <ace_lexicon:CN_pl>Activities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Activity</ace_lexicon:CN_sg>
+    </owl:Class>
+    
 
-# Class: :OccurrenceOrObjectOrInterval (:OccurrenceOrObjectOrInterval)
 
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrIntervals")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :OccurrenceOrObjectOrInterval "OccurrenceOrObjectOrInterval")
+    <!-- http://ontohub.org/PSL/psl_core#Activity_Occurrence -->
 
-# Class: :PositiveDuration (:PositiveDuration)
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#is_occurring_at"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#occurrence_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <ace_lexicon:CN_pl>Activity_Occurrences</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Activity_Occurrence</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>An event or action that takes place at a specific place and time. An instance or occurrence of an activity. E.g., paint-part is an activity, painting in Maryland at 2 PM on May 25, 1998 is an activ ityoccurrence.</rdfs:isDefinedBy>
+    </owl:Class>
+    
 
-SubClassOf(:PositiveDuration :TimeDuration)
 
-# Class: :PositiveInfinity (:PositiveInfinity)
+    <!-- http://ontohub.org/PSL/psl_core#Activity_Participation -->
 
-SubClassOf(:PositiveInfinity :Timepoint)
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity_Participation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#occurrence"/>
+                        <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://ontohub.org/PSL/psl_core#participates"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Participation"/>
+    </owl:Class>
+    
 
-# Class: :Primitive (:Primitive)
 
-AnnotationAssertion(rdfs:isDefinedBy :Primitive "primitive activity is an activity that does not have any subactivities.")
-SubClassOf(:Primitive :Activity)
+    <!-- http://ontohub.org/PSL/psl_core#BetweenEqOrdinal -->
 
-# Class: :TimeDuration (:TimeDuration)
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#BetweenEqOrdinal">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    </owl:Class>
+    
 
-AnnotationAssertion(rdfs:isDefinedBy :TimeDuration "The class of timedurations, intuitively, the possible lengths of time that an activity
+
+    <!-- http://ontohub.org/PSL/psl_core#BetweenOrdinal -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#BetweenOrdinal">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#NegativeDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#NegativeDuration">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#TimeDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#NegativeInfinity -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#NegativeInfinity">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <owl:disjointWith rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Object -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Object">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Objects</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Object</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>Anything that is not a timepoint or an activity.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#OccurrenceOrObject -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObject">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <ace_lexicon:CN_pl>OccurrenceOrObjects</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>OccurrenceOrObject</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval">
+        <ace_lexicon:CN_pl>OccurrenceOrObjectOrIntervals</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>OccurrenceOrObjectOrInterval</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Ordinal -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Participation -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Participation"/>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#PositiveDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#PositiveDuration">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#TimeDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#PositiveInfinity -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#PositiveInfinity">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Primitive -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Primitive">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+        <rdfs:isDefinedBy>primitive activity is an activity that does not have any subactivities.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#TimeDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#TimeDuration">
+        <rdfs:isDefinedBy>The class of timedurations, intuitively, the possible lengths of time that an activity
 occurrence can last, represented simply as the pair of points that at which an activity
-occurrence begins and ends, respectively.")
-
-# Class: :Timepoint (:Timepoint)
-
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Timepoint "Timepoints")
-AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Timepoint "Timepoint")
-AnnotationAssertion(rdfs:isDefinedBy :Timepoint "A point in time.")
+occurrence begins and ends, respectively.</rdfs:isDefinedBy>
+    </owl:Class>
+    
 
 
-############################
-#   Named Individuals
-############################
+    <!-- http://ontohub.org/PSL/psl_core#Timepoint -->
 
-# Individual: :Inf- (:Inf-)
-
-ClassAssertion(:NegativeInfinity :Inf-)
-
-# Individual: :Inf+ (:Inf+)
-
-ClassAssertion(:PositiveInfinity :Inf+)
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Timepoint">
+        <ace_lexicon:CN_pl>Timepoints</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Timepoint</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>A point in time.</rdfs:isDefinedBy>
+    </owl:Class>
+    
 
 
-DisjointClasses(:Activity :OccurrenceOrObjectOrInterval :Timepoint)
-DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Inf- is before all other timepoints."^^xsd:string) Annotation(rdfs:label "Axiom 5"^^xsd:string) Body(ClassAtom(:NegativeInfinity Variable(:i1)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:i1) Variable(:t))))
-DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Every timepoint else than inf+ is before mf-t-"^^xsd:string) Annotation(rdfs:label "Axiom 6"^^xsd:string) Body(ClassAtom(:PositiveInfinity Variable(:i)) ClassAtom(:Timepoint Variable(:t)))Head(ObjectPropertyAtom(:before Variable(:t) Variable(:i))))
-DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurrence ends."^^xsd:string) Annotation(rdfs:label "Axiom 14"^^xsd:string) Body(ObjectPropertyAtom(:ends Variable(:occ) Variable(:t2)) ObjectPropertyAtom(:begins Variable(:occ) Variable(:t1)))Head(ObjectPropertyAtom(:before Variable(:t1) Variable(:t2))))
-)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Inf- -->
+
+    <owl:NamedIndividual rdf:about="http://ontohub.org/PSL/psl_core#Inf-">
+        <rdf:type rdf:resource="http://ontohub.org/PSL/psl_core#NegativeInfinity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Inf+ -->
+
+    <owl:NamedIndividual rdf:about="http://ontohub.org/PSL/psl_core#Inf+">
+        <rdf:type rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Activity"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#i1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#occ">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inf- is before all other timepoints.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#NegativeInfinity"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i1"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Every timepoint else than inf+ is before mf-t-</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The timepoint at which an activity-occurrence begins always precedes the timepoint at which the activity-occurrence ends.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 14</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t1"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
