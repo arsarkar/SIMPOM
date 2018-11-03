@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/eads.owl" uri="eads.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/fiat.owl" uri="fiat.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl" uri="food.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food_nutrients.owl" uri="food_nutrients.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/food_taxonomy.owl" uri="food_taxonomy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/generic.owl" uri="generic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/process.owl" uri="process.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/product.owl" uri="product.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://kmi.open.ac.uk/projects/smartproducts/ontologies/user.owl" uri="user.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://purl.oclc.org/NET/ssnx/ssn" uri="ssn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://www.loa-cnr.it/ontologies/DUL.owl" uri="DUL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540321766460" name="http://www.w3.org/2006/time" uri="w3ctime.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,159 @@
+Prefix(:=<http://ontohub.org/PSL/subactivity#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ontohub.org/PSL/subactivity>
+Import(<http://ontohub.org/PSL/psl_core>)
+
+Declaration(Class(:Primitive))
+Declaration(ObjectProperty(<http://ontohub.org/PSL/psl_core#subactivity>))
+Declaration(ObjectProperty(:min-precedes))
+Declaration(ObjectProperty(:next_subocc))
+Declaration(ObjectProperty(:occurrence_contains))
+Declaration(ObjectProperty(:occurrence_earlier))
+Declaration(ObjectProperty(:occurrence_overlap))
+Declaration(ObjectProperty(:proper_subactivity))
+Declaration(ObjectProperty(:sibling))
+Declaration(ObjectProperty(:subactivity))
+Declaration(ObjectProperty(:subactivity_occurrence))
+Declaration(ObjectProperty(:successor))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :min-precedes (:min-precedes)
+
+SubObjectPropertyOf(:min-precedes owl:topObjectProperty)
+ObjectPropertyDomain(:min-precedes <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:min-precedes <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :next_subocc (:next_subocc)
+
+SubObjectPropertyOf(:next_subocc owl:topObjectProperty)
+ObjectPropertyDomain(:next_subocc <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:next_subocc <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :occurrence_contains (:occurrence_contains)
+
+AnnotationAssertion(rdfs:isDefinedBy :occurrence_contains "An occurrence occl contains another occ2 if occl happens during occ2.
+|-------------------------|
+     |-------------------|
+Axioms 2 and 3. The relations occurrence-contains and occurrence-overlap are
+reflexive.")
+SubObjectPropertyOf(:occurrence_contains owl:topObjectProperty)
+TransitiveObjectProperty(:occurrence_contains)
+ReflexiveObjectProperty(:occurrence_contains)
+IrreflexiveObjectProperty(:occurrence_contains)
+ObjectPropertyDomain(:occurrence_contains <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:occurrence_contains <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :occurrence_earlier (:occurrence_earlier)
+
+AnnotationAssertion(rdfs:isDefinedBy :occurrence_earlier "")
+AnnotationAssertion(rdfs:isDefinedBy :occurrence_earlier "An occurrence occl is earlier than another occ2 if occl ends before occ2 begins.
+------|
+         |---------------")
+SubObjectPropertyOf(:occurrence_earlier owl:topObjectProperty)
+TransitiveObjectProperty(:occurrence_earlier)
+ObjectPropertyDomain(:occurrence_earlier <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:occurrence_earlier <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :occurrence_overlap (:occurrence_overlap)
+
+AnnotationAssertion(rdfs:isDefinedBy :occurrence_overlap "Two occurrences occl and occ2 overlap if there is an interval of time during which both occurrences are occurring and if occ2 starts before occl starts and ends before occl ends.
+  |-----------|
+|-----------|
+Axioms 2 and 3. The relations occurrence-contains and occurrence-overlap are
+reflexive.")
+SubObjectPropertyOf(:occurrence_overlap owl:topObjectProperty)
+ReflexiveObjectProperty(:occurrence_overlap)
+ObjectPropertyDomain(:occurrence_overlap <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:occurrence_overlap <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :proper_subactivity (:proper_subactivity)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :proper_subactivity "proper_subactivity")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :proper_subactivity "proper_subactivities")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :proper_subactivity "proper_subactivitied")
+SubObjectPropertyOf(:proper_subactivity :subactivity)
+
+# Object Property: :sibling (:sibling)
+
+SubObjectPropertyOf(:sibling owl:topObjectProperty)
+ObjectPropertyDomain(:sibling <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:sibling <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :subactivity (:subactivity)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> :subactivity "subactivity")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> :subactivity "subactivities")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> :subactivity "subactivitied")
+TransitiveObjectProperty(:subactivity)
+ObjectPropertyDomain(:subactivity <http://ontohub.org/PSL/psl_core#Activity>)
+ObjectPropertyRange(:subactivity <http://ontohub.org/PSL/psl_core#Activity>)
+
+# Object Property: :subactivity_occurrence (:subactivity_occurrence)
+
+AnnotationAssertion(rdfs:isDefinedBy :subactivity_occurrence "(defrelation subactivity-occurrence (?occl ?occ2) :=
+(and (forall (?al ?a2)
+(=> (and (occurrence-of ?occl ?al)
+(occurrence-of ?occ2 ?a2))
+(subactivity ?al ?a2)))
+(occurrence-contains ?occ2 ?occl)))")
+AnnotationAssertion(rdfs:isDefinedBy :subactivity_occurrence "An activity-occurrence occl is a subactivity-occurrence of an activityoccurrence
+occ2 if the activity of which occl is an activity-occurrence is a subactivity of
+the activity of which occ2 is an activity-occurrence and occl stands in the occurrencecontains relation with occ2 .")
+ObjectPropertyDomain(:subactivity_occurrence <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:subactivity_occurrence <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+# Object Property: :successor (:successor)
+
+AnnotationAssertion(rdfs:comment :successor "successor relationship may be inferred based on occurrence_earlier relationship")
+AnnotationAssertion(rdfs:isDefinedBy :successor "One activity-occurrence is the successor of another if and only if the fist
+activity-occurrence is earlier and there does not exist any other activity-occurrence
+between them.")
+SubObjectPropertyOf(:successor owl:topObjectProperty)
+ObjectPropertyDomain(:successor <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+ObjectPropertyRange(:successor <http://ontohub.org/PSL/psl_core#Activity_Occurrence>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontohub.org/PSL/psl_core#Activity> (<http://ontohub.org/PSL/psl_core#Activity>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Activity> "Activities")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Activity> "Activity")
+
+# Class: <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> (<http://ontohub.org/PSL/psl_core#OccurrenceOrObject>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> "OccurrenceOrObjects")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> "OccurrenceOrObject")
+
+# Class: <http://ontohub.org/PSL/psl_core#Timepoint> (<http://ontohub.org/PSL/psl_core#Timepoint>)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> <http://ontohub.org/PSL/psl_core#Timepoint> "Timepoints")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> <http://ontohub.org/PSL/psl_core#Timepoint> "Timepoint")
+
+# Class: :Primitive (:Primitive)
+
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> :Primitive "Primitives")
+AnnotationAssertion(<http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> :Primitive "Primitive")
+EquivalentClasses(:Primitive ObjectIntersectionOf(<http://ontohub.org/PSL/psl_core#Activity> ObjectComplementOf(ObjectSomeValuesFrom(ObjectInverseOf(:proper_subactivity) <http://ontohub.org/PSL/psl_core#Activity>))))
+SubClassOf(:Primitive <http://ontohub.org/PSL/psl_core#Activity>)
+
+
+DisjointClasses(<http://ontohub.org/PSL/psl_core#Activity> <http://ontohub.org/PSL/psl_core#OccurrenceOrObject> <http://ontohub.org/PSL/psl_core#Timepoint>)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "If an activity-occurrence occl contains an activity-occurrence occ2, than the beginning timepoint of occl is before or equal to the beginning timepoint of occ2, and the ending timepoint of occ2 is before or equal to the ending timepoint of occl.If an activity-occurrence occl contains an activity-occurrence occ2, than the beginning timepoint of occl is before or equal to the beginning timepoint of occ2, and the ending timepoint of occ2 is before or equal to the ending timepoint of occl."^^xsd:string) Annotation(rdfs:label "Axiom 7-Ext:act_occ"^^xsd:string) Body(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ1>) Variable(<p1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ2>) Variable(<p2>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<p1>) Variable(<p2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<q2>) Variable(<q1>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ1>) Variable(<q1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ2>) Variable(<q2>)))Head(ObjectPropertyAtom(:occurrence_contains Variable(<occ1>) Variable(<occ2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "If an activity-occurrence occl overlaps with an activity-occurrence occ2, then the beginning timepoint of occ2 is before or equal to the beginning timepoint of occl, the beginning timepoint of occl is before or equal to the ending timepoint of occ2 , and the ending timepoint of occ2 is before or equal to the ending timepoint of occl."^^xsd:string) Annotation(rdfs:label "Axiom 9-Ext:act_occ"^^xsd:string) Body(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ1>) Variable(<p1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ2>) Variable(<p2>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<p1>) Variable(<q2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<p2>) Variable(<p1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<q2>) Variable(<q1>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ1>) Variable(<q1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ2>) Variable(<q2>)))Head(ObjectPropertyAtom(:occurrence_overlap Variable(<occ1>) Variable(<occ2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "If an activity-occurrence occl is earlier than an activity-occurrence occ2, then the ending timepoint of occl is before or equal to the beginning timepoint of occ2."^^xsd:string) Annotation(rdfs:label "Axiom 8-Ext:act_occ"^^xsd:string) Body(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ1>) Variable(<p1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#begins> Variable(<occ2>) Variable(<p2>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#beforeEq> Variable(<q1>) Variable(<p2>)) ClassAtom(<http://ontohub.org/PSL/psl_core#Activity_Occurrence> Variable(<occ1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ1>) Variable(<q1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#ends> Variable(<occ2>) Variable(<q2>)))Head(ObjectPropertyAtom(:occurrence_earlier Variable(<occ1>) Variable(<occ2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "An activity-occurrence occl is a subactivity-occurrence of an activityoccurrence occ2 if the activity of which occl is an activity-occurrence is a subactivity of the activity of which occ2 is an activity-occurrence and occl stands in the occurrencecontains relation with occ2 ."^^xsd:string) Annotation(rdfs:label "Definition 2-Ext:act_occ"^^xsd:string) Body(ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#subactivity> Variable(<a1>) Variable(<a2>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#occurrence_of> Variable(<occ1>) Variable(<a1>)) ObjectPropertyAtom(<http://ontohub.org/PSL/psl_core#occurrence_of> Variable(<occ2>) Variable(<a2>)) ObjectPropertyAtom(:occurrence_contains Variable(<occ2>) Variable(<occ1>)))Head(ObjectPropertyAtom(:subactivity_occurrence Variable(<occ1>) Variable(<occ2>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "If two activity-occurrences stand in the successor relation, than they stand in the occurrence-earlier relation."^^xsd:string) Annotation(rdfs:label "Axiom 1-Ext:act_occ"^^xsd:string) Body(ObjectPropertyAtom(:occurrence_earlier Variable(<occ1>) Variable(<occ2>)))Head(ObjectPropertyAtom(:successor Variable(<occ1>) Variable(<occ2>))))
+)
