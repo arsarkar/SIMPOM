@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.com/case1#"
+     xml:base="http://www.example.com/case1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.example.com/case1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/case1#hasSpecification -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/case1#hasSpecification">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/case1#Feature"/>
+        <rdfs:range rdf:resource="http://www.example.com/case1#Specificatioon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/case1#Depth -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Depth"/>
+    
+
+
+    <!-- http://www.example.com/case1#Diameter -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Diameter"/>
+    
+
+
+    <!-- http://www.example.com/case1#Feature -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Feature">
+        <owl:disjointWith rdf:resource="http://www.example.com/case1#Specificatioon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/case1#Hole -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Hole">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/case1#Feature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/case1#hasSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/case1#Depth"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/case1#hasSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/case1#Diameter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.com/case1#Feature"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/case1#Pocket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/case1#Length -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Length"/>
+    
+
+
+    <!-- http://www.example.com/case1#Pocket -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Pocket">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/case1#Feature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/case1#hasSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/case1#Depth"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/case1#hasSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/case1#Length"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/case1#hasSpecification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/case1#Width"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.com/case1#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/case1#Specificatioon -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Specificatioon"/>
+    
+
+
+    <!-- http://www.example.com/case1#Width -->
+
+    <owl:Class rdf:about="http://www.example.com/case1#Width"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/case1#dep1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#dep1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Depth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#dia1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#dia1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Diameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#hole1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#hole1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Feature"/>
+        <hasSpecification rdf:resource="http://www.example.com/case1#dep1"/>
+        <hasSpecification rdf:resource="http://www.example.com/case1#dia1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#len1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#len1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#pocket1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#pocket1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Feature"/>
+        <hasSpecification rdf:resource="http://www.example.com/case1#dep1"/>
+        <hasSpecification rdf:resource="http://www.example.com/case1#len1"/>
+        <hasSpecification rdf:resource="http://www.example.com/case1#wid1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#spec1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#spec1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Specificatioon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/case1#wid1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/case1#wid1">
+        <rdf:type rdf:resource="http://www.example.com/case1#Width"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/case1#Depth"/>
+            <rdf:Description rdf:about="http://www.example.com/case1#Diameter"/>
+            <rdf:Description rdf:about="http://www.example.com/case1#Length"/>
+            <rdf:Description rdf:about="http://www.example.com/case1#Width"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

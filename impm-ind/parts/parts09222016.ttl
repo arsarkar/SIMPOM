@@ -1,0 +1,607 @@
+@prefix : <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002> .
+
+<http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.ohio.edu/ontologies/CPM#hasFeature
+
+<http://www.ohio.edu/ontologies/CPM#hasFeature> rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/CPM#hasMaterial
+
+<http://www.ohio.edu/ontologies/CPM#hasMaterial> rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPMU#hasNextFeature
+
+<http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPMU#hasSpecification
+
+<http://www.ohio.edu/ontologies/IMPMU#hasSpecification> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.ohio.edu/ontologies/IMPML#bottomDist
+
+<http://www.ohio.edu/ontologies/IMPML#bottomDist> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#bottomDistance
+
+<http://www.ohio.edu/ontologies/IMPML#bottomDistance> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#hasValue
+
+<http://www.ohio.edu/ontologies/IMPML#hasValue> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#negativeSweepLength
+
+<http://www.ohio.edu/ontologies/IMPML#negativeSweepLength> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#positiveSweepLength
+
+<http://www.ohio.edu/ontologies/IMPML#positiveSweepLength> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#radius
+
+<http://www.ohio.edu/ontologies/IMPML#radius> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#width
+
+<http://www.ohio.edu/ontologies/IMPML#width> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.ohio.edu/ontologies/CPM#Material
+
+<http://www.ohio.edu/ontologies/CPM#Material> rdf:type owl:Class .
+
+
+
+###  http://www.ohio.edu/ontologies/CPM#Part
+
+<http://www.ohio.edu/ontologies/CPM#Part> rdf:type owl:Class .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#Hole
+
+<http://www.ohio.edu/ontologies/IMPML#Hole> rdf:type owl:Class ;
+                                            
+                                            rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPMU#CADFeature> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#Pocket
+
+<http://www.ohio.edu/ontologies/IMPML#Pocket> rdf:type owl:Class ;
+                                              
+                                              rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPMU#CADFeature> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#Slab
+
+<http://www.ohio.edu/ontologies/IMPML#Slab> rdf:type owl:Class ;
+                                            
+                                            rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPMU#CADFeature> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#Slot
+
+<http://www.ohio.edu/ontologies/IMPML#Slot> rdf:type owl:Class ;
+                                            
+                                            rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPMU#CADFeature> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#ValueSpecification
+
+<http://www.ohio.edu/ontologies/IMPML#ValueSpecification> rdf:type owl:Class .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#parallelism
+
+<http://www.ohio.edu/ontologies/IMPML#parallelism> rdf:type owl:Class ;
+                                                   
+                                                   rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPML#ValueSpecification> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#perpendicularity
+
+<http://www.ohio.edu/ontologies/IMPML#perpendicularity> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPML#ValueSpecification> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPML#truePosition
+
+<http://www.ohio.edu/ontologies/IMPML#truePosition> rdf:type owl:Class ;
+                                                    
+                                                    rdfs:subClassOf <http://www.ohio.edu/ontologies/IMPML#ValueSpecification> .
+
+
+
+###  http://www.ohio.edu/ontologies/IMPMU#CADFeature
+
+<http://www.ohio.edu/ontologies/IMPMU#CADFeature> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#CarbonSteel
+
+:CarbonSteel rdf:type owl:NamedIndividual ,
+                      <http://www.ohio.edu/ontologies/CPM#Material> .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#parallelism1486164225383
+
+:parallelism1486164225383 rdf:type owl:NamedIndividual ,
+                                   <http://www.ohio.edu/ontologies/IMPML#parallelism> ;
+                          
+                          <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#perpendicularity1486164225350
+
+:perpendicularity1486164225350 rdf:type owl:NamedIndividual ,
+                                        <http://www.ohio.edu/ontologies/IMPML#perpendicularity> ;
+                               
+                               <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#perpendicularity1486164225373
+
+:perpendicularity1486164225373 rdf:type owl:NamedIndividual ,
+                                        <http://www.ohio.edu/ontologies/IMPML#perpendicularity> ;
+                               
+                               <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#perpendicularity1486164225457
+
+:perpendicularity1486164225457 rdf:type owl:NamedIndividual ,
+                                        <http://www.ohio.edu/ontologies/IMPML#perpendicularity> ;
+                               
+                               <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#perpendicularity1486164225484
+
+:perpendicularity1486164225484 rdf:type owl:NamedIndividual ,
+                                        <http://www.ohio.edu/ontologies/IMPML#perpendicularity> ;
+                               
+                               <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#slider_with_slabs
+
+:slider_with_slabs rdf:type owl:NamedIndividual ,
+                            <http://www.ohio.edu/ontologies/CPM#Part> ;
+                   
+                   <http://www.ohio.edu/ontologies/CPM#hasFeature> :RECTANGULAR_POCKET(14) ,
+                                                                   :RECTANGULAR_POCKET(15) ,
+                                                                   :RECTANGULAR_POCKET(2) ,
+                                                                   :RECTANGULAR_POCKET(3) ,
+                                                                   :RECTANGULAR_POCKET(4) ,
+                                                                   :RECTANGULAR_POCKET(5) ,
+                                                                   :RECTANGULAR_POCKET(6) ,
+                                                                   :RECTANGULAR_POCKET(7) ,
+                                                                   :RECTANGULAR_SLOT(8) ,
+                                                                   :RECTANGULAR_SLOT(9) ,
+                                                                   :SIMPLE HOLE(10) ,
+                                                                   :SIMPLE HOLE(11) ,
+                                                                   :SIMPLE HOLE(12) ,
+                                                                   :SIMPLE HOLE(16) ,
+                                                                   :SIMPLE HOLE(17) ,
+                                                                   :SIMPLE HOLE(18) ,
+                                                                   :SIMPLE HOLE(19) ,
+                                                                   :SIMPLE HOLE(24) ,
+                                                                   :SIMPLE HOLE(25) ,
+                                                                   :SIMPLE HOLE(26) ,
+                                                                   :SIMPLE HOLE(27) ,
+                                                                   :SIMPLE HOLE(28) ,
+                                                                   :SIMPLE HOLE(29) ,
+                                                                   :SIMPLE HOLE(31) ;
+                   
+                   <http://www.ohio.edu/ontologies/CPM#hasMaterial> :CarbonSteel .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#truePosition1486164225285
+
+:truePosition1486164225285 rdf:type owl:NamedIndividual ,
+                                    <http://www.ohio.edu/ontologies/IMPML#truePosition> ;
+                           
+                           <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#truePosition1486164225312
+
+:truePosition1486164225312 rdf:type owl:NamedIndividual ,
+                                    <http://www.ohio.edu/ontologies/IMPML#truePosition> ;
+                           
+                           <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#truePosition1486164225337
+
+:truePosition1486164225337 rdf:type owl:NamedIndividual ,
+                                    <http://www.ohio.edu/ontologies/IMPML#truePosition> ;
+                           
+                           <http://www.ohio.edu/ontologies/IMPML#hasValue> "0.001"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(14)
+
+:RECTANGULAR_POCKET(14) rdf:type owl:NamedIndividual ,
+                                 <http://www.ohio.edu/ontologies/IMPML#Pocket> ;
+                        
+                        <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_SLOT(8) ;
+                        
+                        <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.415"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(15)
+
+:RECTANGULAR_POCKET(15) rdf:type owl:NamedIndividual ,
+                                 <http://www.ohio.edu/ontologies/IMPML#Pocket> ;
+                        
+                        <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_SLOT(8) ;
+                        
+                        <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.415"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(2)
+
+:RECTANGULAR_POCKET(2) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(26) ,
+                                                                             :SIMPLE HOLE(27) ,
+                                                                             :SIMPLE HOLE(28) ,
+                                                                             :SIMPLE HOLE(29) ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(3)
+
+:RECTANGULAR_POCKET(3) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :parallelism1486164225383 ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(4)
+
+:RECTANGULAR_POCKET(4) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :perpendicularity1486164225373 ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(5)
+
+:RECTANGULAR_POCKET(5) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(6)
+
+:RECTANGULAR_POCKET(6) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :perpendicularity1486164225484 ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_POCKET(7)
+
+:RECTANGULAR_POCKET(7) rdf:type owl:NamedIndividual ,
+                                <http://www.ohio.edu/ontologies/IMPML#Slab> ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_SLOT(8) ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :perpendicularity1486164225350 ;
+                       
+                       <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.1"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(8)
+
+:RECTANGULAR_SLOT(8) rdf:type owl:NamedIndividual ,
+                              <http://www.ohio.edu/ontologies/IMPML#Slot> ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(12) ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :perpendicularity1486164225457 ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#bottomDist> "-1.0"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#negativeSweepLength> "1.75"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#positiveSweepLength> "1.75"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#width> "0.2"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#RECTANGULAR_SLOT(9)
+
+:RECTANGULAR_SLOT(9) rdf:type owl:NamedIndividual ,
+                              <http://www.ohio.edu/ontologies/IMPML#Slot> ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(29) ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#bottomDist> "-1.0"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#negativeSweepLength> "1.25"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#positiveSweepLength> "1.25"^^xsd:double ;
+                     
+                     <http://www.ohio.edu/ontologies/IMPML#width> "0.2"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(10)
+
+:SIMPLE HOLE(10) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :truePosition1486164225337 ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.315"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(11)
+
+:SIMPLE HOLE(11) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :truePosition1486164225312 ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.315"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(12)
+
+:SIMPLE HOLE(12) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_SLOT(9) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasSpecification> :truePosition1486164225285 ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.3925"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(16)
+
+:SIMPLE HOLE(16) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.45"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.0625"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(17)
+
+:SIMPLE HOLE(17) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.45"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.0625"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(18)
+
+:SIMPLE HOLE(18) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(16) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.0445"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(19)
+
+:SIMPLE HOLE(19) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(17) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.0445"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(24)
+
+:SIMPLE HOLE(24) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_POCKET(14) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.025"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.125"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(25)
+
+:SIMPLE HOLE(25) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :RECTANGULAR_POCKET(15) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "-0.025"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.125"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(26)
+
+:SIMPLE HOLE(26) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.068"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(27)
+
+:SIMPLE HOLE(27) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.068"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(28)
+
+:SIMPLE HOLE(28) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.068"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(29)
+
+:SIMPLE HOLE(29) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.068"^^xsd:double .
+
+
+
+###  http://www.ohio.edu/ontologies/2016/8/IMPM-ind$002#SIMPLE HOLE(31)
+
+:SIMPLE HOLE(31) rdf:type owl:NamedIndividual ,
+                          <http://www.ohio.edu/ontologies/IMPML#Hole> ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPMU#hasNextFeature> :SIMPLE HOLE(24) ,
+                                                                       :SIMPLE HOLE(25) ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#bottomDistance> "NaN"^^xsd:double ;
+                 
+                 <http://www.ohio.edu/ontologies/IMPML#radius> "0.068"^^xsd:double .
+
+
+
+
+###  Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi
+

@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.ohio.edu/ontologies/2017/10/untitled-ontology-289">
+    <Prefix name="" IRI="http://www.ohio.edu/ontologies/2017/10/untitled-ontology-289"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -13,6 +14,9 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <NamedIndividual IRI="#a2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#a1"/>
@@ -24,13 +28,13 @@
         <NamedIndividual IRI="#y"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#u-obj"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#z"/>
     </Declaration>
     <Declaration>
         <Class IRI="#alloc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#u-obj"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#a"/>
@@ -83,6 +87,10 @@
         <NamedIndividual IRI="#a2"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#alloc"/>
+        <NamedIndividual IRI="#a3"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#l-obj"/>
         <NamedIndividual IRI="#b"/>
     </ClassAssertion>
@@ -108,9 +116,18 @@
         <NamedIndividual IRI="#x"/>
     </SameIndividual>
     <SameIndividual>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual IRI="#x"/>
+    </SameIndividual>
+    <SameIndividual>
         <NamedIndividual IRI="#a2"/>
         <NamedIndividual IRI="#b"/>
         <NamedIndividual IRI="#y"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#a3"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual IRI="#z"/>
     </SameIndividual>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#next"/>

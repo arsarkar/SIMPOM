@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#"
+     xml:base="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-347="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reachableTo"/>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasParent"/>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+        <rdfs:range rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasEdge -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasEdge">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reachableTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+        <rdfs:range rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasNode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reacheableFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasRoot -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasRoot">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasSibling">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reachableTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reachableTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reacheableFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#reacheableFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#BranchNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#BranchNode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasParent"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#BranchNode"/>
+                            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Graph -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Graph">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasNode"/>
+                <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasEdge"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasChild"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Tree -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Tree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Graph"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasNode"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#BranchNode"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#g1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#g1">
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n1"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n2"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n3"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n1">
+        <hasEdge rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n2"/>
+        <hasEdge rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n3"/>
+        <hasEdge rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n2">
+        <hasEdge rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n3"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#n4"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#terminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#terminal">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#Node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+        <hasChild rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn2"/>
+        <hasChild rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn3">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+        <hasChild rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn4">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tree1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tree1">
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn1"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn2"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn3"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn1"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn2"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn3"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#LeafNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#BranchNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#RootNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#TreeNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

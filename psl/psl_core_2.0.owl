@@ -1,0 +1,1250 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontohub.org/PSL/psl_core#"
+     xml:base="http://ontohub.org/PSL/psl_core"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://ontohub.org/PSL/psl_core"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#before -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>before</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>befores</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>befored</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#beforeEq -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#beforeEq">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>beforeEq</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>beforeEqs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>beforeEqed</ace_lexicon:TV_vbg>
+        <rdfs:comment>Definition 2. Timepoint p is beforeEq timepoint q if and only if p is before or equal to q.
+(defrelation beforeEq (?p ?q) :=
+(and (timepoint ?p) (timepoint ?q)
+(or (before ?p ?q)
+(= ?P ?q))))</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#begins -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#begins">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>begins</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>beginss</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>beginsed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The timepoint at which the occurrence begins.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#between -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#between">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>Definition 1. Timepoint q is between timepoints p and r if and only if p is before q and q
+is before r.</rdfs:comment>
+        <rdfs:isDefinedBy>Strictly less than and strictly greater than.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#betweenEq -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#betweenEq">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy>Less or equal to and greater or equal to.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#ends -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#ends">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>ends</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>endss</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>endsed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The timepoint at which the occurrence ends.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#equals -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#equals">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>This property holds beween two TimePoints when they are &apos;=&apos;,</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#exists_at -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#exists_at">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>exists_at</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>existses_at</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>existsed_at</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The object exists at the given timepoint.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasAfterOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasAfterOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasBeforeOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasOrdinal -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#hasOrdinal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#has_occurrence -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#has_occurrence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Participation"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#is_occurring_at -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#is_occurring_at">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <ace_lexicon:TV_pl>is_occurring_at</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>is_occurrings_at</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>is_occurrung_at</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The activity corresponding to the specified activity occurrence is
+occurring at the specified timepoint. I.e., there exists an occurrence of
+the activity that is such that the specified timepoint is between or equal
+to the begin timepoint and end timepoint of the occurrence.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#occurrence_of -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#occurrence_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+        <ace_lexicon:TV_pl>occurrence_of</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>occurrence_ofs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>occurrence_ofed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The activity-occurrence is a particular occurrence of the given activity.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#participates -->
+
+    <owl:ObjectProperty rdf:about="http://ontohub.org/PSL/psl_core#participates">
+        <rdfs:domain rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <rdfs:range rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+        <ace_lexicon:TV_pl>participates</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>participateses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>participatesed</ace_lexicon:TV_vbg>
+        <rdfs:isDefinedBy>The given object plays some (indeterminate) role in an
+occurrence of the given activity at the given timepoint.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://ontohub.org/PSL/psl_core#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Activity -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity">
+        <ace_lexicon:CN_pl>Activities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Activity</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Activity_Occurrence -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#is_occurring_at"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#occurrence_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+        <ace_lexicon:CN_pl>Activity_Occurrences</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Activity_Occurrence</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>An event or action that takes place at a specific place and time. An instance or occurrence of an activity. E.g., paint-part is an activity, painting in Maryland at 2 PM on May 25, 1998 is an activ ityoccurrence.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Activity_Participation -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Activity_Participation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#has_occurrence"/>
+                        <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://ontohub.org/PSL/psl_core#participates"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Participation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#BetweenEqOrdinal -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#BetweenEqOrdinal">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#BetweenOrdinal -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#BetweenOrdinal">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Machine -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Machine">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Material -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Material">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#NegativeDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#NegativeDuration">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#TimeDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#NegativeInfinity -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#NegativeInfinity">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        <owl:disjointWith rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Object -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Object">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                <owl:someValuesFrom rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Objects</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Object</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>Anything that is not a timepoint or an activity.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#OccurrenceOrObject -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObject">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+        <ace_lexicon:CN_pl>OccurrenceOrObjects</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>OccurrenceOrObject</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval">
+        <ace_lexicon:CN_pl>OccurrenceOrObjectOrIntervals</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>OccurrenceOrObjectOrInterval</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Operator -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Operator">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Ordinal -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Ordinal"/>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Participation -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Participation"/>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#PositiveDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#PositiveDuration">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#TimeDuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#PositiveInfinity -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#PositiveInfinity">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#TimeDuration -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#TimeDuration">
+        <rdfs:isDefinedBy>The class of timedurations, intuitively, the possible lengths of time that an activity
+occurrence can last, represented simply as the pair of points that at which an activity
+occurrence begins and ends, respectively.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Timepoint -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Timepoint">
+        <ace_lexicon:CN_pl>Timepoints</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Timepoint</ace_lexicon:CN_sg>
+        <rdfs:isDefinedBy>A point in time.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Tool -->
+
+    <owl:Class rdf:about="http://ontohub.org/PSL/psl_core#Tool">
+        <rdfs:subClassOf rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Inf- -->
+
+    <owl:NamedIndividual rdf:about="http://ontohub.org/PSL/psl_core#Inf-">
+        <rdf:type rdf:resource="http://ontohub.org/PSL/psl_core#NegativeInfinity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontohub.org/PSL/psl_core#Inf+ -->
+
+    <owl:NamedIndividual rdf:about="http://ontohub.org/PSL/psl_core#Inf+">
+        <rdf:type rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Activity"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#OccurrenceOrObjectOrInterval"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Timepoint"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Machine"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Material"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Operator"/>
+            <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#Tool"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#occ">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#q">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#ord">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#obj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#part">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#i1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontohub.org/PSL/psl_core#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The timepoint at which an Object/activity-occurrence begins always precedes the timepoint at which the Object/activity-occurrence ends.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 14</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t1"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An activity occurrence is-occurring-at a timepoint p if and only if p is betweenEq the activity&apos;occurrence’s begin and end points.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition 5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Occurrence"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+                                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#BetweenEqOrdinal"/>
+                                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal"/>
+                                                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                                                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasAfterOrdinal"/>
+                                                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                                                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#is_occurring_at"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object can participate in an activity only at those timepoints at which both the object exists and the activity is occurring.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 16</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#exists_at"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#is_occurring_at"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Activity_Participation"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#part"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#has_occurrence"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#part"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#occ"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#participates"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#part"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#is_occurring_at"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#part"/>
+                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object/activity occurrence exists-at a timepoint p if and only if p is betweenEq its begin and end points.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition 4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Object"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#begins"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#ends"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+                                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#BetweenEqOrdinal"/>
+                                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal"/>
+                                                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                                                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasAfterOrdinal"/>
+                                                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                                                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#exists_at"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#obj"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timepoint q is betweenEq timepoints p and r if and only if p is before or equal to q, and q is before or equal to r.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition 3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#beforeEq"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#beforeEq"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#BetweenEqOrdinal"/>
+                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasAfterOrdinal"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timepoint q is between timepoints q and r if and only if p is before q and q is before r</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasOrdinal"/>
+                                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#q"/>
+                                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#BetweenOrdinal"/>
+                                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasBeforeOrdinal"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#p"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#hasAfterOrdinal"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#r"/>
+                                <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#ord"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inf- is before all other timepoints.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#NegativeInfinity"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i1"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Every timepoint else than inf+ is before mf-t-</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axiom 6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#Timepoint"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://ontohub.org/PSL/psl_core#PositiveInfinity"/>
+                                <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://ontohub.org/PSL/psl_core#before"/>
+                        <swrl:argument1 rdf:resource="http://ontohub.org/PSL/psl_core#t"/>
+                        <swrl:argument2 rdf:resource="http://ontohub.org/PSL/psl_core#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

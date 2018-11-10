@@ -1,0 +1,556 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#"
+     xml:base="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:psl_owl="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>Gives an order to Timepoints</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#beginof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#beginof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>The Timepoint at which Activity Occurrence begins</rdfs:comment>
+        <rdfs:comment>The Timepoint at which an object comes into existence</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlierEq"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlierEq -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlierEq">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#endof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#endof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>The Timepoint at which an Activity Occurrence ends</rdfs:comment>
+        <rdfs:comment>The Timepoint at which the object ceases to exist</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+        <rdfs:comment>The next occurrence that takes place in an activity tree</rdfs:comment>
+    </owl:ObjectProperty>
+    <rdf:Description>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>The occurrence of an Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#participates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#participates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+        <rdfs:comment>The given Object plays a role in the following Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#poss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#poss">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Generator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#precedes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+        <rdfs:comment>Which Legal precedes another in the activity tree</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#proper_subactivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#proper_subactivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root_occ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment>The first axiom of an activity tree for a given Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root_occ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root_occ">
+        <rdfs:comment>The first Occurrence in an activity tree</rdfs:comment>
+    </owl:ObjectProperty>
+    <rdf:Description>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root_occ"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity"/>
+        <rdfs:comment>Relates an Activty that occurres within an Activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity_occurrence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity_occurrence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence"/>
+        <rdfs:comment>The occurrence of an Activity within another Activity Occurrence</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#TimeInterval"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>An action</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#beginof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#endof"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Object"/>
+        <rdfs:comment>Contains a beginning or ending Timepoint</rdfs:comment>
+        <rdfs:comment>Is an occurrence of an Activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlierEq"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Generator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An axiom of an activity tree</rdfs:comment>
+        <rdfs:comment>An occurrence of a Generator Activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Atomic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Atomic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity"/>
+        <rdfs:comment>A set of Activities that can be concurrent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Generator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Generator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Atomic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Activity or Atomic Activity that has an Initial occurrence in an activity tree (Arboreal class).</rdfs:comment>
+        <rdfs:comment>An Activity or Atomic Activity where all occurrences are of an activity tree (Arboreal class).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>An activity occurrence that does not have an earlier occurrence</rdfs:comment>
+        <rdfs:comment>The first occurrence of its activity tree</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>All additional axioms of this activity tree are Legal</rdfs:comment>
+        <rdfs:comment>Is the root of an Activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject"/>
+        <rdfs:comment>A concrete or abstract thing that can participate in an Activity</rdfs:comment>
+        <rdfs:comment>Anything that is not an Activity, Timepoint, or Occurrence</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#OccurrenceOrObject">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#TimeInterval"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>An Occurrence or an Object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Primitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Primitive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Atomic"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#proper_subactivity"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>An activity that does not have a proper subactivity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#TimeInterval">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint"/>
+        <rdfs:comment>A specific extended point in time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Timepoint">
+        <rdfs:comment>A single point in time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence"/>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root_occ"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Activity_Occurrence"/>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity_occurrence"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial"/>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#earlier"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Initial"/>
+            </owl:Class>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Arboreal"/>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity_occurrence"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Atomic"/>
+            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#occurrence_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#root"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#next_occ"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#subactivity_occurrence"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arl4/ontologies/2018/5/PSL_OWL#Legal"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

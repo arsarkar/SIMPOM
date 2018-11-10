@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#"
+     xml:base="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299"
+     xmlns:untitled-ontology-299="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:IMPMU="http://www.ohio.edu/ontologies/IMPMU#">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299">
+        <owl:imports rdf:resource="http://www.ohio.edu/ontologies/IMPML"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#before">
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#next"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasEarlierFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasEarlierFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasEarlierProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasEarlierProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasNextFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasNextFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#next"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasNextProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hasNextProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#next"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#mayBeProcessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#mayBeProcessedBy"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#next -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#next">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#Lapping -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#Lapping">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/IMPML#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#JMD-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#JMD-15">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#M3045 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#M3045">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T217 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T217">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T704 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T704">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T809 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#T809">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Tool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#VM1054-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#VM1054-3">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#bor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#bor1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Boring"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#ream1"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#M3045"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#em1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#em1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#EndMilling"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fin1"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#320M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#emp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#emp1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#EndMillingPeripheral"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#320M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fin1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#FinishMilling"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#330M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fm1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fm1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#FaceMilling"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fin1"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#JMD-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hole1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hole1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Hole"/>
+        <hasNextFeature rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slot1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#bor1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#ream1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#td1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#lap1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#lap1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#Lapping"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#6BPR-20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#ream1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#ream1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Reaming"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#M3045"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slab1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slab1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <hasNextFeature rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#hole1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#emp1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#lap1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#sm1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slab2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slab2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Slab"/>
+        <hasNextFeature rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slot1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#sm1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#slot1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Slot"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#em1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fin1"/>
+        <mayBeProcessedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#fm1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#sm1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#sm1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#SlabMilling"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#emp1"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#lap1"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#VM1054-3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#td1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#td1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#TwistDrilling"/>
+        <hasNextProcess rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#bor1"/>
+        <IMPMU:mayBeMachinedBy rdf:resource="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#JMD-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#320M -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#320M">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#330M -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#330M">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#6BPR-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/2/untitled-ontology-299#6BPR-20">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/IMPML#Machine"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
