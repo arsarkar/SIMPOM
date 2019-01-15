@@ -110,7 +110,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1">
         <rdf:type rdf:resource="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter"/>
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</IVOAO:hasValue>
+        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</IVOAO:hasValue>
     </owl:NamedIndividual>
     
 
