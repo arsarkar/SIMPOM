@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/AgentOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/EventOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/QualityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/ArtifactOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/GeospatialOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/GeospatialOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.obofoundry.org/ro/ro.owl" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/LewisianRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/ExtendedRelationOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/TimeOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/TimeOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/InformationEntityOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/UnitsOfMeasureOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/AllCoreOntology.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/no/ontologies/2017/1/CEO-ontology/" uri="CommercialEntitiesOntology%20(CEO).ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/no/ontologies/2017/1/PLC-ontology/" uri="ProductLifeCycle%20(PLC).ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology" uri="ExtendedRelationOntology.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.obofoundry.org/ro/ro.owl" uri="ro.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.obofoundry.org/ro/ro.owl" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/BFO%20Version/ro.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/classes-only.owl" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/BFO%20Version/bfo_classes_only_latest.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntologyMerged" uri="file:/C:/Users/sarkara1/git/SIMPOM/CCO/AllCoreOntologyMerged.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1553546533690" name="http://purl.obolibrary.org/obo/bfo.owl" uri="bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553546533690" name="http://www.obofoundry.org/ro/ro.owl" uri="ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553546533690" name="http://www.ohio.edu/ontologies/bfo-resource-capability" uri="bfo-resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553546533690" name="http://www.ohio.edu/ontologies/manufacturing-capability" uri="mfg-resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1553546533690" name="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology" uri="ExtendedRelationOntology.ttl"/>
+    </group>
+</catalog>

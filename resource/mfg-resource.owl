@@ -1,0 +1,1517 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/manufacturing-capability#"
+     xml:base="http://www.ohio.edu/ontologies/manufacturing-capability"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability">
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#demarcatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#demarcatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#demarcates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#demarcates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#demarcates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#enabledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#enabledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#enables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#enables -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#enables"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#AgentialCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AgentialCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#AngularityCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AngularityCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#AxisControlingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AxisControlingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#AxisOfControl -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AxisOfControl">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#BlindPocketMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#BlindPocketMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ThroughPocketMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Broaching -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Broaching">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ChipLoadCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChipLoadCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ChipRemovalFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChipRemovalFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ChuckFittingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChuckFittingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ClosedSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ClosedSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CompatibleSpindleSize -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CompatibleSpindleSize">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CoolantCapacity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CoolantCapacity">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CoolantDispensingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CoolantDispensingCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Countouring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Countouring">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CuttingDepth -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingDepth">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CuttingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CuttingSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#DeepSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DeepSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#DepthLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DepthLimit">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#DimensionToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DimensionToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Drilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ElectricalCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ElectricalCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndMillingPeripheral -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndMillingPeripheral">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndMillingSlotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndMillingSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndMillingSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FineFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FineFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FinishMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FinishMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Finishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Finishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FinishingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FinishingCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FlatnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FlatnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FullLoadAmpere -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FullLoadAmpere">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ElectricalCapability"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#InputACVoltage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Grinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Grinding">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#GrooveMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#GrooveMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Grooving -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Grooving">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleStarting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleStarting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Honing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Honing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#InputACVoltage -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#InputACVoltage">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ElectricalCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Knurling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Knurling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#LargestDiameterCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#LargestDiameterCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#LathingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#LathingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingResourceFunction"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessualFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessualFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactFunction"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingResourceFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingResourceFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingResourceFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MaterialAdditionFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialAdditionFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MaterialCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MaterialDeformationFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialDeformationFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Milling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Milling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#NegativeToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NegativeToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#OpenSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#OpenSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ParallelismCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ParallelismCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PerpendicularityCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PerpendicularityCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PlungeMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PlungeMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Plunging -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Plunging">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PolygonalTurning -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PolygonalTurning">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PositionCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PositionCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PositiveToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PositiveToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Productivity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Productivity">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#RoughMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoughMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Roughing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Roughing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#RoughingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoughingCapability">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#RoundnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoundnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Sawing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Sawing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SemiFinishMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SemiFinishMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ShallowSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ShallowSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SizeToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SizeToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Slotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SmallestDimeterCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SmallestDimeterCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpeedSelectionCapabitlity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedSelectionCapabitlity">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindleNoseToTable -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleNoseToTable">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindlePower -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindlePower">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRating -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRating">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRotation -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRotation">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindleSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpindleTorque -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleTorque">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#StabilityRequirement -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#StabilityRequirement">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#StraightnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#StraightnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinishCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinishCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#TappingSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TappingSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Threading -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Threading">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ThroughPocketMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ThroughPocketMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ArtifactCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ToolChangingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolChangingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ToolEndProfile -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolEndProfile">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NonSelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingResourceFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#ToolHoldingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolHoldingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#TurnDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TurnDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Turning -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Turning">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Versatility -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Versatility">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SelfReferringCapability"/>
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceHeight -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceHeight">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceHoldingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceHoldingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceLength -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceLength">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceWidth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceWidth -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceWidth">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#capability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#capability">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcess"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AngularityCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DepthLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DimensionToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FlatnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#LargestDiameterCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#NegativeToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ParallelismCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PerpendicularityCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PositionCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PositiveToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoundnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SizeToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SmallestDimeterCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#StraightnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinishCapability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AxisControlingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRotation"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolChangingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolHoldingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#WorkpieceHoldingFunction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#AxisOfControl"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CapabilityOfTable"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CoolantCapacity"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ElectricalCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FeedRateCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PowerLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TravelAllowance"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Broaching"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Sawing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Turning"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Grinding"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Honing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChipLoadCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CompatibleSpindleSize"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CoolantDispensingCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingDepth"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FinishingCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Productivity"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoughingCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#StabilityRequirement"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolEndProfile"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Versatility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChipRemovalFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ChuckFittingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingFunction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ClosedSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DeepSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#OpenSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ShallowSlotting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Countouring"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FineFinishing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Finishing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#GrooveMaking"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Plunging"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Roughing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Slotting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CuttingSpeed"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisRapids"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisRapids"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisRapids"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleFinishing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleStarting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#LathingFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FinishMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Grooving"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PlungeMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoughMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SemiFinishMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Knurling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PolygonalTurning"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Threading"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TurnDrilling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MachineCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ManufacturingProcessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#ToolCapability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialAdditionFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialDeformationFunction"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MaterialRemovalFunction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#MotorThurst"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindlePower"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleRating"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpeedSelectionCapabitlity"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleSpeed"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleTorque"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TappingSpeed"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpindleNoseToTable"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisTravel"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisTravel"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisTravel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#X-AxisThrust"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Y-AxisThrust"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Z-AxisThrust"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

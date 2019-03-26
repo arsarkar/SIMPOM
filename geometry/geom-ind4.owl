@@ -19,7 +19,7 @@
   <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
   <geometry:circularCone rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1">
     <geometry:embeds>
-      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I5159">
+      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I4618">
         <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
         >0.3097483577482385</IVOAO:hasValue>
       </geometry:cube>

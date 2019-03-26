@@ -319,6 +319,17 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tree2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tree2">
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn5"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn6"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn7"/>
+        <hasNode rdf:resource="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#tn8"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

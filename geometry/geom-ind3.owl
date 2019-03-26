@@ -18,12 +18,12 @@
   <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#hasHeight"/>
   <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
   <geometry:circularCone rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1">
-    <geometry:embeds>
-      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I5159">
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >0.3097483577482385</IVOAO:hasValue>
-      </geometry:cube>
-    </geometry:embeds>
+    <geometry:hasVolume>
+      <geometry:volume rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#volume_I8115">
+        <IVOAO:hasVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >2.945243112740431</IVOAO:hasVolume>
+      </geometry:volume>
+    </geometry:hasVolume>
     <geometry:hasHeight>
       <IVOAO:height rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#h1">
         <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
@@ -34,7 +34,7 @@
     <astronomy:hasDiameter>
       <IVOAO:diameter rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1">
         <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >1.0</IVOAO:hasValue>
+        >1.5</IVOAO:hasValue>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </IVOAO:diameter>
     </astronomy:hasDiameter>
