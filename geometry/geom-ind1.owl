@@ -1,43 +1,124 @@
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:astronomy="http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#"
-    xmlns:skos-core="http://www.astro.umd.edu/~eshaya/astro-onto/owl/skos-core.owl#"
-    xmlns:IVOAO="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#"
-    xmlns="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:operation="http://www.astro.umd.edu/~eshaya/astro-onto/owl/operation.owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:geometry="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#">
-  <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#circularCone"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#height"/>
-  <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#hasDiameter"/>
-  <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#hasHeight"/>
-  <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
-  <geometry:circularCone rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1">
-    <geometry:embeds>
-      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I5159">
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >0.3097483577482385</IVOAO:hasValue>
-      </geometry:cube>
-    </geometry:embeds>
-    <geometry:hasHeight>
-      <IVOAO:height rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#h1">
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >5.0</IVOAO:hasValue>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </IVOAO:height>
-    </geometry:hasHeight>
-    <astronomy:hasDiameter>
-      <IVOAO:diameter rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1">
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >1.0</IVOAO:hasValue>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </IVOAO:diameter>
-    </astronomy:hasDiameter>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </geometry:circularCone>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#"
+     xml:base="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos-core="http://www.astro.umd.edu/~eshaya/astro-onto/owl/skos-core.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:geometry="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#"
+     xmlns:astronomy="http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#"
+     xmlns:IVOAO="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#"
+     xmlns:operation="http://www.astro.umd.edu/~eshaya/astro-onto/owl/operation.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#hasDiameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#hasDiameter"/>
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#hasHeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#hasHeight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter -->
+
+    <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter"/>
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#height -->
+
+    <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#height"/>
+    
+
+
+    <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#circularCone -->
+
+    <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#circularCone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1">
+        <rdf:type rdf:resource="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#circularCone"/>
+        <astronomy:hasDiameter rdf:resource="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1"/>
+        <geometry:hasHeight rdf:resource="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#h1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#dia1">
+        <rdf:type rdf:resource="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter"/>
+        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.5</IVOAO:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/2018/7/8/geom-ind#h1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#h1">
+        <rdf:type rdf:resource="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#height"/>
+        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</IVOAO:hasValue>
+    </owl:NamedIndividual>
 </rdf:RDF>
