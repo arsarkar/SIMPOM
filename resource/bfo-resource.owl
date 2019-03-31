@@ -1,0 +1,1347 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/bfo-resource-capability#"
+     xml:base="http://www.ohio.edu/ontologies/bfo-resource-capability"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability">
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#demarcatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#demarcatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#demarcates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#demarcates">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#capability"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#enabledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#enabledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#enables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#enables -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#enables">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#AgentialCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AgentialCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#AngularityCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AngularityCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#DepthLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ArtifactCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ArtifactCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#AxisControlingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AxisControlingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#AxisOfControl -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AxisOfControl">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#BlindPocketMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#BlindPocketMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#PocketMakingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Broaching -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Broaching">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachine -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachine">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ArtifactCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CapabilityOfTable -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CapabilityOfTable">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CenterDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CenterDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ChipLoadCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ChipLoadCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ChipRemovalFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ChipRemovalFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ChuckFittingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ChuckFittingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ClosedSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ClosedSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CompatibleSpindleSize -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CompatibleSpindleSize">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CoolantCapacity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CoolantCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CoolantDispensingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CoolantDispensingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Countouring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Countouring">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingDepth -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingDepth">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#DeepSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DeepSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#DepthLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DepthLimit">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#DimensionToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DimensionToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#DrillBit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillBit">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ElectricalCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ElectricalCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#EndDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#EndDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#EndMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#EndMillingPeripheral -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMillingPeripheral">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMilling"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMillingSlotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#EndMillingSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMillingSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FaceMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FaceMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FineFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FineFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FinishMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FinishMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Finishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Finishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FinishingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FinishingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FlatnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FlatnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#FullLoadAmpere -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FullLoadAmpere">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ElectricalCapability"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#InputACVoltage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Grinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Grinding">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#GrooveMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#GrooveMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Grooving -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Grooving">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#GunDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#GunDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#HoleFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#HoleImproving -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleImproving">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#HoleStarting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleStarting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Honing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Honing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#InputACVoltage -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#InputACVoltage">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ElectricalCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Knurling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Knurling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#LargestDiameterCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#LargestDiameterCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#LathingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#LathingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Machine -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Machine">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingResourceFunction"/>
+        <rdfs:label xml:lang="en">Machining Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ArtifactCapability"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessualFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessualFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingResourceFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingResourceFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction"/>
+        <rdfs:label xml:lang="en">Manufacturing Resource Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialAdditionFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialAdditionFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+        <rdfs:isDefinedBy>The materials which can be cut with the tool</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialDeformationFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialDeformationFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialRemovalFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialRemovalFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessualFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Milling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MillingCutter -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingCutter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MaterialRemovalFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#NegativeToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#NegativeToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#NonSelfReferingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#NonSelfReferingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#capability"/>
+        <rdfs:isDefinedBy>A capability which predicts the change of state of some object which does not bear the capability but participate in the same process the bearing artifact participates in.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#OpenSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#OpenSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ParallelismCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ParallelismCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PerpendicularityCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PerpendicularityCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PlungeMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PlungeMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Plunging -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Plunging">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PocketMakingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PocketMakingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PolygonalTurning -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PolygonalTurning">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PositionCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PositionCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PositiveToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PositiveToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#PrecisionBoring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PrecisionBoring">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Productivity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Productivity">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#RoughMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoughMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Roughing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Roughing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#RoughingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoughingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#RoundnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoundnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Sawing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Sawing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SelfReferingCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SelfReferingCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#capability"/>
+        <rdfs:isDefinedBy>A capability which predicts the change of state in the artifact it inheres in</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SemiFinishMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SemiFinishMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ShallowSlotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ShallowSlotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SideMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SideMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SizeToleranceCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SizeToleranceCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SlabMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SlabMilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Milling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Slotting">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SmallestDimeterCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SmallestDimeterCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpadeDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpadeDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedSelectionCapabitlity -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedSelectionCapabitlity">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleNoseToTable -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleNoseToTable">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindlePower -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindlePower">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleRating -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleRating">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleRotation -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleRotation">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleTorque -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleTorque">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SpotDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpotDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#StabilityRequirement -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#StabilityRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#StraightnessCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#StraightnessCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#SurfaceFinishCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SurfaceFinishCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcessCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#TappingSpeed -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TappingSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Threading -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Threading">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ThroughPocketMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ThroughPocketMaking">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#PocketMakingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ArtifactCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ToolChangingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolChangingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ToolEndProfile -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolEndProfile">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+        <rdfs:isDefinedBy>The geometry of the tip, such as flat end mill or ball end mill. Flat end mill can be either center cutting or non-center cutting.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ToolFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingResourceFunction"/>
+        <rdfs:label xml:lang="en">Tool Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#ToolHoldingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolHoldingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CNCMachineCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#TurnDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TurnDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#Turning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Turning -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Turning">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#TwistDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TwistDrilling">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Versatility -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Versatility">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceHoldingFunction -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceHoldingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MachiningFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceLength -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceLength">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CapabilityOfTable"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceWidth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceWidth -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#WorkpieceWidth">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#CapabilityOfTable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisRapids -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisRapids">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisThrust -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisThrust">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisTravel -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisTravel">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/bfo-resource-capability#capability -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#capability">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">a capability is a disposition, which inheres in artifact a and
+a) demarcates the extent by which some function f, inhering in artifact a, is realized when the a participates in some process p, and
+b) predicts some change of state for a or some other object a’, which also participate in process p</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Tool -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tool">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AngularityCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DimensionToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FlatnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#LargestDiameterCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#NegativeToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ParallelismCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PerpendicularityCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PositionCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PositiveToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoundnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SizeToleranceCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SmallestDimeterCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#StraightnessCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SurfaceFinishCapability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AxisOfControl"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CapabilityOfTable"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#AxisOfControl"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FeedRateCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#PowerLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpeedLimit"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#TravelAllowance"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ClosedSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#DeepSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#OpenSlotting"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#ShallowSlotting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CompatibleSpindleSize"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingDepth"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FinishingCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Productivity"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoughingCapability"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#StabilityRequirement"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Versatility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#CuttingSpeed"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisRapids"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisRapids"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisRapids"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#EndMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FaceMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#FinishMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#RoughMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SemiFinishMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SideMilling"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SlabMilling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleFinishing"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleImproving"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleMaking"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#HoleStarting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#MotorThurst"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindlePower"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleRating"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleTorque"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#SpindleNoseToTable"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisTravel"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisTravel"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisTravel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#X-AxisThrust"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Y-AxisThrust"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/bfo-resource-capability#Z-AxisThrust"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

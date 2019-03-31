@@ -12,52 +12,16 @@
     xmlns:geometry="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#">
   <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"/>
   <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#diameter"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#length"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#cube"/>
-  <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#square"/>
   <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#circularCone"/>
   <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#height"/>
-  <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#definedBy"/>
   <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/astronomy.owl#hasDiameter"/>
   <owl:ObjectProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#hasHeight"/>
   <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
-  <geometry:square rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#square1">
-    <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I2665">
-        <IVOAO:hasValue>4.4,4.4</IVOAO:hasValue>
-      </geometry:vertex>
-    </geometry:definedBy>
-    <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I3616">
-        <IVOAO:hasValue>0.0,0.0</IVOAO:hasValue>
-      </geometry:vertex>
-    </geometry:definedBy>
-    <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I4733">
-        <IVOAO:hasValue>4.4,4.4</IVOAO:hasValue>
-      </geometry:vertex>
-    </geometry:definedBy>
-    <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I9498">
-        <IVOAO:hasValue>0.0,0.0</IVOAO:hasValue>
-      </geometry:vertex>
-    </geometry:definedBy>
-    <geometry:definedBy>
-      <geometry:length rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#len1">
-        <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-        >4.4</IVOAO:hasValue>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </geometry:length>
-    </geometry:definedBy>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </geometry:square>
-  <owl:AnnotationProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#embeds"/>
   <geometry:circularCone rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1">
     <geometry:embeds>
-      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I5159">
+      <geometry:cube rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cube_I4618">
         <IVOAO:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
         >0.3097483577482385</IVOAO:hasValue>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </geometry:cube>
     </geometry:embeds>
     <geometry:hasHeight>

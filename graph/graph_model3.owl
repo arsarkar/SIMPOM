@@ -74,6 +74,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasSibling">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasParent"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/2018/9/untitled-ontology-347#hasChild"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
