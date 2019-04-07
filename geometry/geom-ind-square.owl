@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
+
 <rdf:RDF xmlns="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#"
      xml:base="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"
+
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:skos-core="http://www.astro.umd.edu/~eshaya/astro-onto/owl/skos-core.owl#"
@@ -13,10 +15,7 @@
      xmlns:operation="http://www.astro.umd.edu/~eshaya/astro-onto/owl/operation.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind"/>
-    
-
-
-    <!-- 
+        <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -123,6 +122,7 @@
     <!-- http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#square -->
 
     <owl:Class rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#square"/>
+
     
 
 
@@ -135,6 +135,7 @@
      -->
 
     
+
 
 
     <!-- http://www.ohio.edu/ontologies/2018/7/8/geom-ind#cone1 -->
@@ -184,11 +185,13 @@
     
 
 
+
     <!-- http://www.ohio.edu/ontologies/2018/7/8/geom-ind#square1 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#square1">
         <rdf:type rdf:resource="http://www.astro.umd.edu/~eshaya/astro-onto/owl/geometry.owl#square"/>
         <geometry:definedBy rdf:resource="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#len1"/>
+
     </owl:NamedIndividual>
 </rdf:RDF>
 
