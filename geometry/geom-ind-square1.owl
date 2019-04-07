@@ -23,22 +23,22 @@
   <owl:DatatypeProperty rdf:about="http://www.astro.umd.edu/~eshaya/astro-onto/owl/IVOAO.owl#hasValue"/>
   <geometry:square rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#square1">
     <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I2665">
+      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I1060">
         <IVOAO:hasValue>4.4,4.4</IVOAO:hasValue>
       </geometry:vertex>
     </geometry:definedBy>
     <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I3616">
+      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I1188">
         <IVOAO:hasValue>0.0,0.0</IVOAO:hasValue>
       </geometry:vertex>
     </geometry:definedBy>
     <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I4733">
+      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I3913">
         <IVOAO:hasValue>4.4,4.4</IVOAO:hasValue>
       </geometry:vertex>
     </geometry:definedBy>
     <geometry:definedBy>
-      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I9498">
+      <geometry:vertex rdf:about="http://www.ohio.edu/ontologies/2018/7/8/geom-ind#vertex_I4033">
         <IVOAO:hasValue>0.0,0.0</IVOAO:hasValue>
       </geometry:vertex>
     </geometry:definedBy>

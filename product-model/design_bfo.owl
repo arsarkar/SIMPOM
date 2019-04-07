@@ -27,6 +27,17 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/design#describes_map_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/design#describes_map_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/design#MappingInformationContentEntity"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+        <rdfs:label>describes map for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/design#describes_map_with -->
 
     <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/design#describes_map_with">
@@ -557,6 +568,14 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/design#FeatureToleranceMap -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#FeatureToleranceMap">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#FormFeatureMappingInformationContentEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/design#FiatObjectRepresentation -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#FiatObjectRepresentation">
@@ -935,6 +954,14 @@
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#PartSolidMap">
         <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#TopologicalMappingInformationContentEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/design#PartSpecification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#PartSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#ArtifactSpecification"/>
     </owl:Class>
     
 
