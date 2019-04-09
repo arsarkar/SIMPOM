@@ -1,8 +1,8 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
-    xmlns="http://www.ohio.edu/simplanner/design/2019/4/9/826580#"
     xmlns:design="http://www.ohio.edu/ontologies/design#"
+    xmlns="http://www.ohio.edu/simplanner/design/2019/4/9/251450#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
@@ -12,264 +12,460 @@
   <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/design#describes_map_with"/>
   <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_URI_value"/>
   <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value"/>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1565">
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value"/>
+  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#PartFeatureMap_I9580">
     <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I4485">
+      <design:PartSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#partspecification5346">
         <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I3533">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#AxisPointSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
+          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ibe7598">
+            <cco:has_text_value>SimplePart</cco:has_text_value>
+          </design:LabelBearingEntity>
         </cco:inheres_in>
-      </design:QualitySpecification>
+      </design:PartSpecification>
     </design:describes_map_with>
     <design:describes_map_with>
-      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8797">
+      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144">
         <cco:inheres_in>
-          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#LabelBearingEntity_I3887">
-            <cco:has_text_value>SIMPLE HOLE(4)</cco:has_text_value>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I7620">
+            <cco:has_URI_value>Pocket</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#LabelBearingEntity_I9630">
+            <cco:has_text_value>RECTANGULAR_POCKET(3)</cco:has_text_value>
           </design:LabelBearingEntity>
         </cco:inheres_in>
       </design:FeatureSpecification>
     </design:describes_map_with>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I8726">
+  </design:PartFeatureMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I1118">
     <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I1734">
+      <design:ToleranceSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ToleranceSpecification_I8810">
         <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I9693">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#BottomDistanceSpecification</cco:has_URI_value>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I2280">
+            <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >55.0</cco:has_decimal_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I2642">
+            <cco:has_URI_value>surfaceFinish</cco:has_URI_value>
           </design:TypeBearingEntity>
         </cco:inheres_in>
-      </design:QualitySpecification>
+      </design:ToleranceSpecification>
     </design:describes_map_with>
     <design:describes_map_with>
-      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509">
+      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759">
         <cco:inheres_in>
-          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#LabelBearingEntity_I3045">
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I9122">
+            <cco:has_URI_value>Slot</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#LabelBearingEntity_I5045">
             <cco:has_text_value>RECTANGULAR_SLOT(7)</cco:has_text_value>
           </design:LabelBearingEntity>
         </cco:inheres_in>
       </design:FeatureSpecification>
     </design:describes_map_with>
   </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I8124">
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I6835">
     <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I6670">
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I7530">
         <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I4111">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#BottomDistanceSpecification</cco:has_URI_value>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I9247">
+            <cco:has_text_value>3.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I6832">
+            <cco:has_URI_value>negativeSweepLength</cco:has_URI_value>
           </design:TypeBearingEntity>
         </cco:inheres_in>
       </design:QualitySpecification>
     </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I2689">
     <design:describes_map_with>
-      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I4285">
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I3758">
         <cco:inheres_in>
-          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#LabelBearingEntity_I5795">
-            <cco:has_text_value>RECTANGULAR_POCKET(3)</cco:has_text_value>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I9631">
+            <cco:has_text_value>0 -1 0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I3960">
+            <cco:has_URI_value>normal</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3483">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I6610">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I1458">
+            <cco:has_text_value>2 1 2</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I6127">
+            <cco:has_URI_value>slotPoint</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I2026">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I2157">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I7168">
+            <cco:has_text_value>-1.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I4397">
+            <cco:has_URI_value>bottomDistance</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I8110">
+    <design:describes_map_with>
+      <design:ToleranceSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ToleranceSpecification_I2252">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I6564">
+            <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >0.001</cco:has_decimal_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I5963">
+            <cco:has_URI_value>roundness</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:ToleranceSpecification>
+    </design:describes_map_with>
+    <design:describes_map_with>
+      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523">
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I9775">
+            <cco:has_URI_value>Hole</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#LabelBearingEntity_I3764">
+            <cco:has_text_value>SIMPLE HOLE(4)</cco:has_text_value>
           </design:LabelBearingEntity>
         </cco:inheres_in>
       </design:FeatureSpecification>
     </design:describes_map_with>
   </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I2227">
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I1431">
     <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I8812">
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I8012">
         <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I5647">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#NormalSpecification</cco:has_URI_value>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I4816">
+            <cco:has_text_value>-1.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I6115">
+            <cco:has_URI_value>bottomDistance</cco:has_URI_value>
           </design:TypeBearingEntity>
         </cco:inheres_in>
       </design:QualitySpecification>
     </design:describes_map_with>
     <design:describes_map_with>
-      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8861">
+      <design:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I1438">
         <cco:inheres_in>
-          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#LabelBearingEntity_I1205">
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I1497">
+            <cco:has_URI_value>Slab</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#LabelBearingEntity_I3938">
             <cco:has_text_value>RECTANGULAR_POCKET(2)</cco:has_text_value>
           </design:LabelBearingEntity>
         </cco:inheres_in>
       </design:FeatureSpecification>
     </design:describes_map_with>
   </design:FeatureQualityMap>
-  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#PartFeatureMap_I1987">
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I7548">
     <design:describes_map_with>
-      <design:PartSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#partspecification2082">
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I2125">
         <cco:inheres_in>
-          <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#ibe9943">
-            <cco:has_text_value>SimplePart</cco:has_text_value>
-          </design:LabelBearingEntity>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I8264">
+            <cco:has_text_value>2.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
         </cco:inheres_in>
-      </design:PartSpecification>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I5392">
+            <cco:has_URI_value>diameter</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
     </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8861"/>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I4309">
+    <design:describes_map_with>
+      <design:ToleranceSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ToleranceSpecification_I1671">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I1906">
+            <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >55.0</cco:has_decimal_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I7900">
+            <cco:has_URI_value>surfaceFinish</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:ToleranceSpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3930">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I4653">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I8279">
+            <cco:has_text_value>-0.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I4583">
+            <cco:has_URI_value>bottomDistance</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I7201">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I4729">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I5783">
+            <cco:has_text_value>3.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I3132">
+            <cco:has_URI_value>positiveSweepLength</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I9864">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I6613">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I3431">
+            <cco:has_text_value>2 3 5</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I7784">
+            <cco:has_URI_value>PocketPoint</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I1438"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I4744">
+    <design:describes_map_with>
+      <design:ToleranceSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ToleranceSpecification_I7216">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I4026">
+            <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >0.002</cco:has_decimal_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I7865">
+            <cco:has_URI_value>dimensionTolerance</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:ToleranceSpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3222">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I7182">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I2707">
+            <cco:has_text_value>1.91351 2.92519 4</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I6687">
+            <cco:has_URI_value>axisPoint</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I2593">
+    <design:describes_map_with>
+      <design:ToleranceSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#ToleranceSpecification_I5240">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I4644">
+            <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >0.002</cco:has_decimal_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I8667">
+            <cco:has_URI_value>dimensionTolerance</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:ToleranceSpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3602">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I9108">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I7684">
+            <cco:has_text_value>0 -1 0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I4980">
+            <cco:has_URI_value>Normal</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I1667">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I9844">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I9348">
+            <cco:has_text_value>-0 -0 1</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I1815">
+            <cco:has_URI_value>holeAxis</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I8761">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I9648">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I2008">
+            <cco:has_text_value>0 0 1</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I8033">
+            <cco:has_URI_value>Normal</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I1438"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I8664">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I7453">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I1790">
+            <cco:has_text_value>1 0 0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I7618">
+            <cco:has_URI_value>sweep</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I2946">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I3912">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I3904">
+            <cco:has_text_value>-2.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I1185">
+            <cco:has_URI_value>bottomDistance</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523"/>
+  </design:FeatureQualityMap>
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3976">
+    <design:describes_map_with>
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I1378">
+        <cco:inheres_in>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I6609">
+            <cco:has_text_value>1.0</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I5779">
+            <cco:has_URI_value>width</cco:has_URI_value>
+          </design:TypeBearingEntity>
+        </cco:inheres_in>
+      </design:QualitySpecification>
+    </design:describes_map_with>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
+  </design:FeatureQualityMap>
+  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#PartFeatureMap_I9651">
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#partspecification5346"/>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I1438"/>
   </design:PartFeatureMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I9347">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I2412">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I6679">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#PocketPointSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8861"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1861">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I1255">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I7968">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#NormalSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I4593">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I2419">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I7925">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#PositiveSweepLengthSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I2428">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I6266">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I2154">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#HoleDirectionSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8797"/>
-  </design:FeatureQualityMap>
-  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#PartFeatureMap_I9067">
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#partspecification2082"/>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I4285"/>
+  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#PartFeatureMap_I7044">
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#partspecification5346"/>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I6523"/>
   </design:PartFeatureMap>
-  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#PartFeatureMap_I8836">
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#partspecification2082"/>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8797"/>
+  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#PartFeatureMap_I1628">
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#partspecification5346"/>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I7759"/>
   </design:PartFeatureMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I5108">
+  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureQualityMap_I3595">
     <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I3536">
+      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#QualitySpecification_I3023">
         <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I2822">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#BottomDistanceSpecification</cco:has_URI_value>
+          <design:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#MeasurementBearingEntity_I4501">
+            <cco:has_text_value>2 0 2</cco:has_text_value>
+          </design:MeasurementBearingEntity>
+        </cco:inheres_in>
+        <cco:inheres_in>
+          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/251450#TypeBearingEntity_I1017">
+            <cco:has_URI_value>PocketPoint</cco:has_URI_value>
           </design:TypeBearingEntity>
         </cco:inheres_in>
       </design:QualitySpecification>
     </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8797"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I7648">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I3146">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I1955">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#WidthSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1458">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I5842">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I9429">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#NegativeSweepLengthSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1397">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I4891">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I3029">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#NormalSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I4285"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1224">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I5363">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I5690">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#SweepSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I1895">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I9179">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I3997">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#BottomDistanceSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8861"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I8597">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I5900">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I2829">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#DiameterSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I8797"/>
-  </design:FeatureQualityMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I8083">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I2940">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I1881">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#PocketPointSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I4285"/>
-  </design:FeatureQualityMap>
-  <design:PartFeatureMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#PartFeatureMap_I1679">
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#partspecification2082"/>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
-  </design:PartFeatureMap>
-  <design:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureQualityMap_I7921">
-    <design:describes_map_with>
-      <design:QualitySpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#QualitySpecification_I4470">
-        <cco:inheres_in>
-          <design:TypeBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/826580#TypeBearingEntity_I9816">
-            <cco:has_URI_value>http://www.ohio.edu/ontologies/design#SlotPointSpecification</cco:has_URI_value>
-          </design:TypeBearingEntity>
-        </cco:inheres_in>
-      </design:QualitySpecification>
-    </design:describes_map_with>
-    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/826580#FeatureSpecification_I3509"/>
+    <design:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design/2019/4/9/251450#FeatureSpecification_I3144"/>
   </design:FeatureQualityMap>
 </rdf:RDF>

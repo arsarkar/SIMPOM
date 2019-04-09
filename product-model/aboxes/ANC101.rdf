@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:design="http://www.ohio.edu/ontologies/design#"
+    xmlns="http://www.ohio.edu/simplanner/design/2019/4/9/493480#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#LabelBearingEntity"/>
+  <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#PartSpecification"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value"/>
+  <design:PartSpecification rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/493480#partspecification9276">
+    <cco:inheres_in>
+      <design:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design/2019/4/9/493480#ibe7176">
+        <cco:has_text_value>SimplePart</cco:has_text_value>
+      </design:LabelBearingEntity>
+    </cco:inheres_in>
+  </design:PartSpecification>
+</rdf:RDF>
