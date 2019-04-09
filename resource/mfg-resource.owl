@@ -11,9 +11,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability">
-        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Upper/ExtendedRelationOntology"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability"/>
     
 
 
@@ -71,11 +69,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
         <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#capability"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000182"/>
     
 
 
@@ -514,6 +536,14 @@
     <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleMaking -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleMaking">
         <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingFunction"/>
     </owl:Class>
     
