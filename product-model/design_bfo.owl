@@ -305,14 +305,6 @@
     
 
 
-    <!-- http://www.ohio.edu/ontologies/design#CircularitySpecification -->
-
-    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#CircularitySpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#QualitySpecification"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ohio.edu/ontologies/design#CoaxilitySpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#CoaxilitySpecification">
@@ -380,7 +372,7 @@
     <!-- http://www.ohio.edu/ontologies/design#CornerRadius -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#CornerRadius">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -388,7 +380,7 @@
     <!-- http://www.ohio.edu/ontologies/design#CounterboreDiameterSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#CounterboreDiameterSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -413,7 +405,7 @@
     <!-- http://www.ohio.edu/ontologies/design#CountersunkDiameterSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#CountersunkDiameterSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -503,7 +495,7 @@
     <!-- http://www.ohio.edu/ontologies/design#DiameterSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#DiameterSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -706,7 +698,7 @@
     <!-- http://www.ohio.edu/ontologies/design#FloorRadiusSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#FloorRadiusSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -1264,6 +1256,14 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/design#RadialSpecification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#RadialSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#QualitySpecification"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/design#RadiusRepresentation -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#RadiusRepresentation">
@@ -1275,7 +1275,7 @@
     <!-- http://www.ohio.edu/ontologies/design#RadiusSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#RadiusSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
     </owl:Class>
     
 
@@ -1797,8 +1797,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.ohio.edu/ontologies/design#AngleSpecification"/>
-            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/design#CircularitySpecification"/>
             <rdf:Description rdf:about="http://www.ohio.edu/ontologies/design#LinearSpecification"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/design#RadialSpecification"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
