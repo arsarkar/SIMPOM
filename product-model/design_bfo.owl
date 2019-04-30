@@ -802,6 +802,14 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/design#Hole -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#Hole">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/design#FormFeature"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/design#HoleDirectionSpecification -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#HoleDirectionSpecification">
