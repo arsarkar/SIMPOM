@@ -1,0 +1,49 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ohio.edu/simplanner/plan2019/5/21/125426#">
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/design#describes_map_with"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value"/>
+  <j.1:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#FeatureQualityMap_I5900">
+    <j.1:describes_map_with>
+      <j.1:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#FeatureSpecification_I2318">
+        <j.0:inheres_in>
+          <j.1:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#LabelBearingEntity_I9428">
+            <j.0:has_text_value>SIMPLE HOLE(4)</j.0:has_text_value>
+          </j.1:LabelBearingEntity>
+        </j.0:inheres_in>
+        <j.0:represents rdf:resource="http://www.ohio.edu/simplanner/design2019/5/2/724804#FeatureRepresentation_I7243"/>
+      </j.1:FeatureSpecification>
+    </j.1:describes_map_with>
+    <j.1:describes_map_with>
+      <j.1:DepthSpecification rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#DepthSpecification_I6678">
+        <j.0:inheres_in>
+          <j.1:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#MeasurementBearingEntity_I4895">
+            <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >2.0</j.0:has_decimal_value>
+          </j.1:MeasurementBearingEntity>
+        </j.0:inheres_in>
+        <j.0:represents rdf:resource="http://www.ohio.edu/simplanner/design2019/5/2/724804#QualityRepresentation_I7401"/>
+      </j.1:DepthSpecification>
+    </j.1:describes_map_with>
+  </j.1:FeatureQualityMap>
+  <j.1:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#FeatureQualityMap_I1885">
+    <j.1:describes_map_with rdf:resource="http://www.ohio.edu/simplanner/design2019/5/2/724804#FeatureSpecification_I2318"/>
+    <j.1:describes_map_with>
+      <j.1:RoundnessSpecification rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#ToleranceSpecification_I1908">
+        <j.0:inheres_in>
+          <j.1:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design2019/5/2/724804#MeasurementBearingEntity_I1571">
+            <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >0.001</j.0:has_decimal_value>
+          </j.1:MeasurementBearingEntity>
+        </j.0:inheres_in>
+        <j.0:represents rdf:resource="http://www.ohio.edu/simplanner/design2019/5/2/724804#ToleranceRepresentation_I6558"/>
+      </j.1:RoundnessSpecification>
+    </j.1:describes_map_with>
+  </j.1:FeatureQualityMap>
+</rdf:RDF>
