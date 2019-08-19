@@ -1,0 +1,667 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/capability-implanner#"
+     xml:base="http://www.ohio.edu/ontologies/capability-implanner"
+     xmlns:capa="http://www.ohio.edu/ontologies/manufacturing-capability#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:design="http://www.ohio.edu/ontologies/design#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/capability-implanner">
+        <owl:imports rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#demarcates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#demarcates"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/describes_set_with_ordinality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/describes_set_with_ordinality"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/realizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/realizes"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/references -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/references"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/design#DimensionToleranceSpecification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#DimensionToleranceSpecification"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/design#FlatnessSpecification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#FlatnessSpecification"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/design#SurfaceFinishSpecification -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/design#SurfaceFinishSpecification"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Boring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Boring"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#DimensionTolerance -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DimensionTolerance"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Flatness -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Flatness"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#HoleGrinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#HoleGrinding"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Honing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Honing"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralFinishing"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Reaming -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Reaming"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinish -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinish"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformation -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformation"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformation -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformation"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#boring0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#boring0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Boring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#centerdrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#centerdrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#CenterDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#dimensiontolerance9563 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#dimensiontolerance9563">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DimensionTolerance"/>
+        <capa:demarcates rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2447"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5795"/>
+        <cco:references rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#dimensiontolerancespecification1597"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#dimensiontolerancespecification1597 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#dimensiontolerancespecification1597">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#DimensionToleranceSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#enddrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#enddrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#endmilling0102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#endmilling0102">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+        <cco:realizes rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#facemilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#facemilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#flatness5794 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#flatness5794">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Flatness"/>
+        <capa:demarcates rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5646"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8140"/>
+        <cco:references rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#flatnessspecification5319"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#flatnessspecification5319 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#flatnessspecification5319">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FlatnessSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#GunDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#HoleGrinding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#honing0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#honing0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Honing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1646 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1646">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1965 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1965">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2724 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2724">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3091 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3091">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5250">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8904 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8904">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3932 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3932">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4320 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4320">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5517 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5517">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MaximumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2447 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2447">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2724"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7674"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4723 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4723">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8904"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5917"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5646 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5646">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5250"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3434"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5795 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5795">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3091"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3932"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6525 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6525">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1965"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5517"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8140">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1646"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4320"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3434 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3434">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5917 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5917">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7674 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7674">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MinimumOrdinalMeasurementInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation1244 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation1244">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5517"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5917"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation6382 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation6382">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4320"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3434"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation8792 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation8792">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/NominalMeasurementInformationContentEntity"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3932"/>
+        <cco:describes_set_with_ordinality rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7674"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralFinishing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#precboring0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#precboring0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#reaming0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Reaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#sidemilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#sidemilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#slabmilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#slabmilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#spadedrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spadedrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#spotdrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spotdrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#surfacefinish7818 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#surfacefinish7818">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SurfaceFinish"/>
+        <capa:demarcates rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#peripheralfinishing9879"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4723"/>
+        <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6525"/>
+        <cco:references rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#surfacefinishspecification1492"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#surfacefinishspecification1492 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#surfacefinishspecification1492">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#SurfaceFinishSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#twistdrilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#twistdrilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies//MillimeterMeasurementUnit"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

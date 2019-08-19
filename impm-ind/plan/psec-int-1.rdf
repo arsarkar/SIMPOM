@@ -1,64 +1,53 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
-    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
-    xmlns:j.2="http://www.ohio.edu/ontologies/manufacturing-capability#"
+    xmlns="http://www.ohio.edu/simplanner/plan2019/8/19/416693#"
+    xmlns:j.0="http://www.ohio.edu/ontologies/manufacturing-capability#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:j.3="http://www.ohio.edu/ontologies/manufacturing-plan#"
-    xmlns="http://www.ohio.edu/simplanner/plan2019/5/20/523050#">
+    xmlns:j.1="http://www.ohio.edu/ontologies/manufacturing-plan#">
   <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#hasSucceedingProcess"/>
-  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
-  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#precedes"/>
-  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
-  <j.2:GunDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101"/>
-  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/plan2019/5/20/523050#IProcess7555">
-    <j.3:precedes>
-      <j.2:TwistDrilling rdf:about="http://www.ohio.edu/simplanner/plan2019/5/20/523050#_I5201">
-        <j.0:has_output>
-          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/plan2019/5/20/523050#Hole_I7122"/>
-        </j.0:has_output>
-        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/5/2/724804#FormFeature_I4810"/>
-      </j.2:TwistDrilling>
-    </j.3:precedes>
-  </rdf:Description>
-  <j.2:EndDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#enddrilling0101">
-    <j.3:hasSucceedingProcess>
-      <j.2:Boring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#boring0101">
-        <j.3:hasSucceedingProcess>
-          <j.2:HoleGrinding rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
-        </j.3:hasSucceedingProcess>
-        <j.3:hasSucceedingProcess>
-          <j.2:Honing rdf:about="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
-        </j.3:hasSucceedingProcess>
-        <j.3:hasSucceedingProcess>
-          <j.2:Reaming rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming0101">
-            <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
-            <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
-          </j.2:Reaming>
-        </j.3:hasSucceedingProcess>
-      </j.2:Boring>
-    </j.3:hasSucceedingProcess>
-    <j.3:hasSucceedingProcess>
-      <j.2:PrecisionBoring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#precboring0101">
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
-      </j.2:PrecisionBoring>
-    </j.3:hasSucceedingProcess>
-    <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
-  </j.2:EndDrilling>
-  <j.3:RootProcess rdf:about="http://www.ohio.edu/ontologies/capability-implanner#RootProcess_I1078">
-    <j.3:hasSucceedingProcess>
-      <j.2:TwistDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#twistdrilling0101">
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#boring0101"/>
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#precboring0101"/>
-        <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
-      </j.2:TwistDrilling>
-    </j.3:hasSucceedingProcess>
-  </j.3:RootProcess>
-  <j.2:SpadeDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spadedrilling0101">
-    <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#boring0101"/>
-    <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#precboring0101"/>
-    <j.3:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
-  </j.2:SpadeDrilling>
+  <j.1:RootProcess rdf:about="http://www.ohio.edu/ontologies/capability-implanner#RootProcess_I1500">
+    <j.1:hasSucceedingProcess>
+      <j.0:TwistDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#twistdrilling0101">
+        <j.1:hasSucceedingProcess>
+          <j.0:Boring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#boring0101">
+            <j.1:hasSucceedingProcess>
+              <j.0:HoleGrinding rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
+            </j.1:hasSucceedingProcess>
+            <j.1:hasSucceedingProcess>
+              <j.0:Honing rdf:about="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
+            </j.1:hasSucceedingProcess>
+            <j.1:hasSucceedingProcess>
+              <j.0:Reaming rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming0101">
+                <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
+                <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
+              </j.0:Reaming>
+            </j.1:hasSucceedingProcess>
+          </j.0:Boring>
+        </j.1:hasSucceedingProcess>
+        <j.1:hasSucceedingProcess>
+          <j.0:PrecisionBoring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#precboring0101">
+            <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101"/>
+            <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#honing0101"/>
+            <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
+          </j.0:PrecisionBoring>
+        </j.1:hasSucceedingProcess>
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
+      </j.0:TwistDrilling>
+    </j.1:hasSucceedingProcess>
+    <j.1:hasSucceedingProcess>
+      <j.0:EndDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#enddrilling0101">
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#boring0101"/>
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#precboring0101"/>
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
+      </j.0:EndDrilling>
+    </j.1:hasSucceedingProcess>
+    <j.1:hasSucceedingProcess>
+      <j.0:SpadeDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spadedrilling0101">
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#boring0101"/>
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#precboring0101"/>
+        <j.1:hasSucceedingProcess rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#reaming0101"/>
+      </j.0:SpadeDrilling>
+    </j.1:hasSucceedingProcess>
+  </j.1:RootProcess>
+  <j.0:GunDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101"/>
 </rdf:RDF>

@@ -1,0 +1,95 @@
+<rdf:RDF
+    xmlns="http://www.ohio.edu/ontologies/capability-implanner#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:j.2="http://www.ohio.edu/ontologies/manufacturing-capability#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/capability-implanner">
+    <owl:imports rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability"/>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_measured_by"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/realizes"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/references"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/describes_set_with_ordinality"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#demarcates"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value"/>
+  <j.2:TwistDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#twistdrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:TwistDrilling>
+  <j.0:NominalMeasurementInformationContentEntity rdf:about="http://www.ohio.edu/ontologies/capability-implanner#nominalmeasurementinformation7526">
+    <j.0:describes_set_with_ordinality>
+      <j.0:MinimumOrdinalMeasurementInformation rdf:about="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3966"/>
+    </j.0:describes_set_with_ordinality>
+    <j.0:describes_set_with_ordinality>
+      <j.0:MaximumOrdinalMeasurementInformation rdf:about="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9860"/>
+    </j.0:describes_set_with_ordinality>
+  </j.0:NominalMeasurementInformationContentEntity>
+  <j.2:EndDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#enddrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:EndDrilling>
+  <j.2:HoleGrinding rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holegrinding0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:HoleGrinding>
+  <j.2:CenterDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#centerdrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:CenterDrilling>
+  <j.2:Reaming rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming0101">
+    <j.0:realizes>
+      <j.2:HoleImproving rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holeimproving6568"/>
+    </j.0:realizes>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:Reaming>
+  <j.2:GunDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:GunDrilling>
+  <j.2:SpadeDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spadedrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:SpadeDrilling>
+  <j.2:Honing rdf:about="http://www.ohio.edu/ontologies/capability-implanner#honing0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:Honing>
+  <j.2:SpotDrilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spotdrilling0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:SpotDrilling>
+  <j.2:Boring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#boring0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:Boring>
+  <j.2:Roundness rdf:about="http://www.ohio.edu/ontologies/capability-implanner#roundness2427">
+    <j.0:references>
+      <j.1:RoundnessSpecification rdf:about="http://www.ohio.edu/ontologies/capability-implanner#roundnessspecification2617"/>
+    </j.0:references>
+    <j.0:is_measured_by>
+      <j.0:MeasurementInformationContentEntity rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6402">
+        <j.0:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3966"/>
+        <j.0:inheres_in>
+          <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5840">
+            <j.0:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+            <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >0.0127</j.0:has_decimal_value>
+          </j.0:InformationBearingEntity>
+        </j.0:inheres_in>
+      </j.0:MeasurementInformationContentEntity>
+    </j.0:is_measured_by>
+    <j.0:is_measured_by>
+      <j.0:MeasurementInformationContentEntity rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8199">
+        <j.0:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9860"/>
+        <j.0:inheres_in>
+          <j.0:InformationBearingEntity rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8636">
+            <j.0:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+            <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >9.999999999999E10</j.0:has_decimal_value>
+          </j.0:InformationBearingEntity>
+        </j.0:inheres_in>
+      </j.0:MeasurementInformationContentEntity>
+    </j.0:is_measured_by>
+    <j.2:demarcates rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving6568"/>
+  </j.2:Roundness>
+  <j.2:PrecisionBoring rdf:about="http://www.ohio.edu/ontologies/capability-implanner#precboring0101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </j.2:PrecisionBoring>
+</rdf:RDF>

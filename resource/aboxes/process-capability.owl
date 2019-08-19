@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.ohio.edu/ontologies/capability-implanner#"
      xml:base="http://www.ohio.edu/ontologies/capability-implanner"
+     xmlns:capa="http://www.ohio.edu/ontologies/manufacturing-capability#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:design="http://www.ohio.edu/ontologies/design#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cco="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/capability-implanner">
         <owl:imports rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability"/>
     </owl:Ontology>
@@ -47,6 +50,22 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#endmilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#endmilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#EndMilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#facemilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#facemilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#FaceMilling"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gundrilling0101">
@@ -83,6 +102,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming0101">
         <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Reaming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#sidemilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#sidemilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SideMilling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#slabmilling0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#slabmilling0101">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SlabMilling"/>
     </owl:NamedIndividual>
     
 
