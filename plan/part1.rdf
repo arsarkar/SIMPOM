@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ohio.edu/ontologies/design#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.ohio.edu/ontologies/manufacturing-plan#">
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#hasSucceedingFeature"/>
+  <j.0:RootFeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/8/29/488134#IFeature4595">
+    <j.1:hasSucceedingFeature>
+      <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/8/29/488134#f2_1689">
+        <j.1:hasSucceedingFeature>
+          <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/8/29/488134#f4_7887"/>
+        </j.1:hasSucceedingFeature>
+      </j.0:FeatureRepresentation>
+    </j.1:hasSucceedingFeature>
+    <j.1:hasSucceedingFeature>
+      <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/8/29/488134#f1_9571">
+        <j.1:hasSucceedingFeature>
+          <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/8/29/488134#f3_2836">
+            <j.1:hasSucceedingFeature rdf:resource="http://www.ohio.edu/simplanner/plan2019/8/29/488134#f4_7887"/>
+          </j.0:FeatureRepresentation>
+        </j.1:hasSucceedingFeature>
+      </j.0:FeatureRepresentation>
+    </j.1:hasSucceedingFeature>
+  </j.0:RootFeatureRepresentation>
+</rdf:RDF>

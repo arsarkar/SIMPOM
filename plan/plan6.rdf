@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.2="http://www.ohio.edu/ontologies/manufacturing-plan#">
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#hasSucceedingFeature"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/specified_by"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#precedes"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+  <j.2:PlannedProcess rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#IProcess3090">
+    <j.2:precedes>
+      <j.2:PlannedProcess rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#p11_1266">
+        <j.2:precedes>
+          <j.2:PlannedProcess rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#p21_4168">
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_3004"/>
+            </j.0:has_output>
+          </j.2:PlannedProcess>
+        </j.2:precedes>
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_7840"/>
+        </j.0:has_output>
+      </j.2:PlannedProcess>
+    </j.2:precedes>
+    <j.0:has_output>
+      <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_8548"/>
+    </j.0:has_output>
+    <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-plan#RootProcess"/>
+  </j.2:PlannedProcess>
+  <j.1:RootFeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#IFeature2331">
+    <j.2:hasSucceedingFeature>
+      <j.1:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f1_4955">
+        <j.2:hasSucceedingFeature>
+          <j.1:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f2_4343">
+            <j.2:hasSucceedingFeature>
+              <j.1:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f3_8316"/>
+            </j.2:hasSucceedingFeature>
+            <j.0:specified_by rdf:resource="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_3004"/>
+          </j.1:FeatureRepresentation>
+        </j.2:hasSucceedingFeature>
+        <j.0:specified_by rdf:resource="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_7840"/>
+      </j.1:FeatureRepresentation>
+    </j.2:hasSucceedingFeature>
+    <j.0:specified_by rdf:resource="http://www.ohio.edu/simplanner/design2019/9/9/751150#feature_8548"/>
+    <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FeatureRepresentation"/>
+  </j.1:RootFeatureRepresentation>
+</rdf:RDF>

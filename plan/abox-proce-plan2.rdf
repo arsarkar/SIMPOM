@@ -1,0 +1,98 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:j.2="http://www.ohio.edu/ontologies/manufacturing-capability#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.3="http://www.ohio.edu/ontologies/manufacturing-plan#"
+    xmlns="http://www.ohio.edu/simplanner/plan2019/9/5/116567#">
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#hasSucceedingProcess"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#precedes"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+  <j.3:PlannedProcess rdf:about="http://www.ohio.edu/simplanner/design2019/8/26/352077#RootProcess_I5373">
+    <j.0:has_output>
+      <j.1:IntermediateFormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/8/26/352077#FormFeature_I1432">
+        <j.0:designated_by>
+          <j.0:FormFeatureIdentifier rdf:about="http://www.ohio.edu/simplanner/design2019/8/26/352077#FormFeatureIdentifier_I6141">
+            <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#TypeBearingEntity_I6755"/>
+            <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#LabelBearingEntity_I8230"/>
+          </j.0:FormFeatureIdentifier>
+        </j.0:designated_by>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FormFeature"/>
+      </j.1:IntermediateFormFeature>
+    </j.0:has_output>
+    <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-plan#RootProcess"/>
+    <j.3:precedes>
+      <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#EndMilling_I5094">
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#FormFeature_I1432"/>
+        <j.0:has_output>
+          <j.1:UnsatisfiedFeature rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I6452">
+            <j.0:concretizes rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#FeatureSpecification_I8290"/>
+            <j.0:designated_by>
+              <j.0:FormFeatureIdentifier rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeatureIdentifier_I9648">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#LabelBearingEntity_I8230"/>
+              </j.0:FormFeatureIdentifier>
+            </j.0:designated_by>
+            <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FormFeature"/>
+            <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I6452"/>
+          </j.1:UnsatisfiedFeature>
+        </j.0:has_output>
+      </j.2:EndMilling>
+    </j.3:precedes>
+    <j.3:precedes>
+      <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#SideMilling_I3418">
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#FormFeature_I1432"/>
+        <j.0:has_output>
+          <j.1:IntermediateFormFeature rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I2321">
+            <j.0:designated_by>
+              <j.0:FormFeatureIdentifier rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeatureIdentifier_I7211">
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#LabelBearingEntity_I8230"/>
+              </j.0:FormFeatureIdentifier>
+            </j.0:designated_by>
+            <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FormFeature"/>
+          </j.1:IntermediateFormFeature>
+        </j.0:has_output>
+        <j.3:precedes>
+          <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#SideMilling_I7278">
+            <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I2321"/>
+            <j.0:has_output>
+              <j.1:UnsatisfiedFeature rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I2678">
+                <j.0:concretizes rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#FeatureSpecification_I8290"/>
+                <j.0:designated_by>
+                  <j.0:FormFeatureIdentifier rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeatureIdentifier_I8414">
+                    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#LabelBearingEntity_I8230"/>
+                  </j.0:FormFeatureIdentifier>
+                </j.0:designated_by>
+                <rdf:type rdf:resource="http://www.ohio.edu/ontologies/design#FormFeature"/>
+                <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I2678"/>
+              </j.1:UnsatisfiedFeature>
+            </j.0:has_output>
+          </j.2:SideMilling>
+        </j.3:precedes>
+      </j.2:SideMilling>
+    </j.3:precedes>
+  </j.3:PlannedProcess>
+  <j.3:RootProcess rdf:about="http://www.ohio.edu/ontologies/capability-implanner#RootProcess_I4810">
+    <j.3:hasSucceedingProcess>
+      <j.2:SideMilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#sidemilling0101">
+        <j.3:hasSucceedingProcess>
+          <j.2:SideMilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#sidemilling0102"/>
+        </j.3:hasSucceedingProcess>
+      </j.2:SideMilling>
+    </j.3:hasSucceedingProcess>
+    <j.3:hasSucceedingProcess>
+      <j.2:EndMilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#endmilling0103">
+        <j.3:hasSucceedingProcess>
+          <j.2:EndMilling rdf:about="http://www.ohio.edu/ontologies/capability-implanner#endmilling0104"/>
+        </j.3:hasSucceedingProcess>
+      </j.2:EndMilling>
+    </j.3:hasSucceedingProcess>
+  </j.3:RootProcess>
+  <j.0:InformationQualityEntity rdf:about="http://www.ohio.edu/simplanner/plan2019/9/5/116567#InformationQualityEntity_I8881">
+    <j.0:concretizes rdf:resource="http://www.ohio.edu/simplanner/design2019/8/26/352077#ToleranceSpecification_I9765"/>
+    <j.0:inheres_in rdf:resource="http://www.ohio.edu/simplanner/plan2019/9/5/116567#FormFeature_I2321"/>
+  </j.0:InformationQualityEntity>
+</rdf:RDF>

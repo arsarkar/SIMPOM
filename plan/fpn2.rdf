@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ohio.edu/ontologies/design#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://www.ohio.edu/ontologies/manufacturing-plan#">
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#hasSucceedingFeature"/>
+  <j.0:RootFeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#IFeature2331">
+    <j.1:hasSucceedingFeature>
+      <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f1_4955">
+        <j.1:hasSucceedingFeature>
+          <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f2_4343">
+            <j.1:hasSucceedingFeature>
+              <j.0:FeatureRepresentation rdf:about="http://www.ohio.edu/simplanner/plan2019/9/9/751150#f3_8316"/>
+            </j.1:hasSucceedingFeature>
+          </j.0:FeatureRepresentation>
+        </j.1:hasSucceedingFeature>
+      </j.0:FeatureRepresentation>
+    </j.1:hasSucceedingFeature>
+  </j.0:RootFeatureRepresentation>
+</rdf:RDF>

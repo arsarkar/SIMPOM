@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/2019/7/untitled-ontology-425#"
+     xml:base="http://www.ohio.edu/ontologies/2019/7/untitled-ontology-425"
+     xmlns:graph5="http://www.ohio.edu/ontologies/graph5#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:test1="http://www.ohio.edu/ontologies/graph/test1#">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/2019/7/untitled-ontology-425"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reachableTo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reacheableFrom"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/graph5#hasParent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <rdfs:range rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasEdge -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasEdge">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reachableTo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reacheableFrom"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdfs:range rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasNode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reacheableFrom"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reachableTo"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasRoot -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasRoot">
+        <rdfs:subPropertyOf rdf:resource="http://www.ohio.edu/ontologies/graph5#hasNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#hasSibling">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#hasParent"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#hasChild"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#reachableTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#reachableTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ohio.edu/ontologies/graph5#reacheableFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#reacheableFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/graph5#reacheableFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ohio.edu/ontologies/graph/test1#hasLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#BranchNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#BranchNode">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <owl:disjointWith rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#Graph -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#Graph">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/graph5#hasNode"/>
+                <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#LeafNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#LeafNode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.ohio.edu/ontologies/graph5#BranchNode"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#Node -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#Node">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#Node"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/graph5#hasEdge"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#RootNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#RootNode">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#Tree -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#Tree">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#Graph"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/graph5#hasNode"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/graph5#Graph"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#TreeNode -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/graph5#TreeNode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/graph5#hasChild"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/graph5#hasParent"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#Node11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#Node11">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <test1:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node11</test1:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node4"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node6"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node7"/>
+        <test1:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node1</test1:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node4"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node4"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node7"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <test1:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node2</test1:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node3">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node6"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node6"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <test1:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node3</test1:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node4">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node4"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node5">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node7"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node4"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node7"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node6">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node6"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node3"/>
+        <test1:hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node6</test1:hasLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph/test1#node7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph/test1#node7">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node7"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node2"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph/test1#node5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#g1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#g1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Graph"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#n1"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#n2"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#n3"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#n4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#n1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#n1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <graph5:hasEdge rdf:resource="http://www.ohio.edu/ontologies/graph5#n2"/>
+        <graph5:hasEdge rdf:resource="http://www.ohio.edu/ontologies/graph5#n3"/>
+        <graph5:hasEdge rdf:resource="http://www.ohio.edu/ontologies/graph5#n4"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#n2"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#n3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#n4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#n2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#n2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <graph5:hasEdge rdf:resource="http://www.ohio.edu/ontologies/graph5#n3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#n3"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#n1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#n3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#n3">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#n1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#n2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#n4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#n4">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#n1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn4"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn3"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn4"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn3">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn3"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn4">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#LeafNode"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn4"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn5">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn7"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn7"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn6">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasChild rdf:resource="http://www.ohio.edu/ontologies/graph5#tn8"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn7"/>
+        <graph5:reachableTo rdf:resource="http://www.ohio.edu/ontologies/graph5#tn8"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn7">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn7"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tn8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tn8">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Node"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#TreeNode"/>
+        <graph5:hasParent rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:hasSibling rdf:resource="http://www.ohio.edu/ontologies/graph5#tn8"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+        <graph5:reacheableFrom rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tree1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tree1">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Graph"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Tree"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn1"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn2"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn3"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/graph5#tree2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/graph5#tree2">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Graph"/>
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/graph5#Tree"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn5"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn6"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn7"/>
+        <graph5:hasNode rdf:resource="http://www.ohio.edu/ontologies/graph5#tn8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#tn5"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#tn6"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#tn7"/>
+            <rdf:Description rdf:about="http://www.ohio.edu/ontologies/graph5#tn8"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#n1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#Tree"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#hasChild"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#BranchNode"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#hasNode"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#n"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#RootNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#hasNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#t"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#hasChild"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#n1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#Tree"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#t1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ohio.edu/ontologies/graph5#BranchNode"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

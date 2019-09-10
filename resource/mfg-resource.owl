@@ -716,6 +716,14 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FineGrinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FineGrinding">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Polishing"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/manufacturing-capability#FinishMilling -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#FinishMilling">
@@ -1167,22 +1175,6 @@
     
 
 
-    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralFinishing -->
-
-    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralFinishing">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Finishing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralRoughing -->
-
-    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PeripheralRoughing">
-        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Roughing"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PerpendicularityCapability -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PerpendicularityCapability">
@@ -1229,9 +1221,33 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PocketFinishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PocketFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Finishing"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PocketMakingFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PocketRoughing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PocketRoughing">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Roughing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#Polishing -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#Polishing">
         <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#MillingFunction"/>
     </owl:Class>
     
@@ -1329,6 +1345,14 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#RoughGrinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#RoughGrinding">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Polishing"/>
     </owl:Class>
     
 
