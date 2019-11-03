@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/capability-implanner#"
+     xml:base="http://www.ohio.edu/ontologies/capability-implanner"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:j.0="http://www.ohio.edu/ontologies/manufacturing-capability#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/capability-implanner">
+        <owl:imports rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability"/>
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntologyMerged"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_function -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_function"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#BF20VLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#BF20VLP">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingMachine"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holefinishing1637"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holefinishing6715"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving1867"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving7947"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving9211"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking3118"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking4318"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking8001"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holestarting6108"/>
+        <CommonCoreOntologies:has_function>http://www.ohio.edu/ontologies/capability-implanner#holemaking3118</CommonCoreOntologies:has_function>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#boring-kilowood-S20U -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#boring-kilowood-S20U">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#BoringTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving1867"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#grinding-rotary-carbide-burr -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#grinding-rotary-carbide-burr">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#GrindingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holefinishing1637"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#gun-drill-sterling-solid-carbide -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#gun-drill-sterling-solid-carbide">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#GunDrillingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking4318"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holefinishing1637 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holefinishing1637"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holefinishing6715 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holefinishing6715"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holeimproving1867 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holeimproving1867"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holeimproving7947 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holeimproving7947"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holeimproving9211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holeimproving9211"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holemaking3118 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holemaking3118"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holemaking4318 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holemaking4318"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holemaking8001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holemaking8001"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#holestarting6108 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#holestarting6108"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#honing-weiler -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#honing-weiler">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#HoningTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holefinishing6715"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#precboring-Balance-364033 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#precboring-Balance-364033">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoringTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving7947"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#reaming-tool -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#reaming-tool">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#ReamingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holeimproving9211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#spade-drill-moster-solid-carbide -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spade-drill-moster-solid-carbide">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpadeDrillingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking8001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#spot-drill-YG-M42 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#spot-drill-YG-M42">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#SpotDrillingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holestarting6108"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#twist-drill-red-helix-cobalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#twist-drill-red-helix-cobalt">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrillingTool"/>
+        <CommonCoreOntologies:has_function rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking3118"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

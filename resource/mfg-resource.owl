@@ -1183,6 +1183,14 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PlanarGrinding -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PlanarGrinding">
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Milling"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PlanarGrindingTool -->
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PlanarGrindingTool">
@@ -1288,6 +1296,25 @@
 
     <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoring">
         <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#Drilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoringTool -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#PrecisionBoringTool">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingTool"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/bearer_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#HoleImproving"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#DrillingTool"/>
     </owl:Class>
     
 

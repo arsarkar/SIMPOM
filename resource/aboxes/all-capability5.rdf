@@ -1118,6 +1118,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#equation1545">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification9649"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2353"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3122"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3339"/>
     </owl:NamedIndividual>
@@ -1130,6 +1131,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification4950"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1897"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3239"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9844"/>
     </owl:NamedIndividual>
     
@@ -1141,6 +1143,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification9862"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1022"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7315"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3786"/>
     </owl:NamedIndividual>
     
@@ -1152,6 +1155,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification6705"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1331"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2974"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6329"/>
     </owl:NamedIndividual>
     
@@ -1163,6 +1167,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification9372"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6982"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9755"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7296"/>
     </owl:NamedIndividual>
     
@@ -1174,6 +1179,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification6766"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification9259"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1610"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6915"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8443"/>
     </owl:NamedIndividual>
@@ -1197,6 +1203,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification5639"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3637"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5894"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8564"/>
     </owl:NamedIndividual>
     
@@ -1208,6 +1215,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification4350"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification4528"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7822"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9970"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8875"/>
     </owl:NamedIndividual>
@@ -1220,6 +1228,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification1257"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7146"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8665"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5944"/>
     </owl:NamedIndividual>
     
@@ -1230,6 +1239,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#equation7270">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification2139"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3722"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3955"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation9991"/>
     </owl:NamedIndividual>
@@ -1242,6 +1252,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification9753"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification1094"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2846"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5719"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation1609"/>
     </owl:NamedIndividual>
@@ -1254,6 +1265,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification8396"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification6802"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4528"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5977"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6342"/>
     </owl:NamedIndividual>
@@ -1266,6 +1278,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification5291"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1304"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4140"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7721"/>
     </owl:NamedIndividual>
     
@@ -1276,6 +1289,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#equation9088">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification7442"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2359"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4281"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4756"/>
     </owl:NamedIndividual>
@@ -1288,6 +1302,7 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Equation"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification9376"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification8545"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9732"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9911"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3636"/>
     </owl:NamedIndividual>
@@ -1301,6 +1316,7 @@
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#depthspecification6967"/>
         <cco:expects rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#diameterspecification9352"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6152"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8363"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation4056"/>
     </owl:NamedIndividual>
     
@@ -1685,6 +1701,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1238 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1238">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1251 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1251">
@@ -1767,6 +1793,26 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1395 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1395">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1405 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1405">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0625</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1418 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1418">
@@ -1817,6 +1863,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1523 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1523">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1553 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1553">
@@ -1833,6 +1889,17 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1610 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1610">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* (** (/ ?arg1 ?arg2) 3) 0.001) 0.003)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -1867,6 +1934,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1725 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1725">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1728 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1728">
@@ -1893,6 +1970,26 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1760 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1760">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.008</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1788 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1788">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.75</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -1998,12 +2095,42 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1988 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1988">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1998 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1998">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07366</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2000">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2006">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2058,6 +2185,26 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2201">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2249 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2249">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2275 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2275">
@@ -2074,6 +2221,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2308 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2308">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2102,8 +2259,31 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2347">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
-        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2353 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2353">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</cco:has_decimal_value>
+        <cco:has_string_value>(* 16 ?arg1)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2359 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2359">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 12 ?arg1)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -2129,6 +2309,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2430 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2430">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.004</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2434 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2434">
@@ -2149,11 +2339,41 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2457 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2457">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2511 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2511">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2522 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2522">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2548 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2548">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -2189,6 +2409,36 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2649 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2649">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2689 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2689">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0625</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2723 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2723">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2724 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2724">
@@ -2209,12 +2459,43 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2734 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2734">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2804 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2804">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2828 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2828">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2846 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2846">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.005(** (/ ?depth ?dia) 3)) 0.002)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -2239,12 +2520,43 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2938 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2938">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2962 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2962">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2974 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2974">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.005 (sqrt ?arg1) ) 0.003)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2981 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2981">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2280,6 +2592,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3185 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3185">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3186 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3186">
@@ -2300,6 +2622,37 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3239 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3239">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 4 ?arg1)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3265 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3265">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3310 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3310">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3360 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3360">
@@ -2316,6 +2669,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.157</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3521 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3521">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2371,12 +2734,43 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3658 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3658">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.075</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3659 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3659">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3700 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3700">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3722 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3722">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 0.007(sqrt ?dia ) )</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -2462,22 +2856,12 @@
     
 
 
-    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4047 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4047">
-        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
-        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
-        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0254</cco:has_decimal_value>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4063 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4063">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
-        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</cco:has_decimal_value>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2488,6 +2872,17 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4140">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 9 ?arg1)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -2553,12 +2948,33 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4528 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4528">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.006 (** (/ ?arg1 ?arg2) 3)) 0.003)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4557 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4557">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4592 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4592">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2589,6 +3005,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4731 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4731">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0E-4</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2693,11 +3119,51 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4981 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4981">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4996 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4996">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5023 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5023">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5028">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5040 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5040">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -2709,6 +3175,36 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2032</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5052 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5052">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5055 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5055">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5082 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5082">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0E-4</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2773,6 +3269,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5316 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5316">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5320 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5320">
@@ -2823,6 +3329,36 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5422 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5422">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5437 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5437">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5524 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5524">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5537 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5537">
@@ -2839,6 +3375,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1016</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5551 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5551">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2904,6 +3450,37 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5772 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5772">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5781 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5781">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5894 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5894">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.007(sqrt ?arg1) ) 0.003)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5977 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5977">
@@ -2920,6 +3497,16 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6003">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6019">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -2955,6 +3542,26 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6101">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6107 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6107">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6152 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6152">
@@ -2962,6 +3569,36 @@
         <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_string_value>(+ (* 0.00762 (pow (/ ?arg1 ?arg2) 3)) 0.0254)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6153 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6153">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6162 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6162">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6206 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6206">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0024</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -2986,11 +3623,31 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6265 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6265">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6293 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6293">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6313 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6313">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -3016,12 +3673,32 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6397 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6397">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6398 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6398">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00254</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6410 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6410">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3042,6 +3719,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6537 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6537">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3076,6 +3763,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6708 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6708">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6747 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6747">
@@ -3106,6 +3803,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6842 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6842">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6844 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6844">
@@ -3126,6 +3833,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6886 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6886">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6915 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6915">
@@ -3133,6 +3850,16 @@
         <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_string_value>(+ (* (** (/ ?arg1 ?arg2) 3) 0.0254) 0.0762)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6921 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6921">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3158,6 +3885,26 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7047 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7047">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7120 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7120">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7146 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7146">
@@ -3175,6 +3922,17 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0508</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7315 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7315">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.004 (sqrt ?arg1 ) ) 0.0025)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -3279,12 +4037,32 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7672 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7672">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7678 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7678">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7681 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7681">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.004</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3349,6 +4127,67 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7796 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7796">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7822 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7822">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.0003 (** (/ ?arg1 ?arg2) 3)) 0.002)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7856 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7856">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0029</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7874 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7874">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7875 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7875">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7909 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7909">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7948 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7948">
@@ -3369,12 +4208,42 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8043 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8043">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8069 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8069">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8088 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8088">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8103">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3409,6 +4278,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8217 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8217">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8219 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8219">
@@ -3439,12 +4318,33 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8363 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8363">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.0003 (** (/ ?arg1 ?arg2) 3)) 0.001)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8445 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8445">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8462 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8462">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3509,6 +4409,27 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8644 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8644">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0625</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8665 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8665">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 16 ?arg1)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8694 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8694">
@@ -3519,11 +4440,31 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8747 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8747">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8811 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8811">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8851 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8851">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -3544,6 +4485,26 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9043">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9129 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9129">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9149 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9149">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
@@ -3579,6 +4540,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9200">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9207 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9207">
@@ -3595,6 +4566,26 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9263 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9263">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.008</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9268 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9268">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3629,6 +4620,16 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9455 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9455">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9465 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9465">
@@ -3655,6 +4656,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9527 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9527">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -3689,6 +4700,26 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9579 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9579">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9589 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9589">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0E-4</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9680 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9680">
@@ -3709,12 +4740,34 @@
     
 
 
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9732 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9732">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(+ (* 0.001 (** (/ ?arg1 ?arg2) 3)) 0.003)</cco:has_string_value>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9735 -->
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9735">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9755 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9755">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_equation_type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/JessEquation"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_string_value>(* 40 ?arg1)</cco:has_string_value>
     </owl:NamedIndividual>
     
 
@@ -3745,6 +4798,16 @@
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
         <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MillimeterMeasurementUnit"/>
         <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.525</cco:has_decimal_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9858 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9858">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <cco:uses_measurement_unit rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
+        <cco:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.999999999999E10</cco:has_decimal_value>
     </owl:NamedIndividual>
     
 
@@ -4600,6 +5663,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1028">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4557"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9589"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5930"/>
     </owl:NamedIndividual>
     
@@ -4619,6 +5683,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1123">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2689"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3584"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6426"/>
     </owl:NamedIndividual>
@@ -4649,6 +5714,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1328">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6842"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8621"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6786"/>
     </owl:NamedIndividual>
@@ -4689,6 +5755,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1434">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2353"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2440"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6821"/>
     </owl:NamedIndividual>
@@ -4699,6 +5766,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1469">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2938"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7752"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation9823"/>
     </owl:NamedIndividual>
@@ -4719,6 +5787,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1483">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2981"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4822"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8522"/>
     </owl:NamedIndividual>
@@ -4730,6 +5799,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1505">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1998"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7856"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7400"/>
     </owl:NamedIndividual>
     
@@ -4740,6 +5810,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1510">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5685"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7047"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2785"/>
     </owl:NamedIndividual>
     
@@ -4770,6 +5841,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1592">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2865"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3310"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation1536"/>
     </owl:NamedIndividual>
     
@@ -4779,6 +5851,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1690">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7909"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8474"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4296"/>
     </owl:NamedIndividual>
@@ -4819,6 +5892,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1746">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1238"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4425"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3482"/>
     </owl:NamedIndividual>
@@ -4829,6 +5903,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1863">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2511"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3186"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3943"/>
     </owl:NamedIndividual>
@@ -4850,6 +5925,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1918">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1340"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8747"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3965"/>
     </owl:NamedIndividual>
     
@@ -4859,6 +5935,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity1920">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2006"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3582"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3288"/>
     </owl:NamedIndividual>
@@ -4899,6 +5976,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2205">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1788"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3961"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2224"/>
     </owl:NamedIndividual>
@@ -4960,6 +6038,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2496">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7373"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7672"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7477"/>
     </owl:NamedIndividual>
     
@@ -4979,6 +6058,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2651">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6019"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8228"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9855"/>
     </owl:NamedIndividual>
@@ -5040,6 +6120,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2850">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2429"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8644"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3877"/>
     </owl:NamedIndividual>
     
@@ -5060,6 +6141,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2935">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1418"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6537"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation4073"/>
     </owl:NamedIndividual>
     
@@ -5070,6 +6152,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity2975">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1216"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5028"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7203"/>
     </owl:NamedIndividual>
     
@@ -5089,6 +6172,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3107">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4592"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4745"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6696"/>
     </owl:NamedIndividual>
@@ -5100,6 +6184,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3120">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8512"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9455"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3877"/>
     </owl:NamedIndividual>
     
@@ -5109,6 +6194,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3141">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1988"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7360"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7048"/>
     </owl:NamedIndividual>
@@ -5149,6 +6235,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3359">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2249"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9465"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6856"/>
     </owl:NamedIndividual>
@@ -5169,6 +6256,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3536">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3521"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4063"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8420"/>
     </owl:NamedIndividual>
@@ -5179,6 +6267,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3557">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7796"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8219"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9943"/>
     </owl:NamedIndividual>
@@ -5189,6 +6278,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3640">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2723"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7948"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8051"/>
     </owl:NamedIndividual>
@@ -5210,6 +6300,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3710">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4346"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5316"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6138"/>
     </owl:NamedIndividual>
     
@@ -5220,6 +6311,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3728">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1272"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8103"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2053"/>
     </owl:NamedIndividual>
     
@@ -5239,6 +6331,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity3951">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2201"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2561"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2121"/>
     </owl:NamedIndividual>
@@ -5250,6 +6343,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4065">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1843"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3659"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2989"/>
     </owl:NamedIndividual>
     
@@ -5280,6 +6374,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4166">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6444"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8088"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7570"/>
     </owl:NamedIndividual>
     
@@ -5299,6 +6394,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4274">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6153"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7701"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2809"/>
     </owl:NamedIndividual>
@@ -5330,6 +6426,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4451">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1482"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8217"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7024"/>
     </owl:NamedIndividual>
     
@@ -5349,6 +6446,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4524">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1395"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7592"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5024"/>
     </owl:NamedIndividual>
@@ -5390,6 +6488,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4926">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2828"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6162"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation5608"/>
     </owl:NamedIndividual>
     
@@ -5400,6 +6499,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity4981">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5160"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6708"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9212"/>
     </owl:NamedIndividual>
     
@@ -5409,6 +6509,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5021">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6313"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8565"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6880"/>
     </owl:NamedIndividual>
@@ -5460,6 +6561,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5200">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1553"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1760"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation1399"/>
     </owl:NamedIndividual>
     
@@ -5469,6 +6571,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5202">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9200"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9578"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7665"/>
     </owl:NamedIndividual>
@@ -5480,6 +6583,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5213">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5409"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6921"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6703"/>
     </owl:NamedIndividual>
     
@@ -5489,6 +6593,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5389">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6107"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7544"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3943"/>
     </owl:NamedIndividual>
@@ -5500,6 +6605,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5483">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1793"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8462"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation4476"/>
     </owl:NamedIndividual>
     
@@ -5509,6 +6615,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5602">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5422"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9207"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4010"/>
     </owl:NamedIndividual>
@@ -5519,6 +6626,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5638">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3185"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7583"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9651"/>
     </owl:NamedIndividual>
@@ -5579,6 +6687,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5800">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1523"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6960"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7143"/>
     </owl:NamedIndividual>
@@ -5589,7 +6698,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity5910">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
-        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4047"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6308"/>
     </owl:NamedIndividual>
     
@@ -5650,6 +6758,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6278">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1361"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9527"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation1275"/>
     </owl:NamedIndividual>
     
@@ -5660,6 +6769,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6327">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1263"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5055"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4738"/>
     </owl:NamedIndividual>
     
@@ -5669,6 +6779,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6431">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1405"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2332"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2184"/>
     </owl:NamedIndividual>
@@ -5679,6 +6790,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6440">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3658"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3875"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6913"/>
     </owl:NamedIndividual>
@@ -5699,6 +6811,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6495">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2804"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7979"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7098"/>
     </owl:NamedIndividual>
@@ -5720,6 +6833,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6571">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3117"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8851"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation1776"/>
     </owl:NamedIndividual>
     
@@ -5730,6 +6844,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6597">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1728"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7681"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7558"/>
     </owl:NamedIndividual>
     
@@ -5739,6 +6854,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6601">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4731"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6762"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2637"/>
     </owl:NamedIndividual>
@@ -5770,6 +6886,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6785">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3650"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5551"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation4940"/>
     </owl:NamedIndividual>
     
@@ -5779,6 +6896,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6800">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6101"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9373"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation7034"/>
     </owl:NamedIndividual>
@@ -5789,6 +6907,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6807">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2000"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7773"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6904"/>
     </owl:NamedIndividual>
@@ -5799,6 +6918,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6822">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2308"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5732"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8894"/>
     </owl:NamedIndividual>
@@ -5809,6 +6929,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6848">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4981"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9475"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3780"/>
     </owl:NamedIndividual>
@@ -5859,6 +6980,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6906">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9129"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9680"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2947"/>
     </owl:NamedIndividual>
@@ -5869,6 +6991,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity6911">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5772"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9436"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6808"/>
     </owl:NamedIndividual>
@@ -5889,6 +7012,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7007">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2734"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6844"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7382"/>
     </owl:NamedIndividual>
@@ -5900,6 +7024,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7078">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2119"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7120"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7391"/>
     </owl:NamedIndividual>
     
@@ -5909,6 +7034,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7079">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4996"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9513"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8006"/>
     </owl:NamedIndividual>
@@ -5939,6 +7065,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7146">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5052"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9778"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8700"/>
     </owl:NamedIndividual>
@@ -5950,6 +7077,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7164">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1932"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7874"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5605"/>
     </owl:NamedIndividual>
     
@@ -5969,6 +7097,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7463">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2649"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4917"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation9360"/>
     </owl:NamedIndividual>
@@ -5989,6 +7118,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7605">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2457"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9531"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4671"/>
     </owl:NamedIndividual>
@@ -6020,6 +7150,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7759">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4629"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5040"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5032"/>
     </owl:NamedIndividual>
     
@@ -6029,6 +7160,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7788">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1725"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5320"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation1766"/>
     </owl:NamedIndividual>
@@ -6040,6 +7172,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7793">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4129"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9579"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4380"/>
     </owl:NamedIndividual>
     
@@ -6080,6 +7213,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7963">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3360"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6397"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3730"/>
     </owl:NamedIndividual>
     
@@ -6100,6 +7234,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity7985">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5045"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9263"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2964"/>
     </owl:NamedIndividual>
     
@@ -6160,6 +7295,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8143">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4895"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5524"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2862"/>
     </owl:NamedIndividual>
     
@@ -6180,6 +7316,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8327">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5333"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9268"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation3499"/>
     </owl:NamedIndividual>
     
@@ -6189,6 +7326,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8389">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5437"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6692"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation3063"/>
     </owl:NamedIndividual>
@@ -6229,6 +7367,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8550">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2430"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3577"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation2378"/>
     </owl:NamedIndividual>
@@ -6240,6 +7379,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8661">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2632"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6265"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation6812"/>
     </owl:NamedIndividual>
     
@@ -6289,6 +7429,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8798">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5082"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7376"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7869"/>
     </owl:NamedIndividual>
@@ -6309,6 +7450,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8835">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2347"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6253"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5924"/>
     </owl:NamedIndividual>
@@ -6330,6 +7472,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity8994">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2962"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9149"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2602"/>
     </owl:NamedIndividual>
     
@@ -6349,6 +7492,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9101">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5781"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6346"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8973"/>
     </owl:NamedIndividual>
@@ -6379,6 +7523,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9310">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8043"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8445"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation7433"/>
     </owl:NamedIndividual>
@@ -6409,6 +7554,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9477">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity3265"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity4006"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2837"/>
     </owl:NamedIndividual>
@@ -6420,6 +7566,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9478">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6082"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6206"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation1421"/>
     </owl:NamedIndividual>
     
@@ -6469,6 +7616,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9732">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6410"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6590"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation2804"/>
     </owl:NamedIndividual>
@@ -6480,6 +7628,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9818">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity5335"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity7875"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation8881"/>
     </owl:NamedIndividual>
     
@@ -6490,6 +7639,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9867">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1621"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity6886"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#minimumordinalmeasurementinformation6248"/>
     </owl:NamedIndividual>
     
@@ -6499,6 +7649,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9870">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1932"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1968"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation5494"/>
     </owl:NamedIndividual>
@@ -6510,6 +7661,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9907">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity8319"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity9858"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation4012"/>
     </owl:NamedIndividual>
     
@@ -6530,6 +7682,7 @@
     <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/capability-implanner#measurementinformationcontententity9970">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity"/>
         <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity1840"/>
+        <cco:inheres_in rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#informationbearingentity2548"/>
         <cco:is_measured_by rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#maximumordinalmeasurementinformation8128"/>
     </owl:NamedIndividual>
     
@@ -10052,6 +11205,12 @@
         <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-capability#TwistDrilling"/>
         <cco:realizes rdf:resource="http://www.ohio.edu/ontologies/capability-implanner#holemaking3118"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InchMeasurementUnit"/>
     
 
 
