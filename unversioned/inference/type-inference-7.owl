@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ohio.edu/ontologies/subsumption#"
+     xml:base="http://www.ohio.edu/ontologies/subsumption"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.ohio.edu/ontologies/subsumption"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#hasDifferentia1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/subsumption#hasDifferentia1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#hasDifferentia2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/subsumption#hasDifferentia2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#A -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/subsumption#A">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/subsumption#hasDifferentia1"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/subsumption#B"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/subsumption#hasDifferentia2"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/subsumption#C"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#B -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/subsumption#B"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#C -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/subsumption#C"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#D -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/subsumption#D">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/subsumption#hasDifferentia1"/>
+                <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/subsumption#B"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#E -->
+
+    <owl:Class rdf:about="http://www.ohio.edu/ontologies/subsumption#E">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ohio.edu/ontologies/subsumption#hasDifferentia2"/>
+                <owl:allValuesFrom rdf:resource="http://www.ohio.edu/ontologies/subsumption#C"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/subsumption#a">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/subsumption#A"/>
+        <hasDifferentia1 rdf:resource="http://www.ohio.edu/ontologies/subsumption#b"/>
+        <hasDifferentia2 rdf:resource="http://www.ohio.edu/ontologies/subsumption#c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/subsumption#b"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/subsumption#c"/>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/subsumption#d">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/subsumption#D"/>
+        <hasDifferentia1 rdf:resource="http://www.ohio.edu/ontologies/subsumption#b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ohio.edu/ontologies/subsumption#e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ohio.edu/ontologies/subsumption#e">
+        <rdf:type rdf:resource="http://www.ohio.edu/ontologies/subsumption#E"/>
+        <hasDifferentia2 rdf:resource="http://www.ohio.edu/ontologies/subsumption#c"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

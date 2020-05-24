@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#">
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/inheres_in"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/design#describes_map_with"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value"/>
+  <owl:DatatypeProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_decimal_value"/>
+  <j.1:FeatureQualityMap rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FeatureQualityMap_I6zrr2e">
+    <j.1:describes_map_with>
+      <j.1:FeatureSpecification rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FeatureSpecification_If3b6an">
+        <j.0:inheres_in>
+          <j.1:LabelBearingEntity rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#LabelBearingEntity_Iycm2g0">
+            <j.0:has_text_value>HOLE_F6(5)</j.0:has_text_value>
+          </j.1:LabelBearingEntity>
+        </j.0:inheres_in>
+        <j.0:represents rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FeatureRepresentation_Ig0xd7b"/>
+      </j.1:FeatureSpecification>
+    </j.1:describes_map_with>
+    <j.1:describes_map_with>
+      <j.1:DiameterSpecification rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#DiameterSpecification_Ip935ea">
+        <j.0:inheres_in>
+          <j.1:MeasurementBearingEntity rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#MeasurementBearingEntity_Ifbp0z4">
+            <j.0:has_decimal_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+            >2.0</j.0:has_decimal_value>
+          </j.1:MeasurementBearingEntity>
+        </j.0:inheres_in>
+        <j.0:represents rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#QualityRepresentation_I6zm8x3"/>
+      </j.1:DiameterSpecification>
+    </j.1:describes_map_with>
+  </j.1:FeatureQualityMap>
+</rdf:RDF>

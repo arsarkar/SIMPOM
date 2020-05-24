@@ -1,0 +1,7 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ohio.edu/ontologies/manufacturing-plan#">
+  <j.0:RootProcess rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#IProcessm6en09">
+    <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-plan#PlannedProcess"/>
+  </j.0:RootProcess>
+</rdf:RDF>

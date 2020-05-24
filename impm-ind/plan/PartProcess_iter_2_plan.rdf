@@ -1,0 +1,236 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.ontologyrepository.com/CommonCoreOntologies/"
+    xmlns:j.1="http://www.ohio.edu/ontologies/design#"
+    xmlns:j.2="http://www.ohio.edu/ontologies/manufacturing-capability#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.3="http://www.ohio.edu/ontologies/manufacturing-plan#">
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input"/>
+  <owl:ObjectProperty rdf:about="http://www.ohio.edu/ontologies/manufacturing-plan#precedes"/>
+  <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I64zr5ejazgx">
+    <j.3:precedes>
+      <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_Ir44nzcbfc8n5">
+        <j.0:has_input>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_I22bggrx23md"/>
+        </j.0:has_input>
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Iy81agdbgp"/>
+        </j.0:has_output>
+      </j.2:EndMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Ip6e42b">
+    <j.3:precedes>
+      <j.2:FaceMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Iby3jhj">
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_In3kq5c"/>
+        </j.0:has_output>
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_If849r7"/>
+        <j.3:precedes>
+          <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I7c90j2bfc8n5">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Iagy2dyx23md"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Imrpqfqbgp"/>
+            </j.0:has_output>
+          </j.2:EndMilling>
+        </j.3:precedes>
+        <j.3:precedes>
+          <j.2:PlungeMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iaepyakaf51nr">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Izy5dj4qze0q"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I0gdzbrxah9bh"/>
+            </j.0:has_output>
+          </j.2:PlungeMilling>
+        </j.3:precedes>
+        <j.3:precedes>
+          <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_I6yejg8y7xd5j">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Iga6m5kx4rxe"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Ifaq0dcx3zgn2"/>
+            </j.0:has_output>
+          </j.2:SideMilling>
+        </j.3:precedes>
+      </j.2:FaceMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I4e1nz5p6e42b">
+    <j.3:precedes>
+      <j.2:FaceMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_I0a2p5pby3jhj">
+        <j.0:has_input>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Ix5fz97f849r7"/>
+        </j.0:has_input>
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Iacgrcdn3kq5c"/>
+        </j.0:has_output>
+      </j.2:FaceMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Id0fy65m9mkk9">
+    <j.3:precedes>
+      <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_I30kffhy7xd5j">
+        <j.0:has_input>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_I610fjcx4rxe"/>
+        </j.0:has_input>
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Ie7084hx3zgn2"/>
+        </j.0:has_output>
+      </j.2:SideMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I15bqb7">
+    <j.3:precedes>
+      <j.2:TwistDrilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#TwistDrilling_I9e5dbk">
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Iq4gcf8"/>
+        </j.0:has_output>
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Ix73j86"/>
+      </j.2:TwistDrilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Irrjm7ejazgx">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I7c90j2bfc8n5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I5jazgx">
+    <j.3:precedes>
+      <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_Ibfc8n5">
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I628bgp"/>
+        </j.0:has_output>
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_I0x23md"/>
+        <j.3:precedes>
+          <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I3qp0rq">
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I38mh39"/>
+            </j.0:has_output>
+            <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Ifr8jfy"/>
+          </j.2:EndMilling>
+        </j.3:precedes>
+        <j.3:precedes>
+          <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_Ixfmee1y7xd5j">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Izd07ecx4rxe"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I0e15g2x3zgn2"/>
+            </j.0:has_output>
+          </j.2:SideMilling>
+        </j.3:precedes>
+        <j.3:precedes>
+          <j.2:PlungeMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iagggh3af51nr">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Ibzraeaqze0q"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I9a5yaxxah9bh"/>
+            </j.0:has_output>
+          </j.2:PlungeMilling>
+        </j.3:precedes>
+        <j.3:precedes>
+          <j.2:FaceMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Ig3rcg7by3jhj">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Iqhfxa7f849r7"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Igyca33n3kq5c"/>
+            </j.0:has_output>
+          </j.2:FaceMilling>
+        </j.3:precedes>
+      </j.2:EndMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_If9c05gm9mkk9">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_I6yejg8y7xd5j"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Iybfecqp6e42b">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Ig3rcg7by3jhj"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Im9mkk9">
+    <j.3:precedes>
+      <j.2:SideMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_Iy7xd5j">
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Ix3zgn2"/>
+        </j.0:has_output>
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_I8x4rxe"/>
+        <j.3:precedes>
+          <j.2:PlungeMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Ibgpjc7af51nr">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Ip3z81dqze0q"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I0de5g8xah9bh"/>
+            </j.0:has_output>
+          </j.2:PlungeMilling>
+        </j.3:precedes>
+        <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_I0a2p5pby3jhj"/>
+        <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_Ir44nzcbfc8n5"/>
+      </j.2:SideMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Idah3p9p6e42b">
+    <j.3:precedes>
+      <j.2:FaceMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Ig4jn8xby3jhj">
+        <j.0:has_input>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_In57yxhf849r7"/>
+        </j.0:has_input>
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I6b281fn3kq5c"/>
+        </j.0:has_output>
+      </j.2:FaceMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I80peprm9mkk9">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_Ixfmee1y7xd5j"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Ibdh8gnjjx6r">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iaepyakaf51nr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I713n38jjx6r">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iagggh3af51nr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Iexf29p">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I3qp0rq"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I0jjx6r">
+    <j.3:precedes>
+      <j.2:PlungeMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iaf51nr">
+        <j.0:has_output>
+          <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_Ixah9bh"/>
+        </j.0:has_output>
+        <j.0:has_input rdf:resource="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_I4qze0q"/>
+        <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#TwistDrilling_I9e5dbk"/>
+        <j.3:precedes>
+          <j.2:EndMilling rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I2pgxhebfc8n5">
+            <j.0:has_input>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#FormFeature_Iambrmgx23md"/>
+            </j.0:has_input>
+            <j.0:has_output>
+              <j.1:FormFeature rdf:about="http://www.ohio.edu/simplanner/design2019/12/19/20brf2#FormFeature_I2qmdcfbgp"/>
+            </j.0:has_output>
+          </j.2:EndMilling>
+        </j.3:precedes>
+        <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_I30kffhy7xd5j"/>
+        <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Ig4jn8xby3jhj"/>
+      </j.2:PlungeMilling>
+    </j.3:precedes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_Ixg5jqfjjx6r">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Ibgpjc7af51nr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ohio.edu/simplanner/design2019/10/30/bq96q9#RootProcess_I4ec7acjazgx">
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_I2pgxhebfc8n5"/>
+  </rdf:Description>
+  <j.3:RootProcess rdf:about="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#IProcessm6en09">
+    <rdf:type rdf:resource="http://www.ohio.edu/ontologies/manufacturing-plan#PlannedProcess"/>
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#FaceMilling_Iby3jhj"/>
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#EndMilling_Ibfc8n5"/>
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#SideMilling_Iy7xd5j"/>
+    <j.3:precedes rdf:resource="http://www.ohio.edu/simplanner/plan2019/12/19/20brf2#PlungeMilling_Iaf51nr"/>
+  </j.3:RootProcess>
+</rdf:RDF>

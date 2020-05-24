@@ -37,9 +37,9 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology is designed to represent standard measurement units that are used when measuring various attributes of entities.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology is designed to represent a range of attributes of entities especially qualities, realizable entities, and process profiles.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Entity Ontology</rdfs:label>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology is designed to represent agents, especially persons and organizations, and their roles.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Units of Measure Ontology</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology is designed to represent agents, especially persons and organizations, and their roles.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Entity Ontology</rdfs:label>
         <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
         <dc:contributor>James A. Overton</dc:contributor>
@@ -88,9 +88,9 @@ If you plan to use the relations that define BFO 2, you should import bfo.owl in
 See the BFO 2 release notes for further information about BFO 2. Please note that the current release of bfo.owl uses temporal relations when the subject or object is a continuant, a major change from BFO 1.</rdfs:comment>
         <dc:contributor>Pierre Grenon</dc:contributor>
         <CommonCoreOntologies:code_license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The 3-Clause BSD License (https://opensource.org/licenses/BSD-3-Clause).</CommonCoreOntologies:code_license>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extended Relation Ontology</rdfs:label>
         <rdfs:comment>This ontology contains logical relations to be shared across the different OBO ontologies. Each OBO ontology is free to extend this set with relations specific to the biology within that ontology. In the definitions, variables c, d, ..., p, q, ... range over instances of continuants and processes respectively. C, D, ..., P, Q, ... range over the corresponding classes. For a discussion of instance-level relations and also of additional axioms needed to infer transitivity and other properties of the relations listed above see:  http://genomebiology.com/2005/6/5/R46; or the OBO relations page hosted at;http://obo.sourceforge.net/relationship;http://obo.sourceforge.net/relationship&lt;
 		</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extended Relation Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0.1</owl:versionInfo>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">December 14, 2017</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
@@ -7228,26 +7228,9 @@ Point ZM (1 2 5 40)</CommonCoreOntologies:example_of_usage>
     
 
 
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel -->
-
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactDesignContentEntity"/>
-        <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Directive Information Content Entity that prescribes a common set of Functions and Qualities to inhere in a set of artifact instances.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artifact Model</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModelName -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModelName">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
         <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Designative Information Content Entity that designates some Artifact Model.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
@@ -15489,12 +15472,6 @@ See: https:/en.wikipedia.org/wiki/Photometry_(optics)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunctionSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ObservationArtifactFunction"/>
             </owl:Restriction>
@@ -16103,12 +16080,6 @@ See: https:/en.wikipedia.org/wiki/Photometry_(optics)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PayloadCapacitySpecification">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunctionSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
@@ -18156,12 +18127,6 @@ See: https:/en.wikipedia.org/wiki/Photometry_(optics)</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ResearchArtifactFunctionSpecification">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactFunctionSpecification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactModel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
@@ -23205,16 +23170,16 @@ See: https://en.wikipedia.org/wiki/Submillimetre_astronomy</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Year Measurement Unit</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
+    </rdf:Description>
+    <rdf:Description>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
     </rdf:Description>
     <rdf:Description>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
     </rdf:Description>
     <rdf:Description>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
-    </rdf:Description>
-    <rdf:Description>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology</CommonCoreOntologies:is_curated_in_ontology>
     </rdf:Description>
     <rdf:Description>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
